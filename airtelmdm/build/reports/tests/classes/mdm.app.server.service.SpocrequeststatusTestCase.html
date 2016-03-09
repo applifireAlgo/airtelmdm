@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.096s</div>
+<div class="counter">0.108s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,22 +79,22 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.064s</td>
+<td>0.066s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.015s</td>
+<td>0.020s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3FindById</td>
-<td>0.006s</td>
+<td>0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test4Delete</td>
-<td>0.011s</td>
+<td>0.013s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -103,21 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 04:54:53.135--ClientSession(204115559)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Spocrequeststatus_M (statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [FE832D23-02EC-4C11-B0F8-20CD71725E73, 9BA4d0abEPcT2vA84kmPUjcqZ87dZwUWvxQkESO2tnySC81Qt5, 1, AAAAA, 2016-03-09 04:54:53.086, null, 2016-03-09 04:54:53.086, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:53.146--ClientSession(1249351118)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
-	bind =&gt; [1, FE832D23-02EC-4C11-B0F8-20CD71725E73]
+[EL Fine]: sql: 2016-03-09 08:21:32.462--ClientSession(953162593)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Spocrequeststatus_M (statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [1EAB2F44-D713-4DC9-824A-9922A03315A6, 9BA4d0abEPcT2vA84kmPUjcqZ87dZwUWvxQkESO2tnySC81Qt5, 1, AAAAA, 2016-03-09 08:21:32.414, null, 2016-03-09 08:21:32.414, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:32.477--ClientSession(280062216)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
+	bind =&gt; [1, 1EAB2F44-D713-4DC9-824A-9922A03315A6]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 04:54:53.151--ClientSession(734254835)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE (statusid = ?)
-	bind =&gt; [FE832D23-02EC-4C11-B0F8-20CD71725E73]
-[EL Fine]: sql: 2016-03-09 04:54:53.152--ClientSession(734254835)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Spocrequeststatus_M SET statusname = ?, updatedBy = ?, versionId = ? WHERE ((statusid = ?) AND (versionId = ?))
-	bind =&gt; [A1zXwcCO5SY5ok4nEE2xQsLZglOt7rEM5aVUr3ka1RHGmduuHV, AAAAA, 2, FE832D23-02EC-4C11-B0F8-20CD71725E73, 1]
-[EL Fine]: sql: 2016-03-09 04:54:53.16--ClientSession(819164035)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
-	bind =&gt; [1, FE832D23-02EC-4C11-B0F8-20CD71725E73]
-[EL Fine]: sql: 2016-03-09 04:54:53.167--ClientSession(1461943889)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE (statusid = ?)
-	bind =&gt; [FE832D23-02EC-4C11-B0F8-20CD71725E73]
-[EL Fine]: sql: 2016-03-09 04:54:53.168--ClientSession(1461943889)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Spocrequeststatus_M WHERE ((statusid = ?) AND (versionId = ?))
-	bind =&gt; [FE832D23-02EC-4C11-B0F8-20CD71725E73, 2]
+[EL Fine]: sql: 2016-03-09 08:21:32.483--ClientSession(1657229431)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE (statusid = ?)
+	bind =&gt; [1EAB2F44-D713-4DC9-824A-9922A03315A6]
+[EL Fine]: sql: 2016-03-09 08:21:32.485--ClientSession(1657229431)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Spocrequeststatus_M SET statusname = ?, updatedBy = ?, versionId = ? WHERE ((statusid = ?) AND (versionId = ?))
+	bind =&gt; [A1zXwcCO5SY5ok4nEE2xQsLZglOt7rEM5aVUr3ka1RHGmduuHV, AAAAA, 2, 1EAB2F44-D713-4DC9-824A-9922A03315A6, 1]
+[EL Fine]: sql: 2016-03-09 08:21:32.496--ClientSession(1582758140)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
+	bind =&gt; [1, 1EAB2F44-D713-4DC9-824A-9922A03315A6]
+[EL Fine]: sql: 2016-03-09 08:21:32.505--ClientSession(95415994)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE (statusid = ?)
+	bind =&gt; [1EAB2F44-D713-4DC9-824A-9922A03315A6]
+[EL Fine]: sql: 2016-03-09 08:21:32.507--ClientSession(95415994)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Spocrequeststatus_M WHERE ((statusid = ?) AND (versionId = ?))
+	bind =&gt; [1EAB2F44-D713-4DC9-824A-9922A03315A6, 2]
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 4:54:58 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
 </div>
 </div>
 </body>

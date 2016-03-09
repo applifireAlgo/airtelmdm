@@ -84,7 +84,7 @@
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.010s</td>
+<td>0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@
 </tr>
 <tr>
 <td class="success">test4Delete</td>
-<td>0.007s</td>
+<td>0.006s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -103,21 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 04:54:56.82--ClientSession(1493865026)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemcategorytype_M (itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [42187582-3BAA-466B-B819-6304DBBB7B4F, skFMl7UfSlCmwNQWKQxPQsvcpXfELdF9A6FfQlyhBgvMiwjdjC, 1, AAAAA, 2016-03-09 04:54:56.815, null, 2016-03-09 04:54:56.815, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:56.826--ClientSession(1908175752)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE ((activeStatus = ?) AND (itemcategoryid = ?))
-	bind =&gt; [1, 42187582-3BAA-466B-B819-6304DBBB7B4F]
+[EL Fine]: sql: 2016-03-09 08:21:36.51--ClientSession(1449757443)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemcategorytype_M (itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [1609C8D5-0045-4E84-A236-EBEBFC0AACE9, skFMl7UfSlCmwNQWKQxPQsvcpXfELdF9A6FfQlyhBgvMiwjdjC, 1, AAAAA, 2016-03-09 08:21:36.506, null, 2016-03-09 08:21:36.506, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:36.517--ClientSession(750133059)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE ((activeStatus = ?) AND (itemcategoryid = ?))
+	bind =&gt; [1, 1609C8D5-0045-4E84-A236-EBEBFC0AACE9]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 04:54:56.829--ClientSession(8516623)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
-	bind =&gt; [42187582-3BAA-466B-B819-6304DBBB7B4F]
-[EL Fine]: sql: 2016-03-09 04:54:56.83--ClientSession(8516623)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Itemcategorytype_M SET itemcategoryname = ?, updatedBy = ?, versionId = ? WHERE ((itemcategoryid = ?) AND (versionId = ?))
-	bind =&gt; [btpu0z0EjFUILUQta9qBp32e5lhvlld2dygOPkTBRiPPvjQWS8, AAAAA, 2, 42187582-3BAA-466B-B819-6304DBBB7B4F, 1]
-[EL Fine]: sql: 2016-03-09 04:54:56.837--ClientSession(1824636737)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE ((activeStatus = ?) AND (itemcategoryid = ?))
-	bind =&gt; [1, 42187582-3BAA-466B-B819-6304DBBB7B4F]
-[EL Fine]: sql: 2016-03-09 04:54:56.84--ClientSession(1482928245)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
-	bind =&gt; [42187582-3BAA-466B-B819-6304DBBB7B4F]
-[EL Fine]: sql: 2016-03-09 04:54:56.842--ClientSession(1482928245)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemcategorytype_M WHERE ((itemcategoryid = ?) AND (versionId = ?))
-	bind =&gt; [42187582-3BAA-466B-B819-6304DBBB7B4F, 2]
+[EL Fine]: sql: 2016-03-09 08:21:36.52--ClientSession(55943577)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
+	bind =&gt; [1609C8D5-0045-4E84-A236-EBEBFC0AACE9]
+[EL Fine]: sql: 2016-03-09 08:21:36.521--ClientSession(55943577)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Itemcategorytype_M SET itemcategoryname = ?, updatedBy = ?, versionId = ? WHERE ((itemcategoryid = ?) AND (versionId = ?))
+	bind =&gt; [btpu0z0EjFUILUQta9qBp32e5lhvlld2dygOPkTBRiPPvjQWS8, AAAAA, 2, 1609C8D5-0045-4E84-A236-EBEBFC0AACE9, 1]
+[EL Fine]: sql: 2016-03-09 08:21:36.527--ClientSession(1187044250)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE ((activeStatus = ?) AND (itemcategoryid = ?))
+	bind =&gt; [1, 1609C8D5-0045-4E84-A236-EBEBFC0AACE9]
+[EL Fine]: sql: 2016-03-09 08:21:36.531--ClientSession(111547508)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
+	bind =&gt; [1609C8D5-0045-4E84-A236-EBEBFC0AACE9]
+[EL Fine]: sql: 2016-03-09 08:21:36.532--ClientSession(111547508)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemcategorytype_M WHERE ((itemcategoryid = ?) AND (versionId = ?))
+	bind =&gt; [1609C8D5-0045-4E84-A236-EBEBFC0AACE9, 2]
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 4:54:58 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
 </div>
 </div>
 </body>

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mdm.app.server.service.ManufacturerTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T04:54:55" hostname="e258b0f19182" time="0.041">
+<testsuite name="mdm.app.server.service.ManufacturerTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T08:21:35" hostname="9b24c35c068b" time="0.038">
   <properties/>
   <testcase name="test1Save" classname="mdm.app.server.service.ManufacturerTestCase" time="0.016"/>
-  <testcase name="test2Update" classname="mdm.app.server.service.ManufacturerTestCase" time="0.013"/>
-  <testcase name="test3FindById" classname="mdm.app.server.service.ManufacturerTestCase" time="0.004"/>
-  <testcase name="test4Delete" classname="mdm.app.server.service.ManufacturerTestCase" time="0.007"/>
+  <testcase name="test2Update" classname="mdm.app.server.service.ManufacturerTestCase" time="0.011"/>
+  <testcase name="test3FindById" classname="mdm.app.server.service.ManufacturerTestCase" time="0.005"/>
+  <testcase name="test4Delete" classname="mdm.app.server.service.ManufacturerTestCase" time="0.006"/>
   <system-out><![CDATA[Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 04:54:55.5--ClientSession(570611754)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Manufacturer_M (manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6, XLpTQwlfG2sjFGybHju3dNxppuIp9rqUJ7CNHwkcTK01hL9lle, 1, AAAAA, 2016-03-09 04:54:55.495, null, 2016-03-09 04:54:55.495, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:55.506--ClientSession(1152256941)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE ((activeStatus = ?) AND (manufacturerid = ?))
-	bind => [1, E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6]
+[EL Fine]: sql: 2016-03-09 08:21:35.246--ClientSession(63645884)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Manufacturer_M (manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [B62B31BC-9A38-471B-A40C-172933962AFB, XLpTQwlfG2sjFGybHju3dNxppuIp9rqUJ7CNHwkcTK01hL9lle, 1, AAAAA, 2016-03-09 08:21:35.241, null, 2016-03-09 08:21:35.241, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:35.252--ClientSession(1861020257)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE ((activeStatus = ?) AND (manufacturerid = ?))
+	bind => [1, B62B31BC-9A38-471B-A40C-172933962AFB]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 04:54:55.51--ClientSession(2113852272)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
-	bind => [E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6]
-[EL Fine]: sql: 2016-03-09 04:54:55.511--ClientSession(2113852272)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Manufacturer_M SET manufacturername = ?, updatedBy = ?, versionId = ? WHERE ((manufacturerid = ?) AND (versionId = ?))
-	bind => [HPDVwUgVajsOtwhWnJsRfz9mAxD2EGnjsiE7bFq9BwjJD8pN79, AAAAA, 2, E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6, 1]
-[EL Fine]: sql: 2016-03-09 04:54:55.519--ClientSession(886294572)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE ((activeStatus = ?) AND (manufacturerid = ?))
-	bind => [1, E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6]
-[EL Fine]: sql: 2016-03-09 04:54:55.524--ClientSession(2040555432)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
-	bind => [E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6]
-[EL Fine]: sql: 2016-03-09 04:54:55.525--ClientSession(2040555432)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Manufacturer_M WHERE ((manufacturerid = ?) AND (versionId = ?))
-	bind => [E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6, 2]
+[EL Fine]: sql: 2016-03-09 08:21:35.256--ClientSession(506618075)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
+	bind => [B62B31BC-9A38-471B-A40C-172933962AFB]
+[EL Fine]: sql: 2016-03-09 08:21:35.257--ClientSession(506618075)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Manufacturer_M SET manufacturername = ?, updatedBy = ?, versionId = ? WHERE ((manufacturerid = ?) AND (versionId = ?))
+	bind => [HPDVwUgVajsOtwhWnJsRfz9mAxD2EGnjsiE7bFq9BwjJD8pN79, AAAAA, 2, B62B31BC-9A38-471B-A40C-172933962AFB, 1]
+[EL Fine]: sql: 2016-03-09 08:21:35.263--ClientSession(599755795)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE ((activeStatus = ?) AND (manufacturerid = ?))
+	bind => [1, B62B31BC-9A38-471B-A40C-172933962AFB]
+[EL Fine]: sql: 2016-03-09 08:21:35.268--ClientSession(919400190)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
+	bind => [B62B31BC-9A38-471B-A40C-172933962AFB]
+[EL Fine]: sql: 2016-03-09 08:21:35.269--ClientSession(919400190)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Manufacturer_M WHERE ((manufacturerid = ?) AND (versionId = ?))
+	bind => [B62B31BC-9A38-471B-A40C-172933962AFB, 2]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

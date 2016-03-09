@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.241s</div>
+<div class="counter">0.248s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.117s</td>
+<td>0.119s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.020s</td>
+<td>0.021s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,12 +94,12 @@
 </tr>
 <tr>
 <td class="success">test3findByitemcategoryid</td>
-<td>0.007s</td>
+<td>0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3findByitemmainid</td>
-<td>0.005s</td>
+<td>0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -114,12 +114,12 @@
 </tr>
 <tr>
 <td class="success">test3findBymanufacturerid</td>
-<td>0.005s</td>
+<td>0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3findBysbpid</td>
-<td>0.006s</td>
+<td>0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -134,7 +134,7 @@
 </tr>
 <tr>
 <td class="success">test4Delete</td>
-<td>0.054s</td>
+<td>0.058s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -142,86 +142,86 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>[EL Fine]: sql: 2016-03-09 04:54:56.514--ClientSession(1708661662)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemcategorytype_M (itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [90BFE6A7-5A8F-4582-B076-2D6749E4B538, eBTM218ZFqpWNSfZ5NDzU38q1jMVISCW5EAv6qIfvGfZhbX3UK, 1, AAAAA, 2016-03-09 04:54:56.511, null, 2016-03-09 04:54:56.511, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:56.52--ClientSession(223931121)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemmaintype_M (itemmaintypeid, itemmaintypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [C50E8C2F-C724-47DF-9A9F-C1A78EE24697, cgVK0AaRd0ZudRgy944jD5xK6nAYYvnCOTiynRRmi2IbxpzpMw, 1, AAAAA, 2016-03-09 04:54:56.517, null, 2016-03-09 04:54:56.517, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:56.526--ClientSession(253688890)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemsubtype_M (itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [B75D3DCC-A97B-4D77-B8B1-EC28D5C0EFE8, KQzCP1Piwt0zRhlzZtchNC3gQxWGMbg5xGTw8laHEhu8HvNaGj, 1, AAAAA, 2016-03-09 04:54:56.523, null, 2016-03-09 04:54:56.523, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:56.533--ClientSession(753973848)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemtype_M (itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [E6684E2E-2FAF-474D-8F1A-6796F75CB0B8, HRJ39f88ZP7MYyFZVfUBVBWq0hCxxU5JKGUWzpJKBQPiHphvHY, 1, AAAAA, 2016-03-09 04:54:56.529, null, 2016-03-09 04:54:56.529, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:56.539--ClientSession(173996681)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Manufacturer_M (manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [94212F16-343F-4EC7-91E4-2E7A62E2DF3E, iF10N6kxaSDpnEp3NMwGhxSuDvQFHvsjC2WcdCyGOpsDpsHf6C, 1, AAAAA, 2016-03-09 04:54:56.536, null, 2016-03-09 04:54:56.536, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:56.546--ClientSession(1374046704)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Sbp_M (sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [EFED170E-E8CB-4579-A338-FA62A3E69338, DVIhZV5FiZJiGwLpdG6FHdpUDwQRjR174wNIuq7d1MWyxdTL91, 1, AAAAA, 2016-03-09 04:54:56.543, null, 2016-03-09 04:54:56.543, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:56.553--ClientSession(1185612805)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Technology_M (technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [F0048E1A-0925-483C-A0AB-A7DDF641A176, 096Wx9zYjSmPnBuv0TZqlfnAH9efJL5Ns09MPMIthAcrprGzct, 1, AAAAA, 2016-03-09 04:54:56.549, null, 2016-03-09 04:54:56.549, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:56.559--ClientSession(1752517669)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Uom_M (uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [C5A7D2AD-DD64-43EF-B01A-AEBFB30E5451, 7gOleozVHm6hwSBXmzOw4ZSuSYv0tDALsgn7EAzsA9x2XuTTpQ, 1, AAAAA, 2016-03-09 04:54:56.556, null, 2016-03-09 04:54:56.556, 1, 51000]
+<pre>[EL Fine]: sql: 2016-03-09 08:21:36.204--ClientSession(1597420740)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemcategorytype_M (itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [8E0B30B0-9E93-4251-8941-F36F716640A4, eBTM218ZFqpWNSfZ5NDzU38q1jMVISCW5EAv6qIfvGfZhbX3UK, 1, AAAAA, 2016-03-09 08:21:36.2, null, 2016-03-09 08:21:36.2, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:36.212--ClientSession(892040316)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemmaintype_M (itemmaintypeid, itemmaintypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [7FC6F21F-9186-46FB-8F61-30F617A92A37, cgVK0AaRd0ZudRgy944jD5xK6nAYYvnCOTiynRRmi2IbxpzpMw, 1, AAAAA, 2016-03-09 08:21:36.208, null, 2016-03-09 08:21:36.208, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:36.218--ClientSession(839044882)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemsubtype_M (itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [51A11DF2-C224-4468-A071-6E96F9584921, KQzCP1Piwt0zRhlzZtchNC3gQxWGMbg5xGTw8laHEhu8HvNaGj, 1, AAAAA, 2016-03-09 08:21:36.214, null, 2016-03-09 08:21:36.214, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:36.225--ClientSession(760711695)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemtype_M (itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [DB34E8A4-42FF-447A-B730-DE51E3EB1528, HRJ39f88ZP7MYyFZVfUBVBWq0hCxxU5JKGUWzpJKBQPiHphvHY, 1, AAAAA, 2016-03-09 08:21:36.221, null, 2016-03-09 08:21:36.221, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:36.232--ClientSession(866149595)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Manufacturer_M (manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [03D0A6CD-F6C6-4B37-BCE8-EB16AE1D360D, iF10N6kxaSDpnEp3NMwGhxSuDvQFHvsjC2WcdCyGOpsDpsHf6C, 1, AAAAA, 2016-03-09 08:21:36.228, null, 2016-03-09 08:21:36.228, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:36.238--ClientSession(213675457)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Sbp_M (sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [0EDEE9CE-541F-4F17-8204-A1BEC71B44D6, DVIhZV5FiZJiGwLpdG6FHdpUDwQRjR174wNIuq7d1MWyxdTL91, 1, AAAAA, 2016-03-09 08:21:36.234, null, 2016-03-09 08:21:36.234, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:36.245--ClientSession(1434723373)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Technology_M (technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [3A7A8063-A339-415C-A72C-1136BB350C40, 096Wx9zYjSmPnBuv0TZqlfnAH9efJL5Ns09MPMIthAcrprGzct, 1, AAAAA, 2016-03-09 08:21:36.241, null, 2016-03-09 08:21:36.241, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:36.252--ClientSession(362406202)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Uom_M (uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [F03B26FD-63B2-4003-889D-9F0479CC2D1C, 7gOleozVHm6hwSBXmzOw4ZSuSYv0tDALsgn7EAzsA9x2XuTTpQ, 1, AAAAA, 2016-03-09 08:21:36.248, null, 2016-03-09 08:21:36.248, 1, 51000]
 Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 04:54:56.609--ClientSession(2052125868)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Spocitem_M (itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [E1767778-F1E9-4FEA-9C36-792EEA1B1778, YNt6NcBDRkmGo7oZXv9mm3D6uJt27ZlXDvA5lcEFT41JccxxsO, Cox6Gw57WQ98STjnOAw1vJ8fOKP9aHrgetXLeXuac0Lx6DU7Nu, JUtcwrv7u9fFeDZReNv4RVUr0pEajBXsHm0srJ0UgVJDAV2vfI, c1kaFf8WHtEGNYQDchmIhH6A5NRZ9xEIVhlPblhDafpvfLo2et, true, 90BFE6A7-5A8F-4582-B076-2D6749E4B538, ViKvg7PiHIrbzsnJ5rviiEWpV0DA90GQCanlTSP7uByODOEeSE, K0jo1zxuKOnnSauH4HmtPrRjx0bGPGAN5s0fz0nsu9A2A2wAaw, C50E8C2F-C724-47DF-9A9F-C1A78EE24697, B75D3DCC-A97B-4D77-B8B1-EC28D5C0EFE8, E6684E2E-2FAF-474D-8F1A-6796F75CB0B8, 12.34, 12.34, 94212F16-343F-4EC7-91E4-2E7A62E2DF3E, 12.34, NoUc8ghf2aDnp0VJR5KCWPNesZV1ZSRqvteL2AHoWPUhgnyJgQ, okwNt8WrPfL3APTse4FeMESfHt6LVW2f8lAfwCfPPy2j8MnL92, HnrZ8QkdA9hjQlzf2uv9CTytWWsvuVrZZN7hBqtoMu4jHzly82, HDGZD8biZB8vGq49kkTs0NbX0qe779PmAiuj68gmj3uorlYq2C, XNgUxjRZMrr4hW9qNSTlZIQv4Y6GSWuz7X0fOXBFAM5bhqITsG, 5PTtqK1YbMgojN8BqGGPW8h2oxMGyBA1miyAXLjQTh7fX5s6HD, v, irvYzpyoQcSIBMsSnFwuplvv0J9cIrBv3x90F2EmhOLLcWA5Z7, uTGpcPaPhZK6cGRCr6UrDdXvsN55LbXf0GbzktI9wwU7aOTNBG, true, true, EFED170E-E8CB-4579-A338-FA62A3E69338, true, true, x1TTtUDCwfov17yiyEK3LCeNeMvGJ3f0fbDHufi7hYJOKJeqUZ, F0048E1A-0925-483C-A0AB-A7DDF641A176, true, C5A7D2AD-DD64-43EF-B01A-AEBFB30E5451, 1, AAAAA, 2016-03-09 04:54:56.562, null, 2016-03-09 04:54:56.562, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:56.618--ClientSession(130087163)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemid = ?))
-	bind =&gt; [1, E1767778-F1E9-4FEA-9C36-792EEA1B1778]
+[EL Fine]: sql: 2016-03-09 08:21:36.303--ClientSession(1993850908)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Spocitem_M (itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [A55671C5-A9D3-438B-8631-6055BC722813, YNt6NcBDRkmGo7oZXv9mm3D6uJt27ZlXDvA5lcEFT41JccxxsO, Cox6Gw57WQ98STjnOAw1vJ8fOKP9aHrgetXLeXuac0Lx6DU7Nu, JUtcwrv7u9fFeDZReNv4RVUr0pEajBXsHm0srJ0UgVJDAV2vfI, c1kaFf8WHtEGNYQDchmIhH6A5NRZ9xEIVhlPblhDafpvfLo2et, true, 8E0B30B0-9E93-4251-8941-F36F716640A4, ViKvg7PiHIrbzsnJ5rviiEWpV0DA90GQCanlTSP7uByODOEeSE, K0jo1zxuKOnnSauH4HmtPrRjx0bGPGAN5s0fz0nsu9A2A2wAaw, 7FC6F21F-9186-46FB-8F61-30F617A92A37, 51A11DF2-C224-4468-A071-6E96F9584921, DB34E8A4-42FF-447A-B730-DE51E3EB1528, 12.34, 12.34, 03D0A6CD-F6C6-4B37-BCE8-EB16AE1D360D, 12.34, NoUc8ghf2aDnp0VJR5KCWPNesZV1ZSRqvteL2AHoWPUhgnyJgQ, okwNt8WrPfL3APTse4FeMESfHt6LVW2f8lAfwCfPPy2j8MnL92, HnrZ8QkdA9hjQlzf2uv9CTytWWsvuVrZZN7hBqtoMu4jHzly82, HDGZD8biZB8vGq49kkTs0NbX0qe779PmAiuj68gmj3uorlYq2C, XNgUxjRZMrr4hW9qNSTlZIQv4Y6GSWuz7X0fOXBFAM5bhqITsG, 5PTtqK1YbMgojN8BqGGPW8h2oxMGyBA1miyAXLjQTh7fX5s6HD, v, irvYzpyoQcSIBMsSnFwuplvv0J9cIrBv3x90F2EmhOLLcWA5Z7, uTGpcPaPhZK6cGRCr6UrDdXvsN55LbXf0GbzktI9wwU7aOTNBG, true, true, 0EDEE9CE-541F-4F17-8204-A1BEC71B44D6, true, true, x1TTtUDCwfov17yiyEK3LCeNeMvGJ3f0fbDHufi7hYJOKJeqUZ, 3A7A8063-A339-415C-A72C-1136BB350C40, true, F03B26FD-63B2-4003-889D-9F0479CC2D1C, 1, AAAAA, 2016-03-09 08:21:36.255, null, 2016-03-09 08:21:36.255, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:36.312--ClientSession(856970699)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemid = ?))
+	bind =&gt; [1, A55671C5-A9D3-438B-8631-6055BC722813]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 04:54:56.629--ClientSession(603861848)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE (itemid = ?)
-	bind =&gt; [E1767778-F1E9-4FEA-9C36-792EEA1B1778]
-[EL Fine]: sql: 2016-03-09 04:54:56.631--ClientSession(603861848)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Spocitem_M SET acs = ?, customdutycode = ?, funcclassification = ?, glcode = ?, itemcode = ?, itemdescription = ?, model = ?, modelfamily = ?, moq = ?, movable = ?, natureofitem = ?, networkelement = ?, nmsunique = ?, partdescription = ?, partnumber = ?, techinical = ?, updatedBy = ?, versionId = ? WHERE ((itemid = ?) AND (versionId = ?))
-	bind =&gt; [AUX87CUIIGUNOQlhYqXpOmKlZO67GUzpBM0rCp7pIU3SJ8vfpX, I9VVwDIaREngRyT2oKwFC05CGArEzbWawRlTx6K7A2SWQkb5eQ, 95WXZ6UGcBfzMftb3iJDurahTHNmGemufYkZvgTe7hrUBE3H6Z, kfgUKSDcuyq96eTuIk3EgzmEKuwmk1T1Dv9rEHfvKQbqec469H, tM5XYZXUqiaBWin0CTpsdo51XPhEgERIhB6BFjJbYsw56wHLr4, y716YO7PzixFdCxHNoR6hcC2SP0OIe24y7vI4mdzEevSCcTu8k, PJLGRl7DAL2sWr5goE33OFHeBRA3t9Oj5tO4fR9D3KS1roZPHU, TmWfY0kUWEgQMzQSjTuacLClPkfOo6IrSDhaLoCYP0KdyOqawi, 0D3r68jDgjHpnYwhOhHlzqGEx2jEoY8iYhOogKbZIdGXXOri4D, YYPsj7KnUzhDAi0YDfdGzazZrsqzLFtRe13B8EBUQPhFERbeGg, KowCsfJxBh0HQySby8TPvHJu3LveZaDIv6NsRBkKdbm5t40wEz, LDjab9ChwuoKdD1tK1IEgPYMfq9okU5uc2z9DnZlpf7tPX3Q3M, H, 70arqhBeU8Mag631Sfovhlk4cBbdZWAKWcwJwMpneFM14ekQRH, hWV702CH1k3RSahExtzxLFW5tdam2KHbArBIQuCr0W96FzFXQs, RIq2pQDxsOWZapv8p6YNzDQ0fWTF53Ez0X16M7sjdufjsctR1L, AAAAA, 2, E1767778-F1E9-4FEA-9C36-792EEA1B1778, 1]
-[EL Fine]: sql: 2016-03-09 04:54:56.638--ClientSession(895443619)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemid = ?))
-	bind =&gt; [1, E1767778-F1E9-4FEA-9C36-792EEA1B1778]
-[EL Fine]: sql: 2016-03-09 04:54:56.645--ClientSession(1258832599)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemcategoryid = ?))
-	bind =&gt; [1, 90BFE6A7-5A8F-4582-B076-2D6749E4B538]
-[EL Fine]: sql: 2016-03-09 04:54:56.651--ClientSession(166981985)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemmainid = ?))
-	bind =&gt; [1, C50E8C2F-C724-47DF-9A9F-C1A78EE24697]
-[EL Fine]: sql: 2016-03-09 04:54:56.657--ClientSession(2024796629)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemsubtypeid = ?))
-	bind =&gt; [1, B75D3DCC-A97B-4D77-B8B1-EC28D5C0EFE8]
-[EL Fine]: sql: 2016-03-09 04:54:56.663--ClientSession(1016126291)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemtypeid = ?))
-	bind =&gt; [1, E6684E2E-2FAF-474D-8F1A-6796F75CB0B8]
-[EL Fine]: sql: 2016-03-09 04:54:56.669--ClientSession(1149705155)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (manufacturerid = ?))
-	bind =&gt; [1, 94212F16-343F-4EC7-91E4-2E7A62E2DF3E]
-[EL Fine]: sql: 2016-03-09 04:54:56.675--ClientSession(1003069041)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (sbpid = ?))
-	bind =&gt; [1, EFED170E-E8CB-4579-A338-FA62A3E69338]
-[EL Fine]: sql: 2016-03-09 04:54:56.68--ClientSession(691058377)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (technologyid = ?))
-	bind =&gt; [1, F0048E1A-0925-483C-A0AB-A7DDF641A176]
-[EL Fine]: sql: 2016-03-09 04:54:56.685--ClientSession(1940356719)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (uomid = ?))
-	bind =&gt; [1, C5A7D2AD-DD64-43EF-B01A-AEBFB30E5451]
-[EL Fine]: sql: 2016-03-09 04:54:56.69--ClientSession(1256898524)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE (itemid = ?)
-	bind =&gt; [E1767778-F1E9-4FEA-9C36-792EEA1B1778]
-[EL Fine]: sql: 2016-03-09 04:54:56.692--ClientSession(1256898524)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Spocitem_M WHERE ((itemid = ?) AND (versionId = ?))
-	bind =&gt; [E1767778-F1E9-4FEA-9C36-792EEA1B1778, 2]
-[EL Fine]: sql: 2016-03-09 04:54:56.697--ClientSession(51070109)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE (uomid = ?)
-	bind =&gt; [C5A7D2AD-DD64-43EF-B01A-AEBFB30E5451]
-[EL Fine]: sql: 2016-03-09 04:54:56.698--ClientSession(51070109)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Uom_M WHERE ((uomid = ?) AND (versionId = ?))
-	bind =&gt; [C5A7D2AD-DD64-43EF-B01A-AEBFB30E5451, 1]
-[EL Fine]: sql: 2016-03-09 04:54:56.703--ClientSession(972804731)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE (technologyid = ?)
-	bind =&gt; [F0048E1A-0925-483C-A0AB-A7DDF641A176]
-[EL Fine]: sql: 2016-03-09 04:54:56.704--ClientSession(972804731)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Technology_M WHERE ((technologyid = ?) AND (versionId = ?))
-	bind =&gt; [F0048E1A-0925-483C-A0AB-A7DDF641A176, 1]
-[EL Fine]: sql: 2016-03-09 04:54:56.709--ClientSession(228841127)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
-	bind =&gt; [EFED170E-E8CB-4579-A338-FA62A3E69338]
-[EL Fine]: sql: 2016-03-09 04:54:56.71--ClientSession(228841127)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Sbp_M WHERE ((sbpid = ?) AND (versionId = ?))
-	bind =&gt; [EFED170E-E8CB-4579-A338-FA62A3E69338, 1]
-[EL Fine]: sql: 2016-03-09 04:54:56.714--ClientSession(2075074886)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
-	bind =&gt; [94212F16-343F-4EC7-91E4-2E7A62E2DF3E]
-[EL Fine]: sql: 2016-03-09 04:54:56.715--ClientSession(2075074886)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Manufacturer_M WHERE ((manufacturerid = ?) AND (versionId = ?))
-	bind =&gt; [94212F16-343F-4EC7-91E4-2E7A62E2DF3E, 1]
-[EL Fine]: sql: 2016-03-09 04:54:56.719--ClientSession(119065947)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE (itemtypeid = ?)
-	bind =&gt; [E6684E2E-2FAF-474D-8F1A-6796F75CB0B8]
-[EL Fine]: sql: 2016-03-09 04:54:56.72--ClientSession(119065947)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemtype_M WHERE ((itemtypeid = ?) AND (versionId = ?))
-	bind =&gt; [E6684E2E-2FAF-474D-8F1A-6796F75CB0B8, 1]
-[EL Fine]: sql: 2016-03-09 04:54:56.725--ClientSession(488714361)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE (itemsubtypeid = ?)
-	bind =&gt; [B75D3DCC-A97B-4D77-B8B1-EC28D5C0EFE8]
-[EL Fine]: sql: 2016-03-09 04:54:56.726--ClientSession(488714361)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemsubtype_M WHERE ((itemsubtypeid = ?) AND (versionId = ?))
-	bind =&gt; [B75D3DCC-A97B-4D77-B8B1-EC28D5C0EFE8, 1]
-[EL Fine]: sql: 2016-03-09 04:54:56.731--ClientSession(790550285)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemmaintypeid, itemmaintypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemmaintype_M WHERE (itemmaintypeid = ?)
-	bind =&gt; [C50E8C2F-C724-47DF-9A9F-C1A78EE24697]
-[EL Fine]: sql: 2016-03-09 04:54:56.732--ClientSession(790550285)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemmaintype_M WHERE ((itemmaintypeid = ?) AND (versionId = ?))
-	bind =&gt; [C50E8C2F-C724-47DF-9A9F-C1A78EE24697, 1]
-[EL Fine]: sql: 2016-03-09 04:54:56.737--ClientSession(2087327305)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
-	bind =&gt; [90BFE6A7-5A8F-4582-B076-2D6749E4B538]
-[EL Fine]: sql: 2016-03-09 04:54:56.738--ClientSession(2087327305)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemcategorytype_M WHERE ((itemcategoryid = ?) AND (versionId = ?))
-	bind =&gt; [90BFE6A7-5A8F-4582-B076-2D6749E4B538, 1]
+[EL Fine]: sql: 2016-03-09 08:21:36.322--ClientSession(1915290454)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE (itemid = ?)
+	bind =&gt; [A55671C5-A9D3-438B-8631-6055BC722813]
+[EL Fine]: sql: 2016-03-09 08:21:36.325--ClientSession(1915290454)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Spocitem_M SET acs = ?, customdutycode = ?, funcclassification = ?, glcode = ?, itemcode = ?, itemdescription = ?, model = ?, modelfamily = ?, moq = ?, movable = ?, natureofitem = ?, networkelement = ?, nmsunique = ?, partdescription = ?, partnumber = ?, techinical = ?, updatedBy = ?, versionId = ? WHERE ((itemid = ?) AND (versionId = ?))
+	bind =&gt; [AUX87CUIIGUNOQlhYqXpOmKlZO67GUzpBM0rCp7pIU3SJ8vfpX, I9VVwDIaREngRyT2oKwFC05CGArEzbWawRlTx6K7A2SWQkb5eQ, 95WXZ6UGcBfzMftb3iJDurahTHNmGemufYkZvgTe7hrUBE3H6Z, kfgUKSDcuyq96eTuIk3EgzmEKuwmk1T1Dv9rEHfvKQbqec469H, tM5XYZXUqiaBWin0CTpsdo51XPhEgERIhB6BFjJbYsw56wHLr4, y716YO7PzixFdCxHNoR6hcC2SP0OIe24y7vI4mdzEevSCcTu8k, PJLGRl7DAL2sWr5goE33OFHeBRA3t9Oj5tO4fR9D3KS1roZPHU, TmWfY0kUWEgQMzQSjTuacLClPkfOo6IrSDhaLoCYP0KdyOqawi, 0D3r68jDgjHpnYwhOhHlzqGEx2jEoY8iYhOogKbZIdGXXOri4D, YYPsj7KnUzhDAi0YDfdGzazZrsqzLFtRe13B8EBUQPhFERbeGg, KowCsfJxBh0HQySby8TPvHJu3LveZaDIv6NsRBkKdbm5t40wEz, LDjab9ChwuoKdD1tK1IEgPYMfq9okU5uc2z9DnZlpf7tPX3Q3M, H, 70arqhBeU8Mag631Sfovhlk4cBbdZWAKWcwJwMpneFM14ekQRH, hWV702CH1k3RSahExtzxLFW5tdam2KHbArBIQuCr0W96FzFXQs, RIq2pQDxsOWZapv8p6YNzDQ0fWTF53Ez0X16M7sjdufjsctR1L, AAAAA, 2, A55671C5-A9D3-438B-8631-6055BC722813, 1]
+[EL Fine]: sql: 2016-03-09 08:21:36.331--ClientSession(1728827615)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemid = ?))
+	bind =&gt; [1, A55671C5-A9D3-438B-8631-6055BC722813]
+[EL Fine]: sql: 2016-03-09 08:21:36.336--ClientSession(1633974687)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemcategoryid = ?))
+	bind =&gt; [1, 8E0B30B0-9E93-4251-8941-F36F716640A4]
+[EL Fine]: sql: 2016-03-09 08:21:36.343--ClientSession(1422274608)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemmainid = ?))
+	bind =&gt; [1, 7FC6F21F-9186-46FB-8F61-30F617A92A37]
+[EL Fine]: sql: 2016-03-09 08:21:36.349--ClientSession(1804643691)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemsubtypeid = ?))
+	bind =&gt; [1, 51A11DF2-C224-4468-A071-6E96F9584921]
+[EL Fine]: sql: 2016-03-09 08:21:36.355--ClientSession(1050944180)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (itemtypeid = ?))
+	bind =&gt; [1, DB34E8A4-42FF-447A-B730-DE51E3EB1528]
+[EL Fine]: sql: 2016-03-09 08:21:36.361--ClientSession(2075074886)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (manufacturerid = ?))
+	bind =&gt; [1, 03D0A6CD-F6C6-4B37-BCE8-EB16AE1D360D]
+[EL Fine]: sql: 2016-03-09 08:21:36.366--ClientSession(70432094)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (sbpid = ?))
+	bind =&gt; [1, 0EDEE9CE-541F-4F17-8204-A1BEC71B44D6]
+[EL Fine]: sql: 2016-03-09 08:21:36.372--ClientSession(587329520)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (technologyid = ?))
+	bind =&gt; [1, 3A7A8063-A339-415C-A72C-1136BB350C40]
+[EL Fine]: sql: 2016-03-09 08:21:36.377--ClientSession(2019306584)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE ((activeStatus = ?) AND (uomid = ?))
+	bind =&gt; [1, F03B26FD-63B2-4003-889D-9F0479CC2D1C]
+[EL Fine]: sql: 2016-03-09 08:21:36.383--ClientSession(1031948610)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, techinical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocitem_M WHERE (itemid = ?)
+	bind =&gt; [A55671C5-A9D3-438B-8631-6055BC722813]
+[EL Fine]: sql: 2016-03-09 08:21:36.385--ClientSession(1031948610)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Spocitem_M WHERE ((itemid = ?) AND (versionId = ?))
+	bind =&gt; [A55671C5-A9D3-438B-8631-6055BC722813, 2]
+[EL Fine]: sql: 2016-03-09 08:21:36.39--ClientSession(1887261269)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE (uomid = ?)
+	bind =&gt; [F03B26FD-63B2-4003-889D-9F0479CC2D1C]
+[EL Fine]: sql: 2016-03-09 08:21:36.391--ClientSession(1887261269)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Uom_M WHERE ((uomid = ?) AND (versionId = ?))
+	bind =&gt; [F03B26FD-63B2-4003-889D-9F0479CC2D1C, 1]
+[EL Fine]: sql: 2016-03-09 08:21:36.396--ClientSession(399571863)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE (technologyid = ?)
+	bind =&gt; [3A7A8063-A339-415C-A72C-1136BB350C40]
+[EL Fine]: sql: 2016-03-09 08:21:36.398--ClientSession(399571863)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Technology_M WHERE ((technologyid = ?) AND (versionId = ?))
+	bind =&gt; [3A7A8063-A339-415C-A72C-1136BB350C40, 1]
+[EL Fine]: sql: 2016-03-09 08:21:36.405--ClientSession(987614346)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
+	bind =&gt; [0EDEE9CE-541F-4F17-8204-A1BEC71B44D6]
+[EL Fine]: sql: 2016-03-09 08:21:36.407--ClientSession(987614346)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Sbp_M WHERE ((sbpid = ?) AND (versionId = ?))
+	bind =&gt; [0EDEE9CE-541F-4F17-8204-A1BEC71B44D6, 1]
+[EL Fine]: sql: 2016-03-09 08:21:36.411--ClientSession(1291895270)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
+	bind =&gt; [03D0A6CD-F6C6-4B37-BCE8-EB16AE1D360D]
+[EL Fine]: sql: 2016-03-09 08:21:36.413--ClientSession(1291895270)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Manufacturer_M WHERE ((manufacturerid = ?) AND (versionId = ?))
+	bind =&gt; [03D0A6CD-F6C6-4B37-BCE8-EB16AE1D360D, 1]
+[EL Fine]: sql: 2016-03-09 08:21:36.417--ClientSession(504982112)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE (itemtypeid = ?)
+	bind =&gt; [DB34E8A4-42FF-447A-B730-DE51E3EB1528]
+[EL Fine]: sql: 2016-03-09 08:21:36.418--ClientSession(504982112)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemtype_M WHERE ((itemtypeid = ?) AND (versionId = ?))
+	bind =&gt; [DB34E8A4-42FF-447A-B730-DE51E3EB1528, 1]
+[EL Fine]: sql: 2016-03-09 08:21:36.423--ClientSession(1233200008)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE (itemsubtypeid = ?)
+	bind =&gt; [51A11DF2-C224-4468-A071-6E96F9584921]
+[EL Fine]: sql: 2016-03-09 08:21:36.424--ClientSession(1233200008)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemsubtype_M WHERE ((itemsubtypeid = ?) AND (versionId = ?))
+	bind =&gt; [51A11DF2-C224-4468-A071-6E96F9584921, 1]
+[EL Fine]: sql: 2016-03-09 08:21:36.429--ClientSession(407018042)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemmaintypeid, itemmaintypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemmaintype_M WHERE (itemmaintypeid = ?)
+	bind =&gt; [7FC6F21F-9186-46FB-8F61-30F617A92A37]
+[EL Fine]: sql: 2016-03-09 08:21:36.43--ClientSession(407018042)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemmaintype_M WHERE ((itemmaintypeid = ?) AND (versionId = ?))
+	bind =&gt; [7FC6F21F-9186-46FB-8F61-30F617A92A37, 1]
+[EL Fine]: sql: 2016-03-09 08:21:36.434--ClientSession(1593094332)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
+	bind =&gt; [8E0B30B0-9E93-4251-8941-F36F716640A4]
+[EL Fine]: sql: 2016-03-09 08:21:36.435--ClientSession(1593094332)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemcategorytype_M WHERE ((itemcategoryid = ?) AND (versionId = ?))
+	bind =&gt; [8E0B30B0-9E93-4251-8941-F36F716640A4, 1]
 </pre>
 </span>
 </div>
@@ -233,7 +233,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 4:54:58 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
 </div>
 </div>
 </body>

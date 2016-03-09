@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.039s</div>
+<div class="counter">0.044s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.017s</td>
+<td>0.019s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.012s</td>
+<td>0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3FindById</td>
-<td>0.003s</td>
+<td>0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -103,21 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 04:54:57.486--ClientSession(1403221158)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [37B99EBF-DF6F-408C-A901-6A6521A7C1CE, 97VO2azAsNxkNGSXYUVk01Qj8S3wHvX1SipC4MwVc7yPwvUKxs, JAMTe936y96tKcbTGD3iXR8g9ikYurKnuWSaqWIVzH1qs4U08o, kPcxSSkiUT30GPw7BcJizbJoRFv869Z5sAM5qk92rN7sqMPyGC, drkjoxcL80H57HHssuy6IqQRGdytdbNfFk0lgzEytqNs8XzdFt, 77274, 1, AAAAA, 2016-03-09 04:54:57.479, null, 2016-03-09 04:54:57.479, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:57.492--ClientSession(1652930903)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
-	bind =&gt; [1, 37B99EBF-DF6F-408C-A901-6A6521A7C1CE]
+[EL Fine]: sql: 2016-03-09 08:21:37.139--ClientSession(1951872197)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [DEBA4E5A-FE62-4A28-95C0-F8781D55EBB4, 97VO2azAsNxkNGSXYUVk01Qj8S3wHvX1SipC4MwVc7yPwvUKxs, JAMTe936y96tKcbTGD3iXR8g9ikYurKnuWSaqWIVzH1qs4U08o, kPcxSSkiUT30GPw7BcJizbJoRFv869Z5sAM5qk92rN7sqMPyGC, drkjoxcL80H57HHssuy6IqQRGdytdbNfFk0lgzEytqNs8XzdFt, 39092, 1, AAAAA, 2016-03-09 08:21:37.132, null, 2016-03-09 08:21:37.132, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:37.147--ClientSession(1359072488)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind =&gt; [1, DEBA4E5A-FE62-4A28-95C0-F8781D55EBB4]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 04:54:57.495--ClientSession(43155436)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
-	bind =&gt; [37B99EBF-DF6F-408C-A901-6A6521A7C1CE]
-[EL Fine]: sql: 2016-03-09 04:54:57.497--ClientSession(43155436)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessDomain_M SET domainDescription = ?, domainHelp = ?, domainIcon = ?, domainName = ?, userAccessDomain = ?, updatedBy = ?, versionId = ? WHERE ((userAccessDomainId = ?) AND (versionId = ?))
-	bind =&gt; [owlRBKVx3QiHt17lSPxA8jN0BueT9CO0K5gSsPZlZIVTdN4a02, FdtYOmVIGw68YTGbLwimSgKdgiDEO3qg4AQsVIsGwljjcnDgei, y9qoZrWdFt6K5rk9FwBfHuHhIiwJbfJvDrOAP8hYW1I0lKi24J, vPpIhxx8zZmSgl1peKgAquRIRHtRJ7eQd29TpcpTV2NZPPgMuq, 57187, AAAAA, 2, 37B99EBF-DF6F-408C-A901-6A6521A7C1CE, 1]
-[EL Fine]: sql: 2016-03-09 04:54:57.504--ClientSession(1702231334)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
-	bind =&gt; [1, 37B99EBF-DF6F-408C-A901-6A6521A7C1CE]
-[EL Fine]: sql: 2016-03-09 04:54:57.509--ClientSession(796893601)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
-	bind =&gt; [37B99EBF-DF6F-408C-A901-6A6521A7C1CE]
-[EL Fine]: sql: 2016-03-09 04:54:57.51--ClientSession(796893601)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
-	bind =&gt; [37B99EBF-DF6F-408C-A901-6A6521A7C1CE, 2]
+[EL Fine]: sql: 2016-03-09 08:21:37.151--ClientSession(102731094)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind =&gt; [DEBA4E5A-FE62-4A28-95C0-F8781D55EBB4]
+[EL Fine]: sql: 2016-03-09 08:21:37.152--ClientSession(102731094)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessDomain_M SET domainDescription = ?, domainHelp = ?, domainIcon = ?, domainName = ?, userAccessDomain = ?, updatedBy = ?, versionId = ? WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind =&gt; [owlRBKVx3QiHt17lSPxA8jN0BueT9CO0K5gSsPZlZIVTdN4a02, FdtYOmVIGw68YTGbLwimSgKdgiDEO3qg4AQsVIsGwljjcnDgei, y9qoZrWdFt6K5rk9FwBfHuHhIiwJbfJvDrOAP8hYW1I0lKi24J, vPpIhxx8zZmSgl1peKgAquRIRHtRJ7eQd29TpcpTV2NZPPgMuq, 57187, AAAAA, 2, DEBA4E5A-FE62-4A28-95C0-F8781D55EBB4, 1]
+[EL Fine]: sql: 2016-03-09 08:21:37.158--ClientSession(758776322)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind =&gt; [1, DEBA4E5A-FE62-4A28-95C0-F8781D55EBB4]
+[EL Fine]: sql: 2016-03-09 08:21:37.163--ClientSession(349385427)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind =&gt; [DEBA4E5A-FE62-4A28-95C0-F8781D55EBB4]
+[EL Fine]: sql: 2016-03-09 08:21:37.164--ClientSession(349385427)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind =&gt; [DEBA4E5A-FE62-4A28-95C0-F8781D55EBB4, 2]
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 4:54:58 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
 </div>
 </div>
 </body>

@@ -1,5 +1,5 @@
 ExitCode=0
-TotalTimeTaken=0.258
+TotalTimeTaken=0.176
 TotalFiles=10539
 TotalFolders=5861
 TotalJavaFiles=304
@@ -8,7 +8,7 @@ TotalJsonFiles=91
 TotalCssFiles=1386
 TotalXmlFiles=283
 TotalPropertiesFiles=77
-Wed Mar 9 07:22:11 UTC 2016 : Code Factory Process Started for instructions airtelmdm.cf
-Wed Mar 9 07:22:38 UTC 2016 : Code Factory : Total Files created : 10539 | Total Time Taken : 0.258 in seconds
-Wed Mar 9 07:22:37 UTC 2016 : Code Factory : Process Completed Blue Print instructions
-Wed Mar  9 07:22:38 UTC 2016 : Code Factory : Exited with the code 0
+Wed Mar 9 08:18:59 UTC 2016 : Code Factory Process Started for instructions airtelmdm.cf
+Wed Mar 9 08:19:26 UTC 2016 : Code Factory : Total Files created : 10539 | Total Time Taken : 0.176 in seconds
+Wed Mar 9 08:19:24 UTC 2016 : Code Factory : Process Completed Blue Print instructions
+Wed Mar  9 08:19:26 UTC 2016 : Code Factory : Exited with the code 0

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mdm.app.server.service.ItemcategorytypeTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T04:54:56" hostname="e258b0f19182" time="0.037">
+<testsuite name="mdm.app.server.service.ItemcategorytypeTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T08:21:36" hostname="9b24c35c068b" time="0.037">
   <properties/>
   <testcase name="test1Save" classname="mdm.app.server.service.ItemcategorytypeTestCase" time="0.015"/>
-  <testcase name="test2Update" classname="mdm.app.server.service.ItemcategorytypeTestCase" time="0.01"/>
+  <testcase name="test2Update" classname="mdm.app.server.service.ItemcategorytypeTestCase" time="0.011"/>
   <testcase name="test3FindById" classname="mdm.app.server.service.ItemcategorytypeTestCase" time="0.004"/>
-  <testcase name="test4Delete" classname="mdm.app.server.service.ItemcategorytypeTestCase" time="0.007"/>
+  <testcase name="test4Delete" classname="mdm.app.server.service.ItemcategorytypeTestCase" time="0.006"/>
   <system-out><![CDATA[Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 04:54:56.82--ClientSession(1493865026)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemcategorytype_M (itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [42187582-3BAA-466B-B819-6304DBBB7B4F, skFMl7UfSlCmwNQWKQxPQsvcpXfELdF9A6FfQlyhBgvMiwjdjC, 1, AAAAA, 2016-03-09 04:54:56.815, null, 2016-03-09 04:54:56.815, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:56.826--ClientSession(1908175752)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE ((activeStatus = ?) AND (itemcategoryid = ?))
-	bind => [1, 42187582-3BAA-466B-B819-6304DBBB7B4F]
+[EL Fine]: sql: 2016-03-09 08:21:36.51--ClientSession(1449757443)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemcategorytype_M (itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [1609C8D5-0045-4E84-A236-EBEBFC0AACE9, skFMl7UfSlCmwNQWKQxPQsvcpXfELdF9A6FfQlyhBgvMiwjdjC, 1, AAAAA, 2016-03-09 08:21:36.506, null, 2016-03-09 08:21:36.506, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:36.517--ClientSession(750133059)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE ((activeStatus = ?) AND (itemcategoryid = ?))
+	bind => [1, 1609C8D5-0045-4E84-A236-EBEBFC0AACE9]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 04:54:56.829--ClientSession(8516623)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
-	bind => [42187582-3BAA-466B-B819-6304DBBB7B4F]
-[EL Fine]: sql: 2016-03-09 04:54:56.83--ClientSession(8516623)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Itemcategorytype_M SET itemcategoryname = ?, updatedBy = ?, versionId = ? WHERE ((itemcategoryid = ?) AND (versionId = ?))
-	bind => [btpu0z0EjFUILUQta9qBp32e5lhvlld2dygOPkTBRiPPvjQWS8, AAAAA, 2, 42187582-3BAA-466B-B819-6304DBBB7B4F, 1]
-[EL Fine]: sql: 2016-03-09 04:54:56.837--ClientSession(1824636737)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE ((activeStatus = ?) AND (itemcategoryid = ?))
-	bind => [1, 42187582-3BAA-466B-B819-6304DBBB7B4F]
-[EL Fine]: sql: 2016-03-09 04:54:56.84--ClientSession(1482928245)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
-	bind => [42187582-3BAA-466B-B819-6304DBBB7B4F]
-[EL Fine]: sql: 2016-03-09 04:54:56.842--ClientSession(1482928245)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemcategorytype_M WHERE ((itemcategoryid = ?) AND (versionId = ?))
-	bind => [42187582-3BAA-466B-B819-6304DBBB7B4F, 2]
+[EL Fine]: sql: 2016-03-09 08:21:36.52--ClientSession(55943577)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
+	bind => [1609C8D5-0045-4E84-A236-EBEBFC0AACE9]
+[EL Fine]: sql: 2016-03-09 08:21:36.521--ClientSession(55943577)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Itemcategorytype_M SET itemcategoryname = ?, updatedBy = ?, versionId = ? WHERE ((itemcategoryid = ?) AND (versionId = ?))
+	bind => [btpu0z0EjFUILUQta9qBp32e5lhvlld2dygOPkTBRiPPvjQWS8, AAAAA, 2, 1609C8D5-0045-4E84-A236-EBEBFC0AACE9, 1]
+[EL Fine]: sql: 2016-03-09 08:21:36.527--ClientSession(1187044250)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE ((activeStatus = ?) AND (itemcategoryid = ?))
+	bind => [1, 1609C8D5-0045-4E84-A236-EBEBFC0AACE9]
+[EL Fine]: sql: 2016-03-09 08:21:36.531--ClientSession(111547508)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
+	bind => [1609C8D5-0045-4E84-A236-EBEBFC0AACE9]
+[EL Fine]: sql: 2016-03-09 08:21:36.532--ClientSession(111547508)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemcategorytype_M WHERE ((itemcategoryid = ?) AND (versionId = ?))
+	bind => [1609C8D5-0045-4E84-A236-EBEBFC0AACE9, 2]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

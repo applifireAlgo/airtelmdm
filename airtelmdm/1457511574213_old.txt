@@ -1,0 +1,13 @@
+
+
+
+
+ development mode --enabled true 
+
+
+ruleServiceClass create --ruleServiceClass mdm.app.server.service.masterdatamanagment.mdmdomain.SaveUserRequestServiceWS --ruleBzClass mdm.app.server.businessservice.masterdatamanagment.mdmdomain.SaveUserRequestService --ruleMethod saveRequest --parameterNames requestInput --parameterTypes mdm.app.shared.masterdatamanagment.mdmdomain.RequestDTO --returnType java.lang.void --overrideMethod saveRequest --isoverride false
+ruleEngine create --rulebzClass mdm.app.server.businessservice.masterdatamanagment.mdmdomain.SaveUserRequestService --ruleFieldName runtimeLogInfoHelper,userrequestRepository --ruleFieldType com.athena.framework.server.helper.RuntimeLogInfoHelper,mdm.app.server.repository.UserrequestRepository --entityType false,mdm.app.shared.mdmdomain.Userrequest
+
+buzzormethod add --toClass mdm.app.server.businessservice.masterdatamanagment.mdmdomain.SaveUserRequestService --method_name saveRequest --return_type java.lang.void --modifier public --parameter_name requestInput --parameter_value mdm.app.shared.masterdatamanagment.mdmdomain.RequestDTO --method_body "if(requestInput!=null){mdm.app.shared.mdmdomain.Userrequest userrequest2 = new mdm.app.shared.mdmdomain.Userrequest();userrequest2.setCircleid(requestInput.getCircleid());userrequest2.setItemcode(requestInput.getItemcode());userrequest2.setItemdescription(requestInput.getItemdesc());userrequest2.setUserid(runtimeLogInfoHelper.getRuntimeLogInfo().getUserId());userrequest2.setStatusid("FE5FFA60-883C-4955-82E8-16E2A4A18806");mdm.app.shared.mdmdomain.Userrequest userrequest3 = userrequestRepository.save(userrequest2);}" --throws com.athena.framework.server.exception.repository.SpartanPersistenceException,com.athena.framework.server.exception.biz.SpartanConstraintViolationException,java.lang.Exception
+
+quit

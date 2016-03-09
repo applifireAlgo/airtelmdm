@@ -44,9 +44,9 @@
  29 src/main/java/mdm/app/server/repository/P2pitemcircleRepository.java
  29 src/main/java/mdm/app/server/repository/UsercirclemapRepository.java
  29 src/main/java/mdm/app/server/repository/UserRoleBridgeRepository.java
+ 31 src/main/java/mdm/app/server/businessservice/masterdatamanagment/mdmdomain/SaveUserRequestService.java
  31 src/main/java/mdm/app/server/repository/UserRepository.java
  31 src/main/java/mdm/app/server/repository/UserrequestRepository.java
- 32 src/main/java/mdm/app/server/businessservice/masterdatamanagment/mdmdomain/SaveUserRequestService.java
  33 src/main/java/mdm/app/server/repository/AddressRepository.java
  33 src/main/java/mdm/app/server/repository/LoginRepository.java
  35 src/main/java/mdm/app/server/service/masterdatamanagment/mdmdomain/SaveUserRequestServiceWS.java
@@ -302,4 +302,4 @@
  647 src/main/java/mdm/app/shared/contacts/CoreContacts.java
  740 src/main/java/mdm/app/shared/mdmdomain/Spocitem.java
  741 src/main/java/mdm/app/shared/mdmdomain/P2pitem.java
- 47273 total
+ 47272 total

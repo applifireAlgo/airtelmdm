@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.074s</div>
+<div class="counter">0.064s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.045s</td>
+<td>0.040s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.016s</td>
+<td>0.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3FindById</td>
-<td>0.005s</td>
+<td>0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -103,21 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 04:54:54.847--ClientSession(1646614702)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Gender_M (genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [1325FC01-3323-43E5-BA85-704A7986E7ED, 5UAE1Az2bPuVkeXkcbYMwz8p8hfJG0rICQeZnxtr4nhOSu2cXa, 1, AAAAA, 2016-03-09 04:54:54.816, null, 2016-03-09 04:54:54.816, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:54.857--ClientSession(1275624696)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE ((activeStatus = ?) AND (genderId = ?))
-	bind =&gt; [1, 1325FC01-3323-43E5-BA85-704A7986E7ED]
+[EL Fine]: sql: 2016-03-09 08:21:34.605--ClientSession(678696971)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Gender_M (genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [8983417C-6FC1-4B36-B7DC-E1862F10CD6E, 5UAE1Az2bPuVkeXkcbYMwz8p8hfJG0rICQeZnxtr4nhOSu2cXa, 1, AAAAA, 2016-03-09 08:21:34.578, null, 2016-03-09 08:21:34.578, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:34.612--ClientSession(1425284314)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE ((activeStatus = ?) AND (genderId = ?))
+	bind =&gt; [1, 8983417C-6FC1-4B36-B7DC-E1862F10CD6E]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 04:54:54.863--ClientSession(956373972)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
-	bind =&gt; [1325FC01-3323-43E5-BA85-704A7986E7ED]
-[EL Fine]: sql: 2016-03-09 04:54:54.864--ClientSession(956373972)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Gender_M SET gender = ?, updatedBy = ?, versionId = ? WHERE ((genderId = ?) AND (versionId = ?))
-	bind =&gt; [3p7P4mj6cUVxesp5exTiOraE4Lk1drj7iJN8lGYrucN01BGoKw, AAAAA, 2, 1325FC01-3323-43E5-BA85-704A7986E7ED, 1]
-[EL Fine]: sql: 2016-03-09 04:54:54.872--ClientSession(1802648524)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE ((activeStatus = ?) AND (genderId = ?))
-	bind =&gt; [1, 1325FC01-3323-43E5-BA85-704A7986E7ED]
-[EL Fine]: sql: 2016-03-09 04:54:54.878--ClientSession(1427228070)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
-	bind =&gt; [1325FC01-3323-43E5-BA85-704A7986E7ED]
-[EL Fine]: sql: 2016-03-09 04:54:54.879--ClientSession(1427228070)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Gender_M WHERE ((genderId = ?) AND (versionId = ?))
-	bind =&gt; [1325FC01-3323-43E5-BA85-704A7986E7ED, 2]
+[EL Fine]: sql: 2016-03-09 08:21:34.617--ClientSession(113815618)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
+	bind =&gt; [8983417C-6FC1-4B36-B7DC-E1862F10CD6E]
+[EL Fine]: sql: 2016-03-09 08:21:34.618--ClientSession(113815618)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Gender_M SET gender = ?, updatedBy = ?, versionId = ? WHERE ((genderId = ?) AND (versionId = ?))
+	bind =&gt; [3p7P4mj6cUVxesp5exTiOraE4Lk1drj7iJN8lGYrucN01BGoKw, AAAAA, 2, 8983417C-6FC1-4B36-B7DC-E1862F10CD6E, 1]
+[EL Fine]: sql: 2016-03-09 08:21:34.624--ClientSession(518704337)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE ((activeStatus = ?) AND (genderId = ?))
+	bind =&gt; [1, 8983417C-6FC1-4B36-B7DC-E1862F10CD6E]
+[EL Fine]: sql: 2016-03-09 08:21:34.63--ClientSession(1986830588)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
+	bind =&gt; [8983417C-6FC1-4B36-B7DC-E1862F10CD6E]
+[EL Fine]: sql: 2016-03-09 08:21:34.631--ClientSession(1986830588)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Gender_M WHERE ((genderId = ?) AND (versionId = ?))
+	bind =&gt; [8983417C-6FC1-4B36-B7DC-E1862F10CD6E, 2]
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 4:54:58 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
 </div>
 </div>
 </body>

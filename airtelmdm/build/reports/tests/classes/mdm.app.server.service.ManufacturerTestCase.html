@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.040s</div>
+<div class="counter">0.038s</div>
 <p>duration</p>
 </div>
 </td>
@@ -84,17 +84,17 @@
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.013s</td>
+<td>0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3FindById</td>
-<td>0.004s</td>
+<td>0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test4Delete</td>
-<td>0.007s</td>
+<td>0.006s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -103,21 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 04:54:55.5--ClientSession(570611754)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Manufacturer_M (manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6, XLpTQwlfG2sjFGybHju3dNxppuIp9rqUJ7CNHwkcTK01hL9lle, 1, AAAAA, 2016-03-09 04:54:55.495, null, 2016-03-09 04:54:55.495, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:55.506--ClientSession(1152256941)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE ((activeStatus = ?) AND (manufacturerid = ?))
-	bind =&gt; [1, E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6]
+[EL Fine]: sql: 2016-03-09 08:21:35.246--ClientSession(63645884)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Manufacturer_M (manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [B62B31BC-9A38-471B-A40C-172933962AFB, XLpTQwlfG2sjFGybHju3dNxppuIp9rqUJ7CNHwkcTK01hL9lle, 1, AAAAA, 2016-03-09 08:21:35.241, null, 2016-03-09 08:21:35.241, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:35.252--ClientSession(1861020257)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE ((activeStatus = ?) AND (manufacturerid = ?))
+	bind =&gt; [1, B62B31BC-9A38-471B-A40C-172933962AFB]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 04:54:55.51--ClientSession(2113852272)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
-	bind =&gt; [E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6]
-[EL Fine]: sql: 2016-03-09 04:54:55.511--ClientSession(2113852272)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Manufacturer_M SET manufacturername = ?, updatedBy = ?, versionId = ? WHERE ((manufacturerid = ?) AND (versionId = ?))
-	bind =&gt; [HPDVwUgVajsOtwhWnJsRfz9mAxD2EGnjsiE7bFq9BwjJD8pN79, AAAAA, 2, E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6, 1]
-[EL Fine]: sql: 2016-03-09 04:54:55.519--ClientSession(886294572)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE ((activeStatus = ?) AND (manufacturerid = ?))
-	bind =&gt; [1, E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6]
-[EL Fine]: sql: 2016-03-09 04:54:55.524--ClientSession(2040555432)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
-	bind =&gt; [E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6]
-[EL Fine]: sql: 2016-03-09 04:54:55.525--ClientSession(2040555432)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Manufacturer_M WHERE ((manufacturerid = ?) AND (versionId = ?))
-	bind =&gt; [E81A2AF3-C311-4B21-BA9A-1E8730B5DCC6, 2]
+[EL Fine]: sql: 2016-03-09 08:21:35.256--ClientSession(506618075)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
+	bind =&gt; [B62B31BC-9A38-471B-A40C-172933962AFB]
+[EL Fine]: sql: 2016-03-09 08:21:35.257--ClientSession(506618075)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Manufacturer_M SET manufacturername = ?, updatedBy = ?, versionId = ? WHERE ((manufacturerid = ?) AND (versionId = ?))
+	bind =&gt; [HPDVwUgVajsOtwhWnJsRfz9mAxD2EGnjsiE7bFq9BwjJD8pN79, AAAAA, 2, B62B31BC-9A38-471B-A40C-172933962AFB, 1]
+[EL Fine]: sql: 2016-03-09 08:21:35.263--ClientSession(599755795)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE ((activeStatus = ?) AND (manufacturerid = ?))
+	bind =&gt; [1, B62B31BC-9A38-471B-A40C-172933962AFB]
+[EL Fine]: sql: 2016-03-09 08:21:35.268--ClientSession(919400190)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
+	bind =&gt; [B62B31BC-9A38-471B-A40C-172933962AFB]
+[EL Fine]: sql: 2016-03-09 08:21:35.269--ClientSession(919400190)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Manufacturer_M WHERE ((manufacturerid = ?) AND (versionId = ?))
+	bind =&gt; [B62B31BC-9A38-471B-A40C-172933962AFB, 2]
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 4:54:58 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
 </div>
 </div>
 </body>

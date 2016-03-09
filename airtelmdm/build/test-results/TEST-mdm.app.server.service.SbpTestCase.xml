@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mdm.app.server.service.SbpTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T04:54:54" hostname="e258b0f19182" time="0.077">
+<testsuite name="mdm.app.server.service.SbpTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T08:21:33" hostname="9b24c35c068b" time="0.073">
   <properties/>
-  <testcase name="test1Save" classname="mdm.app.server.service.SbpTestCase" time="0.049"/>
-  <testcase name="test2Update" classname="mdm.app.server.service.SbpTestCase" time="0.013"/>
-  <testcase name="test3FindById" classname="mdm.app.server.service.SbpTestCase" time="0.006"/>
+  <testcase name="test1Save" classname="mdm.app.server.service.SbpTestCase" time="0.043"/>
+  <testcase name="test2Update" classname="mdm.app.server.service.SbpTestCase" time="0.012"/>
+  <testcase name="test3FindById" classname="mdm.app.server.service.SbpTestCase" time="0.007"/>
   <testcase name="test4Delete" classname="mdm.app.server.service.SbpTestCase" time="0.009"/>
   <system-out><![CDATA[Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 04:54:54.257--ClientSession(393086427)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Sbp_M (sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [48ED76C9-A492-497D-B4BE-1155DB2ADB69, 55zRoaJyzXr6Cs4UflolBdWk5gYbZGw8me5oqqqkbp1dwmrjyy, 1, AAAAA, 2016-03-09 04:54:54.226, null, 2016-03-09 04:54:54.226, 1, 51000]
-[EL Fine]: sql: 2016-03-09 04:54:54.265--ClientSession(453379944)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE ((activeStatus = ?) AND (sbpid = ?))
-	bind => [1, 48ED76C9-A492-497D-B4BE-1155DB2ADB69]
+[EL Fine]: sql: 2016-03-09 08:21:34.035--ClientSession(901275877)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Sbp_M (sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [B94DD198-9CD9-431D-9D21-99BC422B809F, 55zRoaJyzXr6Cs4UflolBdWk5gYbZGw8me5oqqqkbp1dwmrjyy, 1, AAAAA, 2016-03-09 08:21:34.008, null, 2016-03-09 08:21:34.008, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:21:34.046--ClientSession(1910495108)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE ((activeStatus = ?) AND (sbpid = ?))
+	bind => [1, B94DD198-9CD9-431D-9D21-99BC422B809F]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 04:54:54.269--ClientSession(362011198)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
-	bind => [48ED76C9-A492-497D-B4BE-1155DB2ADB69]
-[EL Fine]: sql: 2016-03-09 04:54:54.271--ClientSession(362011198)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Sbp_M SET sbpname = ?, updatedBy = ?, versionId = ? WHERE ((sbpid = ?) AND (versionId = ?))
-	bind => [1EcT3FfIbAwiKIhmqAZj8Yd5DF2R1HJGDZe0zfUcrFWcizvq6O, AAAAA, 2, 48ED76C9-A492-497D-B4BE-1155DB2ADB69, 1]
-[EL Fine]: sql: 2016-03-09 04:54:54.278--ClientSession(132562247)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE ((activeStatus = ?) AND (sbpid = ?))
-	bind => [1, 48ED76C9-A492-497D-B4BE-1155DB2ADB69]
-[EL Fine]: sql: 2016-03-09 04:54:54.283--ClientSession(987386973)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
-	bind => [48ED76C9-A492-497D-B4BE-1155DB2ADB69]
-[EL Fine]: sql: 2016-03-09 04:54:54.285--ClientSession(987386973)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Sbp_M WHERE ((sbpid = ?) AND (versionId = ?))
-	bind => [48ED76C9-A492-497D-B4BE-1155DB2ADB69, 2]
+[EL Fine]: sql: 2016-03-09 08:21:34.05--ClientSession(36044411)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
+	bind => [B94DD198-9CD9-431D-9D21-99BC422B809F]
+[EL Fine]: sql: 2016-03-09 08:21:34.051--ClientSession(36044411)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Sbp_M SET sbpname = ?, updatedBy = ?, versionId = ? WHERE ((sbpid = ?) AND (versionId = ?))
+	bind => [1EcT3FfIbAwiKIhmqAZj8Yd5DF2R1HJGDZe0zfUcrFWcizvq6O, AAAAA, 2, B94DD198-9CD9-431D-9D21-99BC422B809F, 1]
+[EL Fine]: sql: 2016-03-09 08:21:34.06--ClientSession(643476063)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE ((activeStatus = ?) AND (sbpid = ?))
+	bind => [1, B94DD198-9CD9-431D-9D21-99BC422B809F]
+[EL Fine]: sql: 2016-03-09 08:21:34.067--ClientSession(871486073)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
+	bind => [B94DD198-9CD9-431D-9D21-99BC422B809F]
+[EL Fine]: sql: 2016-03-09 08:21:34.069--ClientSession(871486073)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Sbp_M WHERE ((sbpid = ?) AND (versionId = ?))
+	bind => [B94DD198-9CD9-431D-9D21-99BC422B809F, 2]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
