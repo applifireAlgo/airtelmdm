@@ -1,34 +1,37 @@
 AppliFire Platform : CC (Gradle) Docker Container v1.0 - Starting the container.....
 WS Volume to be mounted   ... /home/applifire/workspace/airtelmdm 
 GRADLE Command .............. build 
-:compileJavaNote: /home/applifire/workspace/airtelmdm/src/main/java/mdm/app/config/WebConfig.java uses or overrides a deprecated API.
+:compileJava/home/applifire/workspace/airtelmdm/src/main/java/mdm/app/server/businessservice/masterdatamanagment/mdmdomain/SaveUserRequestService.java:27: error: method setUserrequestid in class Userrequest cannot be applied to given types;
+            userrequest.setUserrequestid(5F - 883 - 4955 - 82E8 - 16E2);
+                       ^
+  required: String
+  found: double
+  reason: actual argument double cannot be converted to String by method invocation conversion
+/home/applifire/workspace/airtelmdm/src/main/java/mdm/app/server/businessservice/masterdatamanagment/mdmdomain/SaveUserRequestService.java:28: error: cannot find symbol
+            A4A18806 mdm;
+            ^
+  symbol:   class A4A18806
+  location: class SaveUserRequestService
+/home/applifire/workspace/airtelmdm/src/main/java/mdm/app/server/businessservice/masterdatamanagment/mdmdomain/SaveUserRequestService.java:29: error: package app.shared.mdmdomain does not exist
+            app.shared.mdmdomain.Userrequest userrequest1 = userrequestRepository.save(userrequest);
+                                ^
+Note: /home/applifire/workspace/airtelmdm/src/main/java/mdm/app/config/WebConfig.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
+3 errors
+ FAILED
 
-:processResources
-:classes
-:compileClassesNote: /home/applifire/workspace/airtelmdm/src/main/java/mdm/app/config/WebConfig.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
+FAILURE: Build failed with an exception.
 
-:createBizServiceJar
-:createRepositoryJar
-:createServiceJar
-:createSharedJar
-:creatCustomJars
-:war
-:assemble
-:compileTestJava
-:copyTestResources
-:processTestResources UP-TO-DATE
-:testClasses
-:test
-:check
-:build
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
 
-BUILD SUCCESSFUL
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
 
-Total time: 47.155 secs
-Wed Mar  9 04:54:59 UTC 2016 : Code Compiler : Docker Container shutdown complete..... Docker Exit = 0 
+BUILD FAILED
+
+Total time: 7.385 secs
+Wed Mar  9 07:38:27 UTC 2016 : Code Compiler : Docker Container shutdown complete..... Docker Exit = 1 

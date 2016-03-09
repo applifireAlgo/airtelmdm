@@ -31,6 +31,7 @@ $include-airtelmdm-airtelmdm-shared-mdm-model-masterdatamanagment-mdmdomain-p2pi
 $include-airtelmdm-airtelmdm-shared-mdm-model-masterdatamanagment-mdmdomain-p2prequestmodel: true;
 $include-airtelmdm-airtelmdm-shared-mdm-model-masterdatamanagment-mdmdomain-p2prequeststatusmodel: true;
 $include-airtelmdm-airtelmdm-shared-mdm-model-masterdatamanagment-mdmdomain-processitemmodel: true;
+$include-airtelmdm-airtelmdm-shared-mdm-model-masterdatamanagment-mdmdomain-requestdtomodel: true;
 $include-airtelmdm-airtelmdm-shared-mdm-model-masterdatamanagment-mdmdomain-requestroutingmodel: true;
 $include-airtelmdm-airtelmdm-shared-mdm-model-masterdatamanagment-mdmdomain-sbpmodel: true;
 $include-airtelmdm-airtelmdm-shared-mdm-model-masterdatamanagment-mdmdomain-searchitemmodel: true;

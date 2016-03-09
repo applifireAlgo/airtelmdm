@@ -275,110 +275,103 @@ Ext.define('Airtelmdm.airtelmdm.web.mdm.view.masterdatamanagment.mdmdomain.Searc
           }],
           "columns": [{
                "xtype": "gridcolumn",
-               "header": "addressId",
-               "dataIndex": "addressId",
+               "header": "itemid",
+               "hidden": true,
+               "dataIndex": "itemid",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "addressTypeId",
-               "dataIndex": "addressTypeId",
+               "header": "itemcode",
+               "dataIndex": "itemcode",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "addressLabel",
-               "dataIndex": "addressLabel",
+               "header": "itemdescription",
+               "dataIndex": "itemdescription",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "address1",
-               "dataIndex": "address1",
+               "header": "partnumber",
+               "dataIndex": "partnumber",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "address2",
-               "dataIndex": "address2",
+               "header": "partdescription",
+               "dataIndex": "partdescription",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "address3",
-               "dataIndex": "address3",
+               "header": "model",
+               "dataIndex": "model",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "countryId",
-               "dataIndex": "countryId",
+               "header": "itemtypeid",
+               "hidden": true,
+               "dataIndex": "itemtypeid",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "stateId",
-               "dataIndex": "stateId",
+               "header": "itemtypename",
+               "dataIndex": "itemtypename",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "cityId",
-               "dataIndex": "cityId",
+               "header": "itemsubtypeid",
+               "hidden": true,
+               "dataIndex": "itemsubtypeid",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "zipcode",
-               "dataIndex": "zipcode",
+               "header": "itemsubtypename",
+               "dataIndex": "itemsubtypename",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "latitude",
-               "dataIndex": "latitude",
+               "header": "itemmaintypeid",
+               "hidden": true,
+               "dataIndex": "itemmaintypeid",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "longitude",
-               "dataIndex": "longitude",
+               "header": "itemmaintypename",
+               "dataIndex": "itemmaintypename",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "createdBy",
-               "dataIndex": "createdBy",
+               "header": "itemcategoryid",
+               "hidden": true,
+               "dataIndex": "itemcategoryid",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "createdDate",
-               "dataIndex": "createdDate",
+               "header": "itemcategoryname",
+               "dataIndex": "itemcategoryname",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "updatedBy",
-               "dataIndex": "updatedBy",
+               "header": "technologyid",
+               "hidden": true,
+               "dataIndex": "technologyid",
                "flex": 1
           }, {
                "xtype": "gridcolumn",
-               "header": "updatedDate",
-               "dataIndex": "updatedDate",
-               "flex": 1
-          }, {
-               "xtype": "gridcolumn",
-               "header": "versionId",
-               "dataIndex": "versionId",
-               "flex": 1
-          }, {
-               "xtype": "gridcolumn",
-               "header": "activeStatus",
-               "dataIndex": "activeStatus",
-               "flex": 1
-          }, {
-               "xtype": "gridcolumn",
-               "header": "txnAccessCode",
-               "dataIndex": "txnAccessCode",
+               "header": "technologyname",
+               "dataIndex": "technologyname",
                "flex": 1
           }],
           "itemId": "gridpanel_9",
+          "isRelatedWith": "fgnalfjfi",
+          "height": 300,
           "store": {
-               "model": "Airtelmdm.airtelmdm.shared.mdm.model.organizationboundedcontext.location.AddressModel",
+               "model": "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.SpocSearchModel",
                "autoLoad": true,
                "autoSync": true,
                "proxy": {
                     "type": "ajax",
-                    "url": "secure/Address/findAll",
+                    "url": "secure/SPOCSearchServiceWS/search",
                     "actionMethods": {
-                         "read": "GET"
+                         "read": "POST"
                     },
                     "headers": {
                          "Content-Type": "application/json"
@@ -441,7 +434,7 @@ Ext.define('Airtelmdm.airtelmdm.web.mdm.view.masterdatamanagment.mdmdomain.Searc
      "autoScroll": true,
      "dockedItems": [],
      "itemId": "panel_27",
-     "requires": ["Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.ItemtypeModel", "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.ItemcategorytypeModel", "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.ItemmaintypeModel", "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.ItemsubtypeModel", "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.TechnologyModel", "Airtelmdm.airtelmdm.shared.mdm.model.organizationboundedcontext.location.AddressModel", "Airtelmdm.airtelmdm.web.mdm.controller.masterdatamanagment.mdmdomain.SearchItemController", "Airtelmdm.airtelmdm.shared.mdm.viewmodel.masterdatamanagment.mdmdomain.SearchItemViewModel", "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.SearchItemModel", "Airtelmdm.view.fw.component.Grids"],
+     "requires": ["Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.ItemtypeModel", "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.ItemcategorytypeModel", "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.ItemmaintypeModel", "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.ItemsubtypeModel", "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.TechnologyModel", "Airtelmdm.airtelmdm.shared.mdm.model.organizationboundedcontext.location.AddressModel", "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.SpocSearchModel", "Airtelmdm.airtelmdm.web.mdm.controller.masterdatamanagment.mdmdomain.SearchItemController", "Airtelmdm.airtelmdm.shared.mdm.viewmodel.masterdatamanagment.mdmdomain.SearchItemViewModel", "Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.SearchItemModel", "Airtelmdm.view.fw.component.Grids"],
      "extend": "Ext.panel.Panel",
      "viewModel": "SearchItemViewModel",
      "controller": "SearchItemController"

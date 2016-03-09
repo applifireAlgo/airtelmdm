@@ -7,9 +7,9 @@ Ext.define('Airtelmdm.airtelmdm.web.mdm.controller.masterdatamanagment.mdmdomain
                var jsonData = this.getData(form);
                var scope = this.getView();
                Ext.Ajax.request({
-                    url: 'secure/Address/findAll',
-                    async: false,
-                    method: 'GET',
+                    url: 'secure/SPOCSearchServiceWS/search',
+                    async: true,
+                    method: 'POST',
                     sender: scope,
                     jsonData: jsonData,
                     me: me,
@@ -20,6 +20,9 @@ Ext.define('Airtelmdm.airtelmdm.web.mdm.controller.masterdatamanagment.mdmdomain
                          if (responseText.response.success) {
                               Ext.Msg.alert('Server Response', responseText.response.message);
                               scope.sender.reset();
+                              var responseData = responseText.response.data;
+                              var searchresults = scope.sender.down('#gridpanel_9');
+                              searchresults.store.setData(responseData);
                          } else {
                               Ext.Msg.alert('Server Response', responseText.response.message);
                          }
