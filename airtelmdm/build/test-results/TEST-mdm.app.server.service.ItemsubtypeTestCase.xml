@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mdm.app.server.service.ItemsubtypeTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T04:54:56" hostname="e258b0f19182" time="0.037">
+  <properties/>
+  <testcase name="test1Save" classname="mdm.app.server.service.ItemsubtypeTestCase" time="0.015"/>
+  <testcase name="test2Update" classname="mdm.app.server.service.ItemsubtypeTestCase" time="0.011"/>
+  <testcase name="test3FindById" classname="mdm.app.server.service.ItemsubtypeTestCase" time="0.004"/>
+  <testcase name="test4Delete" classname="mdm.app.server.service.ItemsubtypeTestCase" time="0.006"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-09 04:54:56.954--ClientSession(742080226)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemsubtype_M (itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [9CB9D89C-DC29-4618-814D-18A5378B292F, uQVZUgYjQkIb1Gn432vvRvn1FuHg21qcKPIWK9q15dIkqFXBK7, 1, AAAAA, 2016-03-09 04:54:56.95, null, 2016-03-09 04:54:56.95, 1, 51000]
+[EL Fine]: sql: 2016-03-09 04:54:56.961--ClientSession(1555034918)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE ((activeStatus = ?) AND (itemsubtypeid = ?))
+	bind => [1, 9CB9D89C-DC29-4618-814D-18A5378B292F]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-09 04:54:56.964--ClientSession(127040723)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE (itemsubtypeid = ?)
+	bind => [9CB9D89C-DC29-4618-814D-18A5378B292F]
+[EL Fine]: sql: 2016-03-09 04:54:56.965--ClientSession(127040723)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Itemsubtype_M SET itemsubtypename = ?, updatedBy = ?, versionId = ? WHERE ((itemsubtypeid = ?) AND (versionId = ?))
+	bind => [NDI6HqUfBFPstBYX17ACt9cUgcefjwO5KTALlwILJrGyDBM19l, AAAAA, 2, 9CB9D89C-DC29-4618-814D-18A5378B292F, 1]
+[EL Fine]: sql: 2016-03-09 04:54:56.971--ClientSession(1147913404)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE ((activeStatus = ?) AND (itemsubtypeid = ?))
+	bind => [1, 9CB9D89C-DC29-4618-814D-18A5378B292F]
+[EL Fine]: sql: 2016-03-09 04:54:56.975--ClientSession(132894195)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE (itemsubtypeid = ?)
+	bind => [9CB9D89C-DC29-4618-814D-18A5378B292F]
+[EL Fine]: sql: 2016-03-09 04:54:56.976--ClientSession(132894195)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemsubtype_M WHERE ((itemsubtypeid = ?) AND (versionId = ?))
+	bind => [9CB9D89C-DC29-4618-814D-18A5378B292F, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

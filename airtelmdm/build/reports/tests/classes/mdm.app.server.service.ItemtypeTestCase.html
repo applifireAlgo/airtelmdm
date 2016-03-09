@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class mdm.app.server.service.ItemtypeTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class mdm.app.server.service.ItemtypeTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/mdm.app.server.service.html">mdm.app.server.service</a> &gt; ItemtypeTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.086s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.049s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.014s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-09 04:54:53.03--ClientSession(1007313092)--Connection(1690369540)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemtype_M (itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [1328F906-1F33-48B6-8C33-705A9A0E58BA, 9bcW84yepmThZv6yApKUoeav4WPTUmPWZomh5Ukkff7o7anPpr, 1, AAAAA, 2016-03-09 04:54:52.997, null, 2016-03-09 04:54:52.997, 1, 51000]
+[EL Config]: connection: 2016-03-09 04:54:53.035--ServerSession(692695393)--Connection(1690369540)--Thread(Thread[Test worker,5,main])--disconnect
+[EL Fine]: sql: 2016-03-09 04:54:53.041--ClientSession(2042300484)--Connection(2002160184)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE ((activeStatus = ?) AND (itemtypeid = ?))
+	bind =&gt; [1, 1328F906-1F33-48B6-8C33-705A9A0E58BA]
+[EL Config]: connection: 2016-03-09 04:54:53.042--ServerSession(692695393)--Connection(2002160184)--Thread(Thread[Test worker,5,main])--disconnect
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-09 04:54:53.045--ClientSession(1499782523)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE (itemtypeid = ?)
+	bind =&gt; [1328F906-1F33-48B6-8C33-705A9A0E58BA]
+[EL Fine]: sql: 2016-03-09 04:54:53.047--ClientSession(1499782523)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Itemtype_M SET itemtypename = ?, updatedBy = ?, versionId = ? WHERE ((itemtypeid = ?) AND (versionId = ?))
+	bind =&gt; [P6BWtwrLYdeF36GZJ2MkpZLzFpvFmhFjmqbBQVyz4vl7VqqCKj, AAAAA, 2, 1328F906-1F33-48B6-8C33-705A9A0E58BA, 1]
+[EL Fine]: sql: 2016-03-09 04:54:53.057--ClientSession(100637796)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE ((activeStatus = ?) AND (itemtypeid = ?))
+	bind =&gt; [1, 1328F906-1F33-48B6-8C33-705A9A0E58BA]
+[EL Fine]: sql: 2016-03-09 04:54:53.067--ClientSession(2115541192)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE (itemtypeid = ?)
+	bind =&gt; [1328F906-1F33-48B6-8C33-705A9A0E58BA]
+[EL Fine]: sql: 2016-03-09 04:54:53.068--ClientSession(2115541192)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemtype_M WHERE ((itemtypeid = ?) AND (versionId = ?))
+	bind =&gt; [1328F906-1F33-48B6-8C33-705A9A0E58BA, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 4:54:58 AM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+
+
+
+ development mode --enabled true 
+
+
+
+buzzproperties codeStatus --PropertyFileName status --key RequestDTO --value 1
+
+buzzorclass add --className ~.app.shared.masterdatamanagment.mdmdomain.RequestDTO
+
+buzzorfield create --type ~.app.shared.masterdatamanagment.mdmdomain.RequestDTO --field_name circleid --dataType java.lang.String --Modifier private
+
+buzzorfield create --type ~.app.shared.masterdatamanagment.mdmdomain.RequestDTO --field_name itemcode --dataType java.lang.String --Modifier private
+
+buzzorfield create --type ~.app.shared.masterdatamanagment.mdmdomain.RequestDTO --field_name itemdesc --dataType java.lang.String --Modifier private
+
+methodoperation type getSetMethod --class ~.app.shared.masterdatamanagment.mdmdomain.RequestDTO --variableName circleid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.masterdatamanagment.mdmdomain.RequestDTO --variableName itemcode --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.masterdatamanagment.mdmdomain.RequestDTO --variableName itemdesc --getterMethod true --setterMethod true
+
+buzzorclass createAnnotation --toClass ~.app.shared.masterdatamanagment.mdmdomain.RequestDTO --annotation  javax.xml.bind.annotation.XmlRootElement
+
+buzzproperties codeStatus --PropertyFileName status --key RequestDTO --value 0
+
+quit

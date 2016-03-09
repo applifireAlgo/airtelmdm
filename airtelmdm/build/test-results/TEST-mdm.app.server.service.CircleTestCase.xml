@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mdm.app.server.service.CircleTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T04:54:56" hostname="e258b0f19182" time="0.053">
+  <properties/>
+  <testcase name="test1Save" classname="mdm.app.server.service.CircleTestCase" time="0.024"/>
+  <testcase name="test2Update" classname="mdm.app.server.service.CircleTestCase" time="0.013"/>
+  <testcase name="test3FindById" classname="mdm.app.server.service.CircleTestCase" time="0.006"/>
+  <testcase name="test4Delete" classname="mdm.app.server.service.CircleTestCase" time="0.008"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-09 04:54:56.314--ClientSession(349747798)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Circle_M (circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [7170A526-8B68-4392-804D-A8DAD1A23AA0, 6q1feQphY8nARUB1sHpHmeIILnNwxqrA77XSVQVYwIzqDHCa7o, 1, AAAAA, 2016-03-09 04:54:56.306, null, 2016-03-09 04:54:56.306, 1, 51000]
+[EL Fine]: sql: 2016-03-09 04:54:56.322--ClientSession(1451576061)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE ((activeStatus = ?) AND (circleid = ?))
+	bind => [1, 7170A526-8B68-4392-804D-A8DAD1A23AA0]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-09 04:54:56.327--ClientSession(827451028)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE (circleid = ?)
+	bind => [7170A526-8B68-4392-804D-A8DAD1A23AA0]
+[EL Fine]: sql: 2016-03-09 04:54:56.328--ClientSession(827451028)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Circle_M SET circlename = ?, updatedBy = ?, versionId = ? WHERE ((circleid = ?) AND (versionId = ?))
+	bind => [6ezKErJzjt59He0pva6825bjEJnc48iW2yg9fvxR5NQfh30ALv, AAAAA, 2, 7170A526-8B68-4392-804D-A8DAD1A23AA0, 1]
+[EL Fine]: sql: 2016-03-09 04:54:56.336--ClientSession(1088729141)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE ((activeStatus = ?) AND (circleid = ?))
+	bind => [1, 7170A526-8B68-4392-804D-A8DAD1A23AA0]
+[EL Fine]: sql: 2016-03-09 04:54:56.342--ClientSession(1017227383)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE (circleid = ?)
+	bind => [7170A526-8B68-4392-804D-A8DAD1A23AA0]
+[EL Fine]: sql: 2016-03-09 04:54:56.343--ClientSession(1017227383)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Circle_M WHERE ((circleid = ?) AND (versionId = ?))
+	bind => [7170A526-8B68-4392-804D-A8DAD1A23AA0, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

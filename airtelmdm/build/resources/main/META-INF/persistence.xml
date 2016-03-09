@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+
+	<persistence-unit name="airtelmdm" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<properties>
+			<property name="eclipselink.ddl-generation" value="none"/>
+			<property name="eclipselink.logging.level" value="FINEST"/>
+			<property name="eclipselink.weaving" value="false"/>
+			<property name="eclipselink.jdbc.allow-native-sql-queries" value="true"/>
+			<property name="eclipselink.deploy-on-startup" value="true"/>
+
+			<property name="eclipselink.connection-pool.default.initial" value="15"/>
+			<property name="eclipselink.connection-pool.default.min" value="6"/>
+			<property name="eclipselink.connection-pool.default.max" value="10"/>
+
+
+		<property name="eclipselink.dialect" value="org.eclipse.persistence.platform.database.MySQLPlatform"/>
+        <property name="eclipselink.session.customizer" value="mdm.app.config.UUIDGenerator"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost-MYSQL:3306/airtelmdm"/>
+        <property name="javax.persistence.jdbc.user" value="airtelmdm"/>
+        <property name="javax.persistence.jdbc.password" value="Glass4#21"/>
+        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        </properties>
+	<class>mdm.app.shared.authentication.ArtPasswordAlgorithm</class>
+    <class>mdm.app.shared.authentication.ArtPasswordPolicy</class>
+    <class>mdm.app.shared.location.Timezone</class>
+    <class>mdm.app.shared.location.Language</class>
+    <class>mdm.app.shared.location.Country</class>
+    <class>mdm.app.shared.location.State</class>
+    <class>mdm.app.shared.location.City</class>
+    <class>mdm.app.shared.location.AddressType</class>
+    <class>mdm.app.shared.location.Address</class>
+    <class>mdm.app.shared.contacts.ContactType</class>
+    <class>mdm.app.shared.contacts.CommunicationGroup</class>
+    <class>mdm.app.shared.contacts.CommunicationType</class>
+    <class>mdm.app.shared.contacts.Gender</class>
+    <class>mdm.app.shared.contacts.Title</class>
+    <class>mdm.app.shared.contacts.CoreContacts</class>
+    <class>mdm.app.shared.contacts.CommunicationData</class>
+    <class>mdm.app.shared.authentication.PasswordAlgo</class>
+    <class>mdm.app.shared.authentication.PasswordPolicy</class>
+    <class>mdm.app.shared.authentication.Question</class>
+    <class>mdm.app.shared.authentication.UserAccessLevel</class>
+    <class>mdm.app.shared.authentication.UserAccessDomain</class>
+    <class>mdm.app.shared.authentication.User</class>
+    <class>mdm.app.shared.authentication.Login</class>
+    <class>mdm.app.shared.authentication.LoginSession</class>
+    <class>mdm.app.shared.authentication.PassRecovery</class>
+    <class>mdm.app.shared.authentication.UserData</class>
+    <class>mdm.app.shared.authentication.SessionData</class>
+    <class>mdm.app.shared.authorization.Roles</class>
+    <class>mdm.app.shared.authorization.AppMenus</class>
+    <class>mdm.app.shared.authorization.RoleMenuBridge</class>
+    <class>mdm.app.shared.authorization.UserRoleBridge</class>
+    <class>mdm.app.shared.mdmdomain.Circle</class>
+    <jar-file>lib/athena-config-1.0.jar</jar-file>
+    <jar-file>lib/athena-framework-1.0.jar</jar-file>
+    <jar-file>lib/spartan-sprinkler-1.0.jar</jar-file>
+    <jar-file>lib/spartan-sprinkler-data-1.0.jar</jar-file>
+    <jar-file>lib/spartan-healthmeter-1.0.jar</jar-file>
+    <jar-file>lib/athena-annotation-1.0.jar</jar-file>
+    <jar-file>lib/athena-core-1.0.jar</jar-file>
+    <jar-file>lib/athena-report-1.0.jar</jar-file>
+    <jar-file>lib/athena-query-1.0.jar</jar-file>
+    <jar-file>lib/athena-scheduler-1.0.jar</jar-file>
+    <jar-file>lib/spartan-shield-1.0.jar</jar-file>
+    <jar-file>lib/athena-cloud-1.0.jar</jar-file>
+  <class>mdm.app.shared.mdmdomain.Itemtype</class>
+    <class>mdm.app.shared.mdmdomain.Itemcategorytype</class>
+    <class>mdm.app.shared.mdmdomain.Itemmaintype</class>
+    <class>mdm.app.shared.mdmdomain.Itemsubtype</class>
+    <class>mdm.app.shared.mdmdomain.Manufacturer</class>
+    <class>mdm.app.shared.mdmdomain.Uom</class>
+    <class>mdm.app.shared.mdmdomain.Technology</class>
+    <class>mdm.app.shared.mdmdomain.Sbp</class>
+    <class>mdm.app.shared.mdmdomain.Spocitem</class>
+    <class>mdm.app.shared.mdmdomain.Spocitem</class>
+    <class>mdm.app.shared.mdmdomain.Spocitem</class>
+    <class>mdm.app.shared.mdmdomain.P2pitem</class>
+    <class>mdm.app.shared.mdmdomain.Userrequeststatus</class>
+    <class>mdm.app.shared.mdmdomain.Spocrequeststatus</class>
+    <class>mdm.app.shared.mdmdomain.P2prequeststatus</class>
+    <class>mdm.app.shared.mdmdomain.Userrequest</class>
+    <class>mdm.app.shared.mdmdomain.Spocrequest</class>
+    <class>mdm.app.shared.mdmdomain.P2prequest</class>
+    <class>mdm.app.shared.mdmdomain.P2pitemcircle</class>
+    <class>mdm.app.shared.mdmdomain.Usercirclemap</class>
+    <class>mdm.app.shared.mdmdomain.P2pitem</class>
+    <class>mdm.app.shared.mdmdomain.Spocitem</class>
+    <class>mdm.app.shared.mdmdomain.P2pitem</class>
+    </persistence-unit>
+
+</persistence>

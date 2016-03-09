@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class mdm.app.server.service.UserAccessDomainTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class mdm.app.server.service.UserAccessDomainTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/mdm.app.server.service.html">mdm.app.server.service</a> &gt; UserAccessDomainTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.039s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-09 04:54:57.486--ClientSession(1403221158)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [37B99EBF-DF6F-408C-A901-6A6521A7C1CE, 97VO2azAsNxkNGSXYUVk01Qj8S3wHvX1SipC4MwVc7yPwvUKxs, JAMTe936y96tKcbTGD3iXR8g9ikYurKnuWSaqWIVzH1qs4U08o, kPcxSSkiUT30GPw7BcJizbJoRFv869Z5sAM5qk92rN7sqMPyGC, drkjoxcL80H57HHssuy6IqQRGdytdbNfFk0lgzEytqNs8XzdFt, 77274, 1, AAAAA, 2016-03-09 04:54:57.479, null, 2016-03-09 04:54:57.479, 1, 51000]
+[EL Fine]: sql: 2016-03-09 04:54:57.492--ClientSession(1652930903)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind =&gt; [1, 37B99EBF-DF6F-408C-A901-6A6521A7C1CE]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-09 04:54:57.495--ClientSession(43155436)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind =&gt; [37B99EBF-DF6F-408C-A901-6A6521A7C1CE]
+[EL Fine]: sql: 2016-03-09 04:54:57.497--ClientSession(43155436)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessDomain_M SET domainDescription = ?, domainHelp = ?, domainIcon = ?, domainName = ?, userAccessDomain = ?, updatedBy = ?, versionId = ? WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind =&gt; [owlRBKVx3QiHt17lSPxA8jN0BueT9CO0K5gSsPZlZIVTdN4a02, FdtYOmVIGw68YTGbLwimSgKdgiDEO3qg4AQsVIsGwljjcnDgei, y9qoZrWdFt6K5rk9FwBfHuHhIiwJbfJvDrOAP8hYW1I0lKi24J, vPpIhxx8zZmSgl1peKgAquRIRHtRJ7eQd29TpcpTV2NZPPgMuq, 57187, AAAAA, 2, 37B99EBF-DF6F-408C-A901-6A6521A7C1CE, 1]
+[EL Fine]: sql: 2016-03-09 04:54:57.504--ClientSession(1702231334)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind =&gt; [1, 37B99EBF-DF6F-408C-A901-6A6521A7C1CE]
+[EL Fine]: sql: 2016-03-09 04:54:57.509--ClientSession(796893601)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind =&gt; [37B99EBF-DF6F-408C-A901-6A6521A7C1CE]
+[EL Fine]: sql: 2016-03-09 04:54:57.51--ClientSession(796893601)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind =&gt; [37B99EBF-DF6F-408C-A901-6A6521A7C1CE, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 4:54:58 AM</p>
+</div>
+</div>
+</body>
+</html>

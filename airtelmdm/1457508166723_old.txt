@@ -1,0 +1,13 @@
+
+
+
+
+ development mode --enabled true 
+
+
+ruleServiceClass create --ruleServiceClass mdm.app.server.service.masterdatamanagment.mdmdomain.SPOCSearchServiceWS --ruleBzClass mdm.app.server.businessservice.masterdatamanagment.mdmdomain.SPOCSearchService --ruleMethod search --parameterNames searchInput --parameterTypes mdm.app.shared.masterdatamanagment.SpocSearch --returnType java.util.List<mdm.app.shared.masterdatamanagment.SpocSearch> --overrideMethod search --isoverride false
+ruleEngine create --rulebzClass mdm.app.server.businessservice.masterdatamanagment.mdmdomain.SPOCSearchService --ruleFieldName runtimeLogInfoHelper,spocSearchServiceBzService --ruleFieldType com.athena.framework.server.helper.RuntimeLogInfoHelper,mdm.app.server.businessservice.masterdatamanagment.SpocSearchServiceBzService --entityType false,false
+
+buzzormethod add --toClass mdm.app.server.businessservice.masterdatamanagment.mdmdomain.SPOCSearchService --method_name search --return_type java.util.List<mdm.app.shared.masterdatamanagment.SpocSearch> --modifier public --parameter_name searchInput --parameter_value mdm.app.shared.masterdatamanagment.SpocSearch --method_body "if(searchInput!=null){java.util.List<mdm.app.shared.masterdatamanagment.SpocSearch> spocSearchList1 = spocSearchServiceBzService.executeQuerySpocSearch(searchInput.getItemcode(),searchInput.getItemdescription(),searchInput.getPartnumber(),searchInput.getPartdescription(),searchInput.getModel(),searchInput.getItemtypeid(),searchInput.getItemsubtypeid(),searchInput.getItemmaintypeid(),searchInput.getItemcategoryid(),searchInput.getTechnologyid());return spocSearchList1;}throw new com.athena.framework.server.exception.biz.SpartanUnableToProcessException("3006");" --throws com.athena.framework.server.exception.biz.SpartanUnableToProcessException,java.lang.Exception
+
+quit

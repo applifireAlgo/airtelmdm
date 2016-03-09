@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mdm.app.server.service.TechnologyTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T04:54:55" hostname="e258b0f19182" time="0.052">
+  <properties/>
+  <testcase name="test1Save" classname="mdm.app.server.service.TechnologyTestCase" time="0.024"/>
+  <testcase name="test2Update" classname="mdm.app.server.service.TechnologyTestCase" time="0.016"/>
+  <testcase name="test3FindById" classname="mdm.app.server.service.TechnologyTestCase" time="0.004"/>
+  <testcase name="test4Delete" classname="mdm.app.server.service.TechnologyTestCase" time="0.007"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-09 04:54:55.721--ClientSession(586642660)--Connection(961795976)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Technology_M (technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [07BC6769-31E4-49CA-8CE4-1AB3B1A9857F, FS24K8voIxfP2io2YKhX4XAQN5y7XMb7C1d883Y6HzQBxUxqMe, 1, AAAAA, 2016-03-09 04:54:55.714, null, 2016-03-09 04:54:55.714, 1, 51000]
+[EL Fine]: sql: 2016-03-09 04:54:55.731--ClientSession(936480792)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE ((activeStatus = ?) AND (technologyid = ?))
+	bind => [1, 07BC6769-31E4-49CA-8CE4-1AB3B1A9857F]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-09 04:54:55.736--ClientSession(1056486295)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE (technologyid = ?)
+	bind => [07BC6769-31E4-49CA-8CE4-1AB3B1A9857F]
+[EL Fine]: sql: 2016-03-09 04:54:55.738--ClientSession(1056486295)--Connection(961795976)--Thread(Thread[Test worker,5,main])--UPDATE ast_Technology_M SET technologyname = ?, updatedBy = ?, versionId = ? WHERE ((technologyid = ?) AND (versionId = ?))
+	bind => [ZpDybQ7cjypj6SqVBtoPn8NjNfj8cM0UsknOtqJKyOTLujQsfL, AAAAA, 2, 07BC6769-31E4-49CA-8CE4-1AB3B1A9857F, 1]
+[EL Fine]: sql: 2016-03-09 04:54:55.745--ClientSession(1540711267)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE ((activeStatus = ?) AND (technologyid = ?))
+	bind => [1, 07BC6769-31E4-49CA-8CE4-1AB3B1A9857F]
+[EL Fine]: sql: 2016-03-09 04:54:55.749--ClientSession(519425227)--Connection(961795976)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE (technologyid = ?)
+	bind => [07BC6769-31E4-49CA-8CE4-1AB3B1A9857F]
+[EL Fine]: sql: 2016-03-09 04:54:55.75--ClientSession(519425227)--Connection(961795976)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Technology_M WHERE ((technologyid = ?) AND (versionId = ?))
+	bind => [07BC6769-31E4-49CA-8CE4-1AB3B1A9857F, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,83 @@
+
+
+
+
+ development mode --enabled true 
+
+
+
+buzzorclass add --className mdm.app.shared.masterdatamanagment.PtopSearch --implements com.athena.server.bizService.DTOMapperInterface
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name itemid --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name itemcode --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name itemdescription --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name partnumber --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name partdescription --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name model --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name itemtypeid --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name itemtypename --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name itemsubtypeid --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name itemsubtypename --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name itemmaintypeid --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name itemmaintypename --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name itemcategoryid --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name itemcategoryname --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name technologyid --dataType java.lang.String --Modifier private --valueType null
+
+buzzorfield create --type mdm.app.shared.masterdatamanagment.PtopSearch --field_name technologyname --dataType java.lang.String --Modifier private --valueType null
+
+methodoperation type setParameterizedConstructor --class mdm.app.shared.masterdatamanagment.PtopSearch --parameterType Object[] --parameterName aryObject --constructorBody "if (aryObject != null) {itemid=(java.lang.String)aryObject[0];itemcode=(java.lang.String)aryObject[1];itemdescription=(java.lang.String)aryObject[2];partnumber=(java.lang.String)aryObject[3];partdescription=(java.lang.String)aryObject[4];model=(java.lang.String)aryObject[5];itemtypeid=(java.lang.String)aryObject[6];itemtypename=(java.lang.String)aryObject[7];itemsubtypeid=(java.lang.String)aryObject[8];itemsubtypename=(java.lang.String)aryObject[9];itemmaintypeid=(java.lang.String)aryObject[10];itemmaintypename=(java.lang.String)aryObject[11];itemcategoryid=(java.lang.String)aryObject[12];itemcategoryname=(java.lang.String)aryObject[13];technologyid=(java.lang.String)aryObject[14];technologyname=(java.lang.String)aryObject[15];} else {itemid=null;itemcode=null;itemdescription=null;partnumber=null;partdescription=null;model=null;itemtypeid=null;itemtypename=null;itemsubtypeid=null;itemsubtypename=null;itemmaintypeid=null;itemmaintypename=null;itemcategoryid=null;itemcategoryname=null;technologyid=null;technologyname=null;}"
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName itemid --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName itemcode --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName itemdescription --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName partnumber --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName partdescription --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName model --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName itemtypeid --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName itemtypename --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName itemsubtypeid --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName itemsubtypename --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName itemmaintypeid --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName itemmaintypename --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName itemcategoryid --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName itemcategoryname --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName technologyid --getterMethod true --setterMethod false
+
+methodoperation type getSetMethod --class mdm.app.shared.masterdatamanagment.PtopSearch --variableName technologyname --getterMethod true --setterMethod false
+
+
+
+buzzormethod add --toClass ~.app.server.businessservice.masterdatamanagment.PtopSearchServiceBzService --method_name executeQueryPtopSearch --modifier public --return_type java.util.List<mdm.app.shared.masterdatamanagment.PtopSearch> --parameter_name partnumber1,partdescription2,itemmaintypeid3,itemsubtypeid4,manufacturerid5,uomid6,itemcategoryid7,itemtypeid8,sbpid9, --parameter_value java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String, --throws Exception
+
+buzzormethod add --toClass ~.app.server.businessservice.masterdatamanagment.PtopSearchServiceBzServiceImpl --method_name executeQueryPtopSearch --modifier public --return_type java.util.List<mdm.app.shared.masterdatamanagment.PtopSearch> --parameter_name partnumber1,partdescription2,itemmaintypeid3,itemsubtypeid4,manufacturerid5,uomid6,itemcategoryid7,itemtypeid8,sbpid9, --parameter_value java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String, --method_body "java.util.List<mdm.app.shared.masterdatamanagment.PtopSearch> listDtoInterface=new java.util.ArrayList<mdm.app.shared.masterdatamanagment.PtopSearch>();try{atg.taglib.json.util.JSONObject queryParams = new atg.taglib.json.util.JSONObject();queryParams.put("queryId","C6514B7F-710A-4D81-BE4D-10C8C473F193");atg.taglib.json.util.JSONArray jsonArray = new atg.taglib.json.util.JSONArray();atg.taglib.json.util.JSONObject jsonObjectPartnumber1= new atg.taglib.json.util.JSONObject();jsonObjectPartnumber1.put("name","partnumber");jsonObjectPartnumber1.put("value",partnumber1);jsonObjectPartnumber1.put("datatype","VARCHAR");jsonObjectPartnumber1.put("index",1);jsonArray.add(jsonObjectPartnumber1);atg.taglib.json.util.JSONObject jsonObjectPartdescription2= new atg.taglib.json.util.JSONObject();jsonObjectPartdescription2.put("name","partdescription");jsonObjectPartdescription2.put("value",partdescription2);jsonObjectPartdescription2.put("datatype","VARCHAR");jsonObjectPartdescription2.put("index",2);jsonArray.add(jsonObjectPartdescription2);atg.taglib.json.util.JSONObject jsonObjectItemmaintypeid3= new atg.taglib.json.util.JSONObject();jsonObjectItemmaintypeid3.put("name","itemmaintypeid");jsonObjectItemmaintypeid3.put("value",itemmaintypeid3);jsonObjectItemmaintypeid3.put("datatype","VARCHAR");jsonObjectItemmaintypeid3.put("index",3);jsonArray.add(jsonObjectItemmaintypeid3);atg.taglib.json.util.JSONObject jsonObjectItemsubtypeid4= new atg.taglib.json.util.JSONObject();jsonObjectItemsubtypeid4.put("name","itemsubtypeid");jsonObjectItemsubtypeid4.put("value",itemsubtypeid4);jsonObjectItemsubtypeid4.put("datatype","VARCHAR");jsonObjectItemsubtypeid4.put("index",4);jsonArray.add(jsonObjectItemsubtypeid4);atg.taglib.json.util.JSONObject jsonObjectManufacturerid5= new atg.taglib.json.util.JSONObject();jsonObjectManufacturerid5.put("name","manufacturerid");jsonObjectManufacturerid5.put("value",manufacturerid5);jsonObjectManufacturerid5.put("datatype","VARCHAR");jsonObjectManufacturerid5.put("index",5);jsonArray.add(jsonObjectManufacturerid5);atg.taglib.json.util.JSONObject jsonObjectUomid6= new atg.taglib.json.util.JSONObject();jsonObjectUomid6.put("name","uomid");jsonObjectUomid6.put("value",uomid6);jsonObjectUomid6.put("datatype","VARCHAR");jsonObjectUomid6.put("index",6);jsonArray.add(jsonObjectUomid6);atg.taglib.json.util.JSONObject jsonObjectItemcategoryid7= new atg.taglib.json.util.JSONObject();jsonObjectItemcategoryid7.put("name","itemcategoryid");jsonObjectItemcategoryid7.put("value",itemcategoryid7);jsonObjectItemcategoryid7.put("datatype","VARCHAR");jsonObjectItemcategoryid7.put("index",7);jsonArray.add(jsonObjectItemcategoryid7);atg.taglib.json.util.JSONObject jsonObjectItemtypeid8= new atg.taglib.json.util.JSONObject();jsonObjectItemtypeid8.put("name","itemtypeid");jsonObjectItemtypeid8.put("value",itemtypeid8);jsonObjectItemtypeid8.put("datatype","VARCHAR");jsonObjectItemtypeid8.put("index",8);jsonArray.add(jsonObjectItemtypeid8);atg.taglib.json.util.JSONObject jsonObjectSbpid9= new atg.taglib.json.util.JSONObject();jsonObjectSbpid9.put("name","sbpid");jsonObjectSbpid9.put("value",sbpid9);jsonObjectSbpid9.put("datatype","VARCHAR");jsonObjectSbpid9.put("index",9);jsonArray.add(jsonObjectSbpid9);queryParams.put("queryCriteria",jsonArray);listDtoInterface= queryExecuterService.getAllQueryData("mdm.app.shared.masterdatamanagment.PtopSearch",queryParams);}catch(Exception e){e.printStackTrace();}return listDtoInterface;}" --annotation java.lang.Override --key "" --value "" --throws Exception
+
+quit

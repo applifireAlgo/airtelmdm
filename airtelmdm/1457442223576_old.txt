@@ -1,0 +1,1088 @@
+
+
+
+
+ development mode --enabled true 
+
+
+
+buzzproperties codeStatus --PropertyFileName status --key Spocitem --value 1
+
+// Entity Creation 
+
+buzzorclass add --className ~.app.shared.mdmdomain.Spocitem --implements java.io.Serializable,com.athena.framework.shared.entity.web.entityInterface.CommonEntityInterface --implementsGenericType java.util.Comparator#mdm.app.shared.mdmdomain.Spocitem --annotation javax.persistence.Table,javax.persistence.Entity,org.eclipse.persistence.annotations.Cache,com.athena.annotation.SourceCodeAuthorClass --key type.org.eclipse.persistence.annotations.Cache,size.org.eclipse.persistence.annotations.Cache,expiry.org.eclipse.persistence.annotations.Cache,alwaysRefresh.org.eclipse.persistence.annotations.Cache,disableHits.org.eclipse.persistence.annotations.Cache,name.javax.persistence.Table,createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value org.eclipse.persistence.annotations.CacheType$CACHE#org.eclipse.persistence.annotations.CacheType,64000.org.eclipse.persistence.annotations.Cache,0.org.eclipse.persistence.annotations.Cache,FALSE.org.eclipse.persistence.annotations.Cache,FALSE.org.eclipse.persistence.annotations.Cache,ast_Spocitem_M.javax.persistence.Table,rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass,rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass,8.com.athena.annotation.SourceCodeAuthorClass,Spocitem.com.athena.annotation.SourceCodeAuthorClass,com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity --value_type javaType,Integer,Integer,Boolean,Boolean,String,String,String,String,String,javaType
+
+Persistent add entity --entityName mdm.app.shared.mdmdomain.Spocitem
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name itemcode --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemcode.javax.persistence.Column,itemcode.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name itemcode --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name itemcode --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name itemdescription --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemdescription.javax.persistence.Column,itemdescription.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name itemdescription --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name itemdescription --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name partnumber --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value partnumber.javax.persistence.Column,partnumber.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name partnumber --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name partnumber --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name partdescription --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value partdescription.javax.persistence.Column,partdescription.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name partdescription --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name partdescription --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name natureofitem --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value natureofitem.javax.persistence.Column,natureofitem.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name natureofitem --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name natureofitem --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name networkelement --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value networkelement.javax.persistence.Column,networkelement.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name networkelement --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name networkelement --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name model --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value model.javax.persistence.Column,model.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name model --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name model --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name funcclassification --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value funcclassification.javax.persistence.Column,funcclassification.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name funcclassification --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name funcclassification --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name acs --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value acs.javax.persistence.Column,acs.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name acs --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name acs --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name inventoryitem --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value inventoryitem.javax.persistence.Column,inventoryitem.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name inventoryitem --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name trackablealm --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value trackablealm.javax.persistence.Column,trackablealm.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name trackablealm --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name taggable --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value taggable.javax.persistence.Column,taggable.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name taggable --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name repairable --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value repairable.javax.persistence.Column,repairable.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name repairable --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name serialised --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value serialised.javax.persistence.Column,serialised.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name serialised --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name leadtime --dataType java.lang.Double --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value leadtime.javax.persistence.Column,leadtime.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name leadtime --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name leadtime --valueType Long --annotation javax.validation.constraints.Min --key value.javax.validation.constraints.Min --value "-9223372000000000000.javax.validation.constraints.Min"
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name leadtime --valueType Long --annotation javax.validation.constraints.Max --key value.javax.validation.constraints.Max --value "9223372000000000000.javax.validation.constraints.Max"
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name nmsunique --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value nmsunique.javax.persistence.Column,nmsunique.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name nmsunique --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name movable --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value movable.javax.persistence.Column,movable.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name movable --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name movable --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name moq --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value moq.javax.persistence.Column,moq.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name moq --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name moq --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name purchasable --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value purchasable.javax.persistence.Column,purchasable.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name purchasable --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name majorasset --dataType java.lang.Double --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value majorasset.javax.persistence.Column,majorasset.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name majorasset --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name majorasset --valueType Long --annotation javax.validation.constraints.Min --key value.javax.validation.constraints.Min --value "-9223372000000000000.javax.validation.constraints.Min"
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name majorasset --valueType Long --annotation javax.validation.constraints.Max --key value.javax.validation.constraints.Max --value "9223372000000000000.javax.validation.constraints.Max"
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name minorasset --dataType java.lang.Double --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value minorasset.javax.persistence.Column,minorasset.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name minorasset --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name minorasset --valueType Long --annotation javax.validation.constraints.Min --key value.javax.validation.constraints.Min --value "-9223372000000000000.javax.validation.constraints.Min"
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name minorasset --valueType Long --annotation javax.validation.constraints.Max --key value.javax.validation.constraints.Max --value "9223372000000000000.javax.validation.constraints.Max"
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name customdutycode --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value customdutycode.javax.persistence.Column,customdutycode.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name customdutycode --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name customdutycode --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name glcode --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value glcode.javax.persistence.Column,glcode.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name glcode --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name glcode --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name techinical --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value techinical.javax.persistence.Column,techinical.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name techinical --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name techinical --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name modelfamily --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value modelfamily.javax.persistence.Column,modelfamily.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name modelfamily --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.Spocitem --field_name modelfamily --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name primaryKey --dataType java.lang.String --Modifier private --annotation javax.persistence.Transient
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name itemid --dataType java.lang.String --Modifier private --valueType String,String,String --annotation javax.persistence.Id,javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty,javax.persistence.GeneratedValue --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty,generator.javax.persistence.GeneratedValue --value itemid.javax.persistence.Column,itemid.com.fasterxml.jackson.annotation.JsonProperty,UUIDGenerator.javax.persistence.GeneratedValue
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name manufacturerid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value manufacturerid.javax.persistence.Column,manufacturerid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name itemmainid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemmainid.javax.persistence.Column,itemmainid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name itemsubtypeid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemsubtypeid.javax.persistence.Column,itemsubtypeid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name uomid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value uomid.javax.persistence.Column,uomid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name itemcategoryid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemcategoryid.javax.persistence.Column,itemcategoryid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name itemtypeid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemtypeid.javax.persistence.Column,itemtypeid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name sbpid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value sbpid.javax.persistence.Column,sbpid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name technologyid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value technologyid.javax.persistence.Column,technologyid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name entityValidator --dataType com.athena.framework.server.helper.EntityValidatorHelper<Object> --Modifier private --annotation javax.persistence.Transient,com.fasterxml.jackson.annotation.JsonIgnore
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name versionId --dataType Integer --Modifier private --annotation javax.persistence.Version,javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value versionId.javax.persistence.Column,versionId.com.fasterxml.jackson.annotation.JsonProperty --valueType String,String
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name entityAudit --dataType mdm.app.shared.EntityAudit --Modifier private --annotation javax.persistence.Embedded,com.fasterxml.jackson.annotation.JsonIgnore --initializer "new EntityAudit()"
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name systemInfo --dataType mdm.app.shared.SystemInfo --Modifier private --annotation javax.persistence.Embedded --initializer "new SystemInfo()"
+
+buzzorfield create --type ~.app.shared.mdmdomain.Spocitem --field_name primaryDisplay --dataType String --Modifier private --annotation javax.persistence.Transient
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName itemcode --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName itemdescription --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName partnumber --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName partdescription --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName natureofitem --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName networkelement --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName model --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName funcclassification --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName acs --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName inventoryitem --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName trackablealm --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName taggable --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName repairable --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName serialised --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName leadtime --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName nmsunique --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName movable --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName moq --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName purchasable --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName majorasset --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName minorasset --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName customdutycode --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName glcode --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName techinical --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName modelfamily --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName primaryKey --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName itemid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName manufacturerid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName itemmainid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName itemsubtypeid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName uomid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName itemcategoryid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName itemtypeid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName sbpid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName technologyid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName versionId --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName primaryDisplay --getterMethod false --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.Spocitem --variableName systemInfo --getterMethod true --setterMethod true
+
+methodoperation type hardDelete --entityName ~.app.shared.mdmdomain.Spocitem
+
+methodoperation type setValidator --class ~.app.shared.mdmdomain.Spocitem
+
+methodoperation type setLoggedUserInfo --class ~.app.shared.mdmdomain.Spocitem --updateFieldName updatedBy --createFieldName createdBy --activeFieldName activeStatus --isAggregate false
+
+methodoperation type comparatorDefaultBody --class ~.app.shared.mdmdomain.Spocitem
+
+methodoperation type getPrimayDisplay --class ~.app.shared.mdmdomain.Spocitem
+
+methodoperation type toString --class ~.app.shared.mdmdomain.Spocitem
+
+methodoperation type hashCode --class ~.app.shared.mdmdomain.Spocitem --primaryClass true
+
+methodoperation type equals --class ~.app.shared.mdmdomain.Spocitem --primaryClass true
+
+buzzormethod add --toClass ~.app.shared.mdmdomain.Spocitem --method_name isEntityValidated --modifier public --return_type boolean --method_body "return this.systemInfo.isEntityValidated();" --annotation com.fasterxml.jackson.annotation.JsonIgnore --key "" --value ""
+
+class --abstract true --class ~.app.server.service.SpocitemService
+
+buzzorclass add --className ~.app.server.service.SpocitemServiceImpl  --extends mdm.app.server.service.SpocitemService --value_type string --annotation org.springframework.web.bind.annotation.RestController
+
+Class createAnnotation --toClass ~.app.server.service.SpocitemServiceImpl --annotation org.springframework.context.annotation.Scope --key value.org.springframework.context.annotation.Scope,proxyMode.org.springframework.context.annotation.Scope --value request.org.springframework.context.annotation.Scope#cfg#org.springframework.context.annotation.ScopedProxyMode$TARGET_CLASS#org.springframework.context.annotation.Scope --value_type string,javatype
+
+Class createAnnotation --toClass ~.app.server.service.SpocitemService --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#8.com.athena.annotation.SourceCodeAuthorClass#cfg#Service for Spocitem Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+Class createAnnotation --toClass ~.app.server.service.SpocitemServiceImpl --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#8.com.athena.annotation.SourceCodeAuthorClass#cfg#Service for Spocitem Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+interfacebuzzor add --InterfaceName ~.app.server.repository.SpocitemRepository --genericType T --extends com.athena.server.repository.SearchInterface
+
+buzzorclass add --className ~.app.server.repository.SpocitemRepositoryImpl --implements --extends com.athena.server.repository.SearchInterfaceImpl --value_type string --implementsGenericType mdm.app.server.repository.SpocitemRepository#mdm.app.shared.mdmdomain.Spocitem --annotation org.springframework.stereotype.Repository
+
+Class createAnnotation --toClass ~.app.server.repository.SpocitemRepositoryImpl --annotation org.springframework.context.annotation.Scope --key value.org.springframework.context.annotation.Scope,proxyMode.org.springframework.context.annotation.Scope --value request.org.springframework.context.annotation.Scope#cfg#org.springframework.context.annotation.ScopedProxyMode$TARGET_CLASS#org.springframework.context.annotation.Scope --value_type string,javatype
+
+Class createAnnotation --toClass ~.app.server.repository.SpocitemRepository --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#8.com.athena.annotation.SourceCodeAuthorClass#cfg#Repository for Spocitem Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+Class createAnnotation --toClass ~.app.server.repository.SpocitemRepositoryImpl --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#8.com.athena.annotation.SourceCodeAuthorClass#cfg#Repository for Spocitem Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+buzzorfield create --type ~.app.server.repository.SpocitemRepositoryImpl --field_name emfResource --dataType com.athena.config.server.helper.ResourceFactoryManagerHelper --Modifier private --annotation org.springframework.beans.factory.annotation.Autowired
+
+methodoperation type ENTITY --entityName ~.app.shared.mdmdomain.Spocitem --readOnly false --controllerClass ~.app.server.service.SpocitemService  --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --methodType findAll --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.SpocitemBusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+methodoperation type ENTITY --entityName ~.app.shared.mdmdomain.Spocitem --readOnly false --controllerClass ~.app.server.service.SpocitemService  --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --methodType show --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.SpocitemBusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+methodoperation type ENTITY --entityName ~.app.shared.mdmdomain.Spocitem --readOnly false --controllerClass ~.app.server.service.SpocitemService  --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --methodType save --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.SpocitemBusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+methodoperation type ENTITY --entityName ~.app.shared.mdmdomain.Spocitem --readOnly false --controllerClass ~.app.server.service.SpocitemService  --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --methodType delete --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.SpocitemBusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+
+
+methodoperation type ENTITY --entityName ~.app.shared.mdmdomain.Spocitem --readOnly false --controllerClass ~.app.server.service.SpocitemService  --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --methodType update --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.SpocitemBusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.Spocitem --queryName Spocitem.findByItemmainid --queryValue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.itemmainid=:itemmainid"
+
+methodoperation type namedQueryMethod --queryName Spocitem.findByItemmainid --qvalue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.itemmainid=:itemmainid" --qarameteres itemmainid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.Spocitem --controllerClass ~.app.server.service.SpocitemService --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.SpocitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.Spocitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Itemmaintype
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.Spocitem --queryName Spocitem.findByManufacturerid --queryValue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.manufacturerid=:manufacturerid"
+
+methodoperation type namedQueryMethod --queryName Spocitem.findByManufacturerid --qvalue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.manufacturerid=:manufacturerid" --qarameteres manufacturerid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.Spocitem --controllerClass ~.app.server.service.SpocitemService --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.SpocitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.Spocitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Manufacturer
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.Spocitem --queryName Spocitem.findByItemsubtypeid --queryValue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.itemsubtypeid=:itemsubtypeid"
+
+methodoperation type namedQueryMethod --queryName Spocitem.findByItemsubtypeid --qvalue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.itemsubtypeid=:itemsubtypeid" --qarameteres itemsubtypeid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.Spocitem --controllerClass ~.app.server.service.SpocitemService --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.SpocitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.Spocitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Itemsubtype
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.Spocitem --queryName Spocitem.findByUomid --queryValue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.uomid=:uomid"
+
+methodoperation type namedQueryMethod --queryName Spocitem.findByUomid --qvalue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.uomid=:uomid" --qarameteres uomid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.Spocitem --controllerClass ~.app.server.service.SpocitemService --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.SpocitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.Spocitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Uom
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.Spocitem --queryName Spocitem.findByItemcategoryid --queryValue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.itemcategoryid=:itemcategoryid"
+
+methodoperation type namedQueryMethod --queryName Spocitem.findByItemcategoryid --qvalue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.itemcategoryid=:itemcategoryid" --qarameteres itemcategoryid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.Spocitem --controllerClass ~.app.server.service.SpocitemService --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.SpocitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.Spocitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Itemcategorytype
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.Spocitem --queryName Spocitem.findByItemtypeid --queryValue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.itemtypeid=:itemtypeid"
+
+methodoperation type namedQueryMethod --queryName Spocitem.findByItemtypeid --qvalue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.itemtypeid=:itemtypeid" --qarameteres itemtypeid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.Spocitem --controllerClass ~.app.server.service.SpocitemService --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.SpocitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.Spocitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Itemtype
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.Spocitem --queryName Spocitem.findBySbpid --queryValue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.sbpid=:sbpid"
+
+methodoperation type namedQueryMethod --queryName Spocitem.findBySbpid --qvalue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.sbpid=:sbpid" --qarameteres sbpid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.Spocitem --controllerClass ~.app.server.service.SpocitemService --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.SpocitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.Spocitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Sbp
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.Spocitem --queryName Spocitem.findByTechnologyid --queryValue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.technologyid=:technologyid"
+
+methodoperation type namedQueryMethod --queryName Spocitem.findByTechnologyid --qvalue "select e from Spocitem e where e.systemInfo.activeStatus=1 and e.technologyid=:technologyid" --qarameteres technologyid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.Spocitem --controllerClass ~.app.server.service.SpocitemService --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.SpocitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.Spocitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Technology
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.Spocitem --queryName Spocitem.findById --queryValue "select e from Spocitem e where e.systemInfo.activeStatus=1 and  e.itemid =:itemid"
+
+methodoperation type namedQueryMethod --queryName Spocitem.findById --qvalue "select e from Spocitem e where e.systemInfo.activeStatus=1 and  e.itemid =:itemid" --qarameteres itemid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.Spocitem --controllerClass ~.app.server.service.SpocitemService --controllerImplClass ~.app.server.service.SpocitemServiceImpl --repositoryClass ~.app.server.repository.SpocitemRepository --repositoryImplClass ~.app.server.repository.SpocitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.SpocitembzService --returnType mdm.app.shared.mdmdomain.Spocitem --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Spocitem
+
+buzzproperties codeStatus --PropertyFileName status --key Spocitem --value 0
+
+
+
+buzzorclass add --className SpocitemTestCase  --srcPath test
+Class createAnnotation --toClass SpocitemTestCase --annotation org.junit.runner.RunWith --key value.org.junit.runner.RunWith --value org.springframework.test.context.junit4.SpringJUnit4ClassRunner --value_type javaClass
+Class createAnnotation --toClass SpocitemTestCase --annotation org.springframework.test.context.web.WebAppConfiguration --key null.org.springframework.test.context.web.WebAppConfiguration --value null --value_type null
+Class createAnnotation --toClass SpocitemTestCase --annotation org.springframework.test.context.ContextConfiguration --key classes.org.springframework.test.context.ContextConfiguration --value mdm.app.config.WebConfigExtended --value_type javaClass
+Class createAnnotation --toClass SpocitemTestCase --annotation org.junit.FixMethodOrder --key value.org.junit.FixMethodOrder.org.junit.FixMethodOrder --value org.junit.runners.MethodSorters$NAME_ASCENDING#org.junit.FixMethodOrder --value_type javatype
+ArrayAnnotation create --type SpocitemTestCase --key value --varaiable_name "" --value org.springframework.test.context.support.DependencyInjectionTestExecutionListener,org.springframework.test.context.support.DirtiesContextTestExecutionListener,org.springframework.test.context.transaction.TransactionalTestExecutionListener --valueType javatype,javatype,javatype --annotation org.springframework.test.context.TestExecutionListeners --addTo class
+
+buzzorfield create --type SpocitemTestCase --field_name spocitemRepository --dataType mdm.app.server.repository.SpocitemRepository<mdm.app.shared.mdmdomain.Spocitem> --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name spocitemRepository --valueType mdm.app.server.repository.SpocitemRepository --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type SpocitemTestCase --field_name runtimeLogInfoHelper --dataType com.athena.framework.server.helper.RuntimeLogInfoHelper --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name runtimeLogInfoHelper --valueType com.athena.framework.server.helper.RuntimeLogInfoHelper --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type SpocitemTestCase --field_name entityValidator --dataType com.athena.framework.server.helper.EntityValidatorHelper<Object> --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name entityValidator --valueType com.athena.framework.server.helper.RuntimeLogInfoHelper<Object> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type SpocitemTestCase --field_name valueGenerator --dataType com.athena.framework.server.test.RandomValueGenerator --Modifier private --initializer "new com.athena.framework.server.test.RandomValueGenerator()"
+
+buzzorfield create --type SpocitemTestCase --field_name map --dataType java.util.HashMap<String,Object> --Modifier private --initializer "new HashMap<String,Object>()" --isStatic true
+
+buzzorfield create --type SpocitemTestCase --field_name methodCallStack --dataType com.spartan.healthmeter.entity.scheduler.ArtMethodCallStack --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name methodCallStack --valueType com.spartan.healthmeter.entity.scheduler.ArtMethodCallStack --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type SpocitemTestCase --field_name session --dataType org.springframework.mock.web.MockHttpSession --Modifier protected --valueType javaType
+
+buzzorfield create --type SpocitemTestCase --field_name request --dataType org.springframework.mock.web.MockHttpServletRequest --Modifier protected --valueType javaType
+
+buzzorfield create --type SpocitemTestCase --field_name response --dataType org.springframework.mock.web.MockHttpServletResponse --Modifier protected --valueType javaType
+
+buzzormethod add --toClass SpocitemTestCase --method_name startSession --modifier protected --return_type void --method_body "session = new MockHttpSession();"
+
+buzzormethod add --toClass SpocitemTestCase --method_name endSession --modifier protected --return_type void --method_body "session.clearAttributes(); session.invalidate(); session = null;"
+
+buzzormethod add --toClass SpocitemTestCase --method_name startRequest --modifier protected --return_type void --method_body "request = new MockHttpServletRequest(); request.setSession(session); org.springframework.web.context.request.RequestContextHolder.setRequestAttributes(new org.springframework.web.context.request.ServletRequestAttributes(request));"
+
+buzzormethod add --toClass SpocitemTestCase --method_name endRequest --modifier protected --return_type void --method_body "((org.springframework.web.context.request.ServletRequestAttributes) org.springframework.web.context.request.RequestContextHolder.getRequestAttributes()).requestCompleted(); org.springframework.web.context.request.RequestContextHolder.resetRequestAttributes(); request = null;"
+
+buzzormethod add --toClass SpocitemTestCase --method_name before --modifier public --return_type void --method_body "startSession(); startRequest(); setBeans();" --annotation org.junit.Before --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name after --modifier public --return_type void --method_body "endSession(); endRequest();" --annotation org.junit.After --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name setBeans --modifier private --return_type void --method_body "runtimeLogInfoHelper.createRuntimeLogUserInfo(1, "AAAAA", request.getRemoteHost());   org.junit.Assert.assertNotNull(runtimeLogInfoHelper);methodCallStack.setRequestId(java.util.UUID.randomUUID().toString().toUpperCase()); "
+ Import add --toClass SpocitemTestCase --importType mdm.app.shared.mdmdomain.Spocitem
+ Import add --toClass SpocitemTestCase --importType com.athena.framework.shared.entity.web.entityInterface.CommonEntityInterface.RECORD_TYPE
+
+buzzormethod add --toClass SpocitemTestCase --method_name test1Save --modifier public --return_type void --method_body " try { Itemcategorytype itemcategorytype=new Itemcategorytype();itemcategorytype.setItemcategoryname("eBTM218ZFqpWNSfZ5NDzU38q1jMVISCW5EAv6qIfvGfZhbX3UK"); Itemcategorytype ItemcategorytypeTest =itemcategorytypeRepository.save(itemcategorytype);map.put("ItemcategorytypePrimaryKey", itemcategorytype._getPrimarykey());Itemmaintype itemmaintype=new Itemmaintype();itemmaintype.setItemmaintypename("cgVK0AaRd0ZudRgy944jD5xK6nAYYvnCOTiynRRmi2IbxpzpMw"); Itemmaintype ItemmaintypeTest =itemmaintypeRepository.save(itemmaintype);map.put("ItemmaintypePrimaryKey", itemmaintype._getPrimarykey());Itemsubtype itemsubtype=new Itemsubtype();itemsubtype.setItemsubtypename("KQzCP1Piwt0zRhlzZtchNC3gQxWGMbg5xGTw8laHEhu8HvNaGj"); Itemsubtype ItemsubtypeTest =itemsubtypeRepository.save(itemsubtype);map.put("ItemsubtypePrimaryKey", itemsubtype._getPrimarykey());Itemtype itemtype=new Itemtype();itemtype.setItemtypename("HRJ39f88ZP7MYyFZVfUBVBWq0hCxxU5JKGUWzpJKBQPiHphvHY"); Itemtype ItemtypeTest =itemtypeRepository.save(itemtype);map.put("ItemtypePrimaryKey", itemtype._getPrimarykey());Manufacturer manufacturer=new Manufacturer();manufacturer.setManufacturername("iF10N6kxaSDpnEp3NMwGhxSuDvQFHvsjC2WcdCyGOpsDpsHf6C"); Manufacturer ManufacturerTest =manufacturerRepository.save(manufacturer);map.put("ManufacturerPrimaryKey", manufacturer._getPrimarykey());Sbp sbp=new Sbp();sbp.setSbpname("DVIhZV5FiZJiGwLpdG6FHdpUDwQRjR174wNIuq7d1MWyxdTL91"); Sbp SbpTest =sbpRepository.save(sbp);map.put("SbpPrimaryKey", sbp._getPrimarykey());Technology technology=new Technology();technology.setTechnologyname("096Wx9zYjSmPnBuv0TZqlfnAH9efJL5Ns09MPMIthAcrprGzct"); Technology TechnologyTest =technologyRepository.save(technology);map.put("TechnologyPrimaryKey", technology._getPrimarykey());Uom uom=new Uom();uom.setUomname("7gOleozVHm6hwSBXmzOw4ZSuSYv0tDALsgn7EAzsA9x2XuTTpQ"); Uom UomTest =uomRepository.save(uom);map.put("UomPrimaryKey", uom._getPrimarykey());Spocitem spocitem=new Spocitem();spocitem.setAcs("YNt6NcBDRkmGo7oZXv9mm3D6uJt27ZlXDvA5lcEFT41JccxxsO"); spocitem.setCustomdutycode("Cox6Gw57WQ98STjnOAw1vJ8fOKP9aHrgetXLeXuac0Lx6DU7Nu"); spocitem.setFuncclassification("JUtcwrv7u9fFeDZReNv4RVUr0pEajBXsHm0srJ0UgVJDAV2vfI"); spocitem.setGlcode("c1kaFf8WHtEGNYQDchmIhH6A5NRZ9xEIVhlPblhDafpvfLo2et"); spocitem.setInventoryitem(true); spocitem.setItemcategoryid((java.lang.String)ItemcategorytypeTest._getPrimarykey()); /* ******Adding refrenced table data */spocitem.setItemcode("ViKvg7PiHIrbzsnJ5rviiEWpV0DA90GQCanlTSP7uByODOEeSE"); spocitem.setItemdescription("K0jo1zxuKOnnSauH4HmtPrRjx0bGPGAN5s0fz0nsu9A2A2wAaw"); spocitem.setItemmainid((java.lang.String)ItemmaintypeTest._getPrimarykey()); /* ******Adding refrenced table data */spocitem.setItemsubtypeid((java.lang.String)ItemsubtypeTest._getPrimarykey()); /* ******Adding refrenced table data */spocitem.setItemtypeid((java.lang.String)ItemtypeTest._getPrimarykey()); /* ******Adding refrenced table data */spocitem.setLeadtime(12.34); spocitem.setMajorasset(12.34); spocitem.setManufacturerid((java.lang.String)ManufacturerTest._getPrimarykey()); /* ******Adding refrenced table data */spocitem.setMinorasset(12.34); spocitem.setModel("NoUc8ghf2aDnp0VJR5KCWPNesZV1ZSRqvteL2AHoWPUhgnyJgQ"); spocitem.setModelfamily("okwNt8WrPfL3APTse4FeMESfHt6LVW2f8lAfwCfPPy2j8MnL92"); spocitem.setMoq("HnrZ8QkdA9hjQlzf2uv9CTytWWsvuVrZZN7hBqtoMu4jHzly82"); spocitem.setMovable("HDGZD8biZB8vGq49kkTs0NbX0qe779PmAiuj68gmj3uorlYq2C"); spocitem.setNatureofitem("XNgUxjRZMrr4hW9qNSTlZIQv4Y6GSWuz7X0fOXBFAM5bhqITsG"); spocitem.setNetworkelement("5PTtqK1YbMgojN8BqGGPW8h2oxMGyBA1miyAXLjQTh7fX5s6HD"); spocitem.setNmsunique("v"); spocitem.setPartdescription("irvYzpyoQcSIBMsSnFwuplvv0J9cIrBv3x90F2EmhOLLcWA5Z7"); spocitem.setPartnumber("uTGpcPaPhZK6cGRCr6UrDdXvsN55LbXf0GbzktI9wwU7aOTNBG"); spocitem.setPurchasable(true); spocitem.setRepairable(true); spocitem.setSbpid((java.lang.String)SbpTest._getPrimarykey()); /* ******Adding refrenced table data */spocitem.setSerialised(true); spocitem.setTaggable(true); spocitem.setTechinical("x1TTtUDCwfov17yiyEK3LCeNeMvGJ3f0fbDHufi7hYJOKJeqUZ"); spocitem.setTechnologyid((java.lang.String)TechnologyTest._getPrimarykey()); /* ******Adding refrenced table data */spocitem.setTrackablealm(true); spocitem.setUomid((java.lang.String)UomTest._getPrimarykey()); /* ******Adding refrenced table data */spocitem.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);spocitem.setEntityValidator(entityValidator);spocitem.isValid();spocitemRepository.save(spocitem); map.put("SpocitemPrimaryKey", spocitem._getPrimarykey());} catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {org.junit.Assert.fail(e.getMessage()); }  catch (java.lang.Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+ Import add --toClass SpocitemTestCase --importType mdm.app.shared.mdmdomain.Itemcategorytype
+
+buzzorfield create --type SpocitemTestCase --field_name itemcategorytypeRepository --dataType mdm.app.server.repository.ItemcategorytypeRepository<mdm.app.shared.mdmdomain.Itemcategorytype> --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name itemcategorytypeRepository --valueType mdm.app.server.repository.ItemcategorytypeRepository<mdm.app.shared.mdmdomain.Itemcategorytype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass SpocitemTestCase --importType mdm.app.shared.mdmdomain.Itemmaintype
+
+buzzorfield create --type SpocitemTestCase --field_name itemmaintypeRepository --dataType mdm.app.server.repository.ItemmaintypeRepository<mdm.app.shared.mdmdomain.Itemmaintype> --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name itemmaintypeRepository --valueType mdm.app.server.repository.ItemmaintypeRepository<mdm.app.shared.mdmdomain.Itemmaintype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass SpocitemTestCase --importType mdm.app.shared.mdmdomain.Itemsubtype
+
+buzzorfield create --type SpocitemTestCase --field_name itemsubtypeRepository --dataType mdm.app.server.repository.ItemsubtypeRepository<mdm.app.shared.mdmdomain.Itemsubtype> --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name itemsubtypeRepository --valueType mdm.app.server.repository.ItemsubtypeRepository<mdm.app.shared.mdmdomain.Itemsubtype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass SpocitemTestCase --importType mdm.app.shared.mdmdomain.Itemtype
+
+buzzorfield create --type SpocitemTestCase --field_name itemtypeRepository --dataType mdm.app.server.repository.ItemtypeRepository<mdm.app.shared.mdmdomain.Itemtype> --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name itemtypeRepository --valueType mdm.app.server.repository.ItemtypeRepository<mdm.app.shared.mdmdomain.Itemtype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass SpocitemTestCase --importType mdm.app.shared.mdmdomain.Manufacturer
+
+buzzorfield create --type SpocitemTestCase --field_name manufacturerRepository --dataType mdm.app.server.repository.ManufacturerRepository<mdm.app.shared.mdmdomain.Manufacturer> --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name manufacturerRepository --valueType mdm.app.server.repository.ManufacturerRepository<mdm.app.shared.mdmdomain.Manufacturer> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass SpocitemTestCase --importType mdm.app.shared.mdmdomain.Sbp
+
+buzzorfield create --type SpocitemTestCase --field_name sbpRepository --dataType mdm.app.server.repository.SbpRepository<mdm.app.shared.mdmdomain.Sbp> --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name sbpRepository --valueType mdm.app.server.repository.SbpRepository<mdm.app.shared.mdmdomain.Sbp> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass SpocitemTestCase --importType mdm.app.shared.mdmdomain.Technology
+
+buzzorfield create --type SpocitemTestCase --field_name technologyRepository --dataType mdm.app.server.repository.TechnologyRepository<mdm.app.shared.mdmdomain.Technology> --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name technologyRepository --valueType mdm.app.server.repository.TechnologyRepository<mdm.app.shared.mdmdomain.Technology> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass SpocitemTestCase --importType mdm.app.shared.mdmdomain.Uom
+
+buzzorfield create --type SpocitemTestCase --field_name uomRepository --dataType mdm.app.server.repository.UomRepository<mdm.app.shared.mdmdomain.Uom> --Modifier private --valueType 
+
+fieldAnnotation create --type SpocitemTestCase --field_name uomRepository --valueType mdm.app.server.repository.UomRepository<mdm.app.shared.mdmdomain.Uom> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name test2Update --modifier public --return_type void --method_body " try { org.junit.Assert.assertNotNull(map.get("SpocitemPrimaryKey"));Spocitem spocitem=spocitemRepository.findById((java.lang.String)map.get("SpocitemPrimaryKey"));spocitem.setAcs("AUX87CUIIGUNOQlhYqXpOmKlZO67GUzpBM0rCp7pIU3SJ8vfpX");spocitem.setCustomdutycode("I9VVwDIaREngRyT2oKwFC05CGArEzbWawRlTx6K7A2SWQkb5eQ");spocitem.setFuncclassification("95WXZ6UGcBfzMftb3iJDurahTHNmGemufYkZvgTe7hrUBE3H6Z");spocitem.setGlcode("kfgUKSDcuyq96eTuIk3EgzmEKuwmk1T1Dv9rEHfvKQbqec469H");spocitem.setItemcode("tM5XYZXUqiaBWin0CTpsdo51XPhEgERIhB6BFjJbYsw56wHLr4");spocitem.setItemdescription("y716YO7PzixFdCxHNoR6hcC2SP0OIe24y7vI4mdzEevSCcTu8k");spocitem.setLeadtime(12.34);spocitem.setMajorasset(12.34);spocitem.setMinorasset(12.34);spocitem.setModel("PJLGRl7DAL2sWr5goE33OFHeBRA3t9Oj5tO4fR9D3KS1roZPHU");spocitem.setModelfamily("TmWfY0kUWEgQMzQSjTuacLClPkfOo6IrSDhaLoCYP0KdyOqawi");spocitem.setMoq("0D3r68jDgjHpnYwhOhHlzqGEx2jEoY8iYhOogKbZIdGXXOri4D");spocitem.setMovable("YYPsj7KnUzhDAi0YDfdGzazZrsqzLFtRe13B8EBUQPhFERbeGg");spocitem.setNatureofitem("KowCsfJxBh0HQySby8TPvHJu3LveZaDIv6NsRBkKdbm5t40wEz");spocitem.setNetworkelement("LDjab9ChwuoKdD1tK1IEgPYMfq9okU5uc2z9DnZlpf7tPX3Q3M");spocitem.setNmsunique("H");spocitem.setPartdescription("70arqhBeU8Mag631Sfovhlk4cBbdZWAKWcwJwMpneFM14ekQRH");spocitem.setPartnumber("hWV702CH1k3RSahExtzxLFW5tdam2KHbArBIQuCr0W96FzFXQs");spocitem.setTechinical("RIq2pQDxsOWZapv8p6YNzDQ0fWTF53Ez0X16M7sjdufjsctR1L");spocitem.setVersionId(1);spocitem.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);spocitemRepository.update(spocitem);} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch (java.lang.Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name test3findByitemcategoryid --modifier public --return_type void --method_body " try {java.util.List<Spocitem> listofitemcategoryid=spocitemRepository.findByItemcategoryid((java.lang.String)map.get("ItemcategorytypePrimaryKey"));if(listofitemcategoryid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name test3FindById --modifier public --return_type void --method_body " try {org.junit.Assert.assertNotNull(map.get("SpocitemPrimaryKey"));spocitemRepository.findById((java.lang.String)map.get("SpocitemPrimaryKey"));} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name test3findByitemmainid --modifier public --return_type void --method_body " try {java.util.List<Spocitem> listofitemmainid=spocitemRepository.findByItemmainid((java.lang.String)map.get("ItemmaintypePrimaryKey"));if(listofitemmainid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name test3findByitemsubtypeid --modifier public --return_type void --method_body " try {java.util.List<Spocitem> listofitemsubtypeid=spocitemRepository.findByItemsubtypeid((java.lang.String)map.get("ItemsubtypePrimaryKey"));if(listofitemsubtypeid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name test3findByitemtypeid --modifier public --return_type void --method_body " try {java.util.List<Spocitem> listofitemtypeid=spocitemRepository.findByItemtypeid((java.lang.String)map.get("ItemtypePrimaryKey"));if(listofitemtypeid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name test3findBymanufacturerid --modifier public --return_type void --method_body " try {java.util.List<Spocitem> listofmanufacturerid=spocitemRepository.findByManufacturerid((java.lang.String)map.get("ManufacturerPrimaryKey"));if(listofmanufacturerid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name test3findBysbpid --modifier public --return_type void --method_body " try {java.util.List<Spocitem> listofsbpid=spocitemRepository.findBySbpid((java.lang.String)map.get("SbpPrimaryKey"));if(listofsbpid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name test3findBytechnologyid --modifier public --return_type void --method_body " try {java.util.List<Spocitem> listoftechnologyid=spocitemRepository.findByTechnologyid((java.lang.String)map.get("TechnologyPrimaryKey"));if(listoftechnologyid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name test3findByuomid --modifier public --return_type void --method_body " try {java.util.List<Spocitem> listofuomid=spocitemRepository.findByUomid((java.lang.String)map.get("UomPrimaryKey"));if(listofuomid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass SpocitemTestCase --method_name test4Delete --modifier public --return_type void --method_body " try {org.junit.Assert.assertNotNull(map.get("SpocitemPrimaryKey"));spocitemRepository.delete((java.lang.String)map.get("SpocitemPrimaryKey"));/* Deleting refrenced data */uomRepository.delete((java.lang.String)map.get("UomPrimaryKey"));/* Deleting refrenced data */technologyRepository.delete((java.lang.String)map.get("TechnologyPrimaryKey"));/* Deleting refrenced data */sbpRepository.delete((java.lang.String)map.get("SbpPrimaryKey"));/* Deleting refrenced data */manufacturerRepository.delete((java.lang.String)map.get("ManufacturerPrimaryKey"));/* Deleting refrenced data */itemtypeRepository.delete((java.lang.String)map.get("ItemtypePrimaryKey"));/* Deleting refrenced data */itemsubtypeRepository.delete((java.lang.String)map.get("ItemsubtypePrimaryKey"));/* Deleting refrenced data */itemmaintypeRepository.delete((java.lang.String)map.get("ItemmaintypePrimaryKey"));/* Deleting refrenced data */itemcategorytypeRepository.delete((java.lang.String)map.get("ItemcategorytypePrimaryKey"));/* Deleting refrenced data */} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+
+
+buzzproperties codeStatus --PropertyFileName status --key P2pitem --value 1
+
+// Entity Creation 
+
+buzzorclass add --className ~.app.shared.mdmdomain.P2pitem --implements java.io.Serializable,com.athena.framework.shared.entity.web.entityInterface.CommonEntityInterface --implementsGenericType java.util.Comparator#mdm.app.shared.mdmdomain.P2pitem --annotation javax.persistence.Table,javax.persistence.Entity,org.eclipse.persistence.annotations.Cache,com.athena.annotation.SourceCodeAuthorClass --key type.org.eclipse.persistence.annotations.Cache,size.org.eclipse.persistence.annotations.Cache,expiry.org.eclipse.persistence.annotations.Cache,alwaysRefresh.org.eclipse.persistence.annotations.Cache,disableHits.org.eclipse.persistence.annotations.Cache,name.javax.persistence.Table,createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value org.eclipse.persistence.annotations.CacheType$CACHE#org.eclipse.persistence.annotations.CacheType,64000.org.eclipse.persistence.annotations.Cache,0.org.eclipse.persistence.annotations.Cache,FALSE.org.eclipse.persistence.annotations.Cache,FALSE.org.eclipse.persistence.annotations.Cache,ast_P2pitem_M.javax.persistence.Table,rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass,rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass,6.com.athena.annotation.SourceCodeAuthorClass,P2pitem.com.athena.annotation.SourceCodeAuthorClass,com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity --value_type javaType,Integer,Integer,Boolean,Boolean,String,String,String,String,String,javaType
+
+Persistent add entity --entityName mdm.app.shared.mdmdomain.P2pitem
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name itemcode --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemcode.javax.persistence.Column,itemcode.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name itemcode --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name itemcode --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name itemdescription --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemdescription.javax.persistence.Column,itemdescription.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name itemdescription --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name itemdescription --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name partnumber --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value partnumber.javax.persistence.Column,partnumber.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name partnumber --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name partnumber --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name partdescription --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value partdescription.javax.persistence.Column,partdescription.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name partdescription --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name partdescription --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name natureofitem --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value natureofitem.javax.persistence.Column,natureofitem.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name natureofitem --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name natureofitem --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name networkelement --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value networkelement.javax.persistence.Column,networkelement.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name networkelement --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name networkelement --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name model --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value model.javax.persistence.Column,model.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name model --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name model --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name funcclassification --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value funcclassification.javax.persistence.Column,funcclassification.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name funcclassification --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name funcclassification --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name acs --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value acs.javax.persistence.Column,acs.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name acs --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name acs --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name inventoryitem --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value inventoryitem.javax.persistence.Column,inventoryitem.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name inventoryitem --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name trackablealm --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value trackablealm.javax.persistence.Column,trackablealm.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name trackablealm --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name taggable --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value taggable.javax.persistence.Column,taggable.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name taggable --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name repairable --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value repairable.javax.persistence.Column,repairable.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name repairable --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name serialised --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value serialised.javax.persistence.Column,serialised.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name serialised --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name leadtime --dataType java.lang.Double --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value leadtime.javax.persistence.Column,leadtime.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name leadtime --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name leadtime --valueType Long --annotation javax.validation.constraints.Min --key value.javax.validation.constraints.Min --value "-9223372000000000000.javax.validation.constraints.Min"
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name leadtime --valueType Long --annotation javax.validation.constraints.Max --key value.javax.validation.constraints.Max --value "9223372000000000000.javax.validation.constraints.Max"
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name nmsunique --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value nmsunique.javax.persistence.Column,nmsunique.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name nmsunique --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name nmsunique --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name movable --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value movable.javax.persistence.Column,movable.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name movable --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name movable --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name moq --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value moq.javax.persistence.Column,moq.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name moq --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name moq --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name purchasable --dataType java.lang.Boolean --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value purchasable.javax.persistence.Column,purchasable.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name purchasable --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name majorasset --dataType java.lang.Double --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value majorasset.javax.persistence.Column,majorasset.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name majorasset --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name majorasset --valueType Long --annotation javax.validation.constraints.Min --key value.javax.validation.constraints.Min --value "-9223372000000000000.javax.validation.constraints.Min"
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name majorasset --valueType Long --annotation javax.validation.constraints.Max --key value.javax.validation.constraints.Max --value "9223372000000000000.javax.validation.constraints.Max"
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name minorasset --dataType java.lang.Double --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value minorasset.javax.persistence.Column,minorasset.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name minorasset --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name minorasset --valueType Long --annotation javax.validation.constraints.Min --key value.javax.validation.constraints.Min --value "-9223372000000000000.javax.validation.constraints.Min"
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name minorasset --valueType Long --annotation javax.validation.constraints.Max --key value.javax.validation.constraints.Max --value "9223372000000000000.javax.validation.constraints.Max"
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name customdutycode --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value customdutycode.javax.persistence.Column,customdutycode.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name customdutycode --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name customdutycode --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name glcode --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value glcode.javax.persistence.Column,glcode.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name glcode --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name glcode --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name technical --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value technical.javax.persistence.Column,technical.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name technical --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name technical --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name modelfamily --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value modelfamily.javax.persistence.Column,modelfamily.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name modelfamily --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.mdmdomain.P2pitem --field_name modelfamily --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name primaryKey --dataType java.lang.String --Modifier private --annotation javax.persistence.Transient
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name itemid --dataType java.lang.String --Modifier private --valueType String,String,String --annotation javax.persistence.Id,javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty,javax.persistence.GeneratedValue --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty,generator.javax.persistence.GeneratedValue --value itemid.javax.persistence.Column,itemid.com.fasterxml.jackson.annotation.JsonProperty,UUIDGenerator.javax.persistence.GeneratedValue
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name manufacturerid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value manufacturerid.javax.persistence.Column,manufacturerid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name itemmainid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemmainid.javax.persistence.Column,itemmainid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name itemsubtypeid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemsubtypeid.javax.persistence.Column,itemsubtypeid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name uomid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value uomid.javax.persistence.Column,uomid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name itemcategoryid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemcategoryid.javax.persistence.Column,itemcategoryid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name itemtypeid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value itemtypeid.javax.persistence.Column,itemtypeid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name sbpid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value sbpid.javax.persistence.Column,sbpid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name technologyid --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value technologyid.javax.persistence.Column,technologyid.com.fasterxml.jackson.annotation.JsonProperty
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name entityValidator --dataType com.athena.framework.server.helper.EntityValidatorHelper<Object> --Modifier private --annotation javax.persistence.Transient,com.fasterxml.jackson.annotation.JsonIgnore
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name versionId --dataType Integer --Modifier private --annotation javax.persistence.Version,javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value versionId.javax.persistence.Column,versionId.com.fasterxml.jackson.annotation.JsonProperty --valueType String,String
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name entityAudit --dataType mdm.app.shared.EntityAudit --Modifier private --annotation javax.persistence.Embedded,com.fasterxml.jackson.annotation.JsonIgnore --initializer "new EntityAudit()"
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name systemInfo --dataType mdm.app.shared.SystemInfo --Modifier private --annotation javax.persistence.Embedded --initializer "new SystemInfo()"
+
+buzzorfield create --type ~.app.shared.mdmdomain.P2pitem --field_name primaryDisplay --dataType String --Modifier private --annotation javax.persistence.Transient
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName itemcode --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName itemdescription --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName partnumber --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName partdescription --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName natureofitem --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName networkelement --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName model --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName funcclassification --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName acs --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName inventoryitem --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName trackablealm --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName taggable --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName repairable --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName serialised --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName leadtime --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName nmsunique --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName movable --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName moq --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName purchasable --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName majorasset --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName minorasset --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName customdutycode --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName glcode --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName technical --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName modelfamily --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName primaryKey --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName itemid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName manufacturerid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName itemmainid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName itemsubtypeid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName uomid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName itemcategoryid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName itemtypeid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName sbpid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName technologyid --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName versionId --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName primaryDisplay --getterMethod false --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.mdmdomain.P2pitem --variableName systemInfo --getterMethod true --setterMethod true
+
+methodoperation type hardDelete --entityName ~.app.shared.mdmdomain.P2pitem
+
+methodoperation type setValidator --class ~.app.shared.mdmdomain.P2pitem
+
+methodoperation type setLoggedUserInfo --class ~.app.shared.mdmdomain.P2pitem --updateFieldName updatedBy --createFieldName createdBy --activeFieldName activeStatus --isAggregate false
+
+methodoperation type comparatorDefaultBody --class ~.app.shared.mdmdomain.P2pitem
+
+methodoperation type getPrimayDisplay --class ~.app.shared.mdmdomain.P2pitem
+
+methodoperation type toString --class ~.app.shared.mdmdomain.P2pitem
+
+methodoperation type hashCode --class ~.app.shared.mdmdomain.P2pitem --primaryClass true
+
+methodoperation type equals --class ~.app.shared.mdmdomain.P2pitem --primaryClass true
+
+buzzormethod add --toClass ~.app.shared.mdmdomain.P2pitem --method_name isEntityValidated --modifier public --return_type boolean --method_body "return this.systemInfo.isEntityValidated();" --annotation com.fasterxml.jackson.annotation.JsonIgnore --key "" --value ""
+
+class --abstract true --class ~.app.server.service.P2pitemService
+
+buzzorclass add --className ~.app.server.service.P2pitemServiceImpl  --extends mdm.app.server.service.P2pitemService --value_type string --annotation org.springframework.web.bind.annotation.RestController
+
+Class createAnnotation --toClass ~.app.server.service.P2pitemServiceImpl --annotation org.springframework.context.annotation.Scope --key value.org.springframework.context.annotation.Scope,proxyMode.org.springframework.context.annotation.Scope --value request.org.springframework.context.annotation.Scope#cfg#org.springframework.context.annotation.ScopedProxyMode$TARGET_CLASS#org.springframework.context.annotation.Scope --value_type string,javatype
+
+Class createAnnotation --toClass ~.app.server.service.P2pitemService --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#6.com.athena.annotation.SourceCodeAuthorClass#cfg#Service for P2pitem Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+Class createAnnotation --toClass ~.app.server.service.P2pitemServiceImpl --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#6.com.athena.annotation.SourceCodeAuthorClass#cfg#Service for P2pitem Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+interfacebuzzor add --InterfaceName ~.app.server.repository.P2pitemRepository --genericType T --extends com.athena.server.repository.SearchInterface
+
+buzzorclass add --className ~.app.server.repository.P2pitemRepositoryImpl --implements --extends com.athena.server.repository.SearchInterfaceImpl --value_type string --implementsGenericType mdm.app.server.repository.P2pitemRepository#mdm.app.shared.mdmdomain.P2pitem --annotation org.springframework.stereotype.Repository
+
+Class createAnnotation --toClass ~.app.server.repository.P2pitemRepositoryImpl --annotation org.springframework.context.annotation.Scope --key value.org.springframework.context.annotation.Scope,proxyMode.org.springframework.context.annotation.Scope --value request.org.springframework.context.annotation.Scope#cfg#org.springframework.context.annotation.ScopedProxyMode$TARGET_CLASS#org.springframework.context.annotation.Scope --value_type string,javatype
+
+Class createAnnotation --toClass ~.app.server.repository.P2pitemRepository --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#6.com.athena.annotation.SourceCodeAuthorClass#cfg#Repository for P2pitem Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+Class createAnnotation --toClass ~.app.server.repository.P2pitemRepositoryImpl --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#rakesh.padamshali@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#6.com.athena.annotation.SourceCodeAuthorClass#cfg#Repository for P2pitem Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+buzzorfield create --type ~.app.server.repository.P2pitemRepositoryImpl --field_name emfResource --dataType com.athena.config.server.helper.ResourceFactoryManagerHelper --Modifier private --annotation org.springframework.beans.factory.annotation.Autowired
+
+methodoperation type ENTITY --entityName ~.app.shared.mdmdomain.P2pitem --readOnly false --controllerClass ~.app.server.service.P2pitemService  --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --methodType findAll --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.P2pitemBusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+methodoperation type ENTITY --entityName ~.app.shared.mdmdomain.P2pitem --readOnly false --controllerClass ~.app.server.service.P2pitemService  --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --methodType show --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.P2pitemBusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+methodoperation type ENTITY --entityName ~.app.shared.mdmdomain.P2pitem --readOnly false --controllerClass ~.app.server.service.P2pitemService  --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --methodType save --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.P2pitemBusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+methodoperation type ENTITY --entityName ~.app.shared.mdmdomain.P2pitem --readOnly false --controllerClass ~.app.server.service.P2pitemService  --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --methodType delete --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.P2pitemBusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+
+
+methodoperation type ENTITY --entityName ~.app.shared.mdmdomain.P2pitem --readOnly false --controllerClass ~.app.server.service.P2pitemService  --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --methodType update --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.P2pitemBusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.P2pitem --queryName P2pitem.findByManufacturerid --queryValue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.manufacturerid=:manufacturerid"
+
+methodoperation type namedQueryMethod --queryName P2pitem.findByManufacturerid --qvalue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.manufacturerid=:manufacturerid" --qarameteres manufacturerid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.P2pitem --controllerClass ~.app.server.service.P2pitemService --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.P2pitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.P2pitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Manufacturer
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.P2pitem --queryName P2pitem.findByItemmainid --queryValue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.itemmainid=:itemmainid"
+
+methodoperation type namedQueryMethod --queryName P2pitem.findByItemmainid --qvalue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.itemmainid=:itemmainid" --qarameteres itemmainid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.P2pitem --controllerClass ~.app.server.service.P2pitemService --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.P2pitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.P2pitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Itemmaintype
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.P2pitem --queryName P2pitem.findByItemsubtypeid --queryValue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.itemsubtypeid=:itemsubtypeid"
+
+methodoperation type namedQueryMethod --queryName P2pitem.findByItemsubtypeid --qvalue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.itemsubtypeid=:itemsubtypeid" --qarameteres itemsubtypeid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.P2pitem --controllerClass ~.app.server.service.P2pitemService --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.P2pitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.P2pitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Itemsubtype
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.P2pitem --queryName P2pitem.findByUomid --queryValue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.uomid=:uomid"
+
+methodoperation type namedQueryMethod --queryName P2pitem.findByUomid --qvalue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.uomid=:uomid" --qarameteres uomid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.P2pitem --controllerClass ~.app.server.service.P2pitemService --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.P2pitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.P2pitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Uom
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.P2pitem --queryName P2pitem.findByItemcategoryid --queryValue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.itemcategoryid=:itemcategoryid"
+
+methodoperation type namedQueryMethod --queryName P2pitem.findByItemcategoryid --qvalue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.itemcategoryid=:itemcategoryid" --qarameteres itemcategoryid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.P2pitem --controllerClass ~.app.server.service.P2pitemService --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.P2pitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.P2pitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Itemcategorytype
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.P2pitem --queryName P2pitem.findByItemtypeid --queryValue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.itemtypeid=:itemtypeid"
+
+methodoperation type namedQueryMethod --queryName P2pitem.findByItemtypeid --qvalue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.itemtypeid=:itemtypeid" --qarameteres itemtypeid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.P2pitem --controllerClass ~.app.server.service.P2pitemService --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.P2pitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.P2pitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Itemtype
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.P2pitem --queryName P2pitem.findBySbpid --queryValue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.sbpid=:sbpid"
+
+methodoperation type namedQueryMethod --queryName P2pitem.findBySbpid --qvalue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.sbpid=:sbpid" --qarameteres sbpid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.P2pitem --controllerClass ~.app.server.service.P2pitemService --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.P2pitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.P2pitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Sbp
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.P2pitem --queryName P2pitem.findByTechnologyid --queryValue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.technologyid=:technologyid"
+
+methodoperation type namedQueryMethod --queryName P2pitem.findByTechnologyid --qvalue "select e from P2pitem e where e.systemInfo.activeStatus=1 and e.technologyid=:technologyid" --qarameteres technologyid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.P2pitem --controllerClass ~.app.server.service.P2pitemService --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.P2pitembzService --returnType java.util.List<mdm.app.shared.mdmdomain.P2pitem> --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.Technology
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.mdmdomain.P2pitem --queryName P2pitem.findById --queryValue "select e from P2pitem e where e.systemInfo.activeStatus=1 and  e.itemid =:itemid"
+
+methodoperation type namedQueryMethod --queryName P2pitem.findById --qvalue "select e from P2pitem e where e.systemInfo.activeStatus=1 and  e.itemid =:itemid" --qarameteres itemid --typeOfParameteres java.lang.String --entityName ~.app.shared.mdmdomain.P2pitem --controllerClass ~.app.server.service.P2pitemService --controllerImplClass ~.app.server.service.P2pitemServiceImpl --repositoryClass ~.app.server.repository.P2pitemRepository --repositoryImplClass ~.app.server.repository.P2pitemRepositoryImpl --businessServiceClass ~.app.server.businessservice.P2pitembzService --returnType mdm.app.shared.mdmdomain.P2pitem --isFindByID true --isUserAccess false --isMultitenant false --refEntity mdm.app.shared.mdmdomain.P2pitem
+
+buzzproperties codeStatus --PropertyFileName status --key P2pitem --value 0
+
+
+
+buzzorclass add --className P2pitemTestCase  --srcPath test
+Class createAnnotation --toClass P2pitemTestCase --annotation org.junit.runner.RunWith --key value.org.junit.runner.RunWith --value org.springframework.test.context.junit4.SpringJUnit4ClassRunner --value_type javaClass
+Class createAnnotation --toClass P2pitemTestCase --annotation org.springframework.test.context.web.WebAppConfiguration --key null.org.springframework.test.context.web.WebAppConfiguration --value null --value_type null
+Class createAnnotation --toClass P2pitemTestCase --annotation org.springframework.test.context.ContextConfiguration --key classes.org.springframework.test.context.ContextConfiguration --value mdm.app.config.WebConfigExtended --value_type javaClass
+Class createAnnotation --toClass P2pitemTestCase --annotation org.junit.FixMethodOrder --key value.org.junit.FixMethodOrder.org.junit.FixMethodOrder --value org.junit.runners.MethodSorters$NAME_ASCENDING#org.junit.FixMethodOrder --value_type javatype
+ArrayAnnotation create --type P2pitemTestCase --key value --varaiable_name "" --value org.springframework.test.context.support.DependencyInjectionTestExecutionListener,org.springframework.test.context.support.DirtiesContextTestExecutionListener,org.springframework.test.context.transaction.TransactionalTestExecutionListener --valueType javatype,javatype,javatype --annotation org.springframework.test.context.TestExecutionListeners --addTo class
+
+buzzorfield create --type P2pitemTestCase --field_name p2pitemRepository --dataType mdm.app.server.repository.P2pitemRepository<mdm.app.shared.mdmdomain.P2pitem> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name p2pitemRepository --valueType mdm.app.server.repository.P2pitemRepository --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type P2pitemTestCase --field_name runtimeLogInfoHelper --dataType com.athena.framework.server.helper.RuntimeLogInfoHelper --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name runtimeLogInfoHelper --valueType com.athena.framework.server.helper.RuntimeLogInfoHelper --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type P2pitemTestCase --field_name entityValidator --dataType com.athena.framework.server.helper.EntityValidatorHelper<Object> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name entityValidator --valueType com.athena.framework.server.helper.RuntimeLogInfoHelper<Object> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type P2pitemTestCase --field_name valueGenerator --dataType com.athena.framework.server.test.RandomValueGenerator --Modifier private --initializer "new com.athena.framework.server.test.RandomValueGenerator()"
+
+buzzorfield create --type P2pitemTestCase --field_name map --dataType java.util.HashMap<String,Object> --Modifier private --initializer "new HashMap<String,Object>()" --isStatic true
+
+buzzorfield create --type P2pitemTestCase --field_name methodCallStack --dataType com.spartan.healthmeter.entity.scheduler.ArtMethodCallStack --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name methodCallStack --valueType com.spartan.healthmeter.entity.scheduler.ArtMethodCallStack --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type P2pitemTestCase --field_name session --dataType org.springframework.mock.web.MockHttpSession --Modifier protected --valueType javaType
+
+buzzorfield create --type P2pitemTestCase --field_name request --dataType org.springframework.mock.web.MockHttpServletRequest --Modifier protected --valueType javaType
+
+buzzorfield create --type P2pitemTestCase --field_name response --dataType org.springframework.mock.web.MockHttpServletResponse --Modifier protected --valueType javaType
+
+buzzormethod add --toClass P2pitemTestCase --method_name startSession --modifier protected --return_type void --method_body "session = new MockHttpSession();"
+
+buzzormethod add --toClass P2pitemTestCase --method_name endSession --modifier protected --return_type void --method_body "session.clearAttributes(); session.invalidate(); session = null;"
+
+buzzormethod add --toClass P2pitemTestCase --method_name startRequest --modifier protected --return_type void --method_body "request = new MockHttpServletRequest(); request.setSession(session); org.springframework.web.context.request.RequestContextHolder.setRequestAttributes(new org.springframework.web.context.request.ServletRequestAttributes(request));"
+
+buzzormethod add --toClass P2pitemTestCase --method_name endRequest --modifier protected --return_type void --method_body "((org.springframework.web.context.request.ServletRequestAttributes) org.springframework.web.context.request.RequestContextHolder.getRequestAttributes()).requestCompleted(); org.springframework.web.context.request.RequestContextHolder.resetRequestAttributes(); request = null;"
+
+buzzormethod add --toClass P2pitemTestCase --method_name before --modifier public --return_type void --method_body "startSession(); startRequest(); setBeans();" --annotation org.junit.Before --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name after --modifier public --return_type void --method_body "endSession(); endRequest();" --annotation org.junit.After --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name setBeans --modifier private --return_type void --method_body "runtimeLogInfoHelper.createRuntimeLogUserInfo(1, "AAAAA", request.getRemoteHost());   org.junit.Assert.assertNotNull(runtimeLogInfoHelper);methodCallStack.setRequestId(java.util.UUID.randomUUID().toString().toUpperCase()); "
+ Import add --toClass P2pitemTestCase --importType mdm.app.shared.mdmdomain.P2pitem
+ Import add --toClass P2pitemTestCase --importType com.athena.framework.shared.entity.web.entityInterface.CommonEntityInterface.RECORD_TYPE
+
+buzzormethod add --toClass P2pitemTestCase --method_name test1Save --modifier public --return_type void --method_body " try { Itemcategorytype itemcategorytype=new Itemcategorytype();itemcategorytype.setItemcategoryname("9yme2UFZoIZQA2HbiwVbKjgbEZNuHoNEHuVVdFFl13wermUz7H"); Itemcategorytype ItemcategorytypeTest =itemcategorytypeRepository.save(itemcategorytype);map.put("ItemcategorytypePrimaryKey", itemcategorytype._getPrimarykey());Itemmaintype itemmaintype=new Itemmaintype();itemmaintype.setItemmaintypename("7ot1KUUHPTBIBTCAklblVIWzn52bsmUwDbve6wEc1ygG4JYBkP"); Itemmaintype ItemmaintypeTest =itemmaintypeRepository.save(itemmaintype);map.put("ItemmaintypePrimaryKey", itemmaintype._getPrimarykey());Itemsubtype itemsubtype=new Itemsubtype();itemsubtype.setItemsubtypename("W2mZBkhBPlOCU401nYTLeT7Bys8NWX87YDc0qxID7y4PhDRR1h"); Itemsubtype ItemsubtypeTest =itemsubtypeRepository.save(itemsubtype);map.put("ItemsubtypePrimaryKey", itemsubtype._getPrimarykey());Itemtype itemtype=new Itemtype();itemtype.setItemtypename("1lH37JzYeSIhQ6qOba1D126ZoUa6QHk1Q2ihi0J0rFj2S7WxbF"); Itemtype ItemtypeTest =itemtypeRepository.save(itemtype);map.put("ItemtypePrimaryKey", itemtype._getPrimarykey());Manufacturer manufacturer=new Manufacturer();manufacturer.setManufacturername("GsSXN82BGMdmQ8H3DyHOD0FUBuR2ctEBXOwygxvu5yqzo1am8z"); Manufacturer ManufacturerTest =manufacturerRepository.save(manufacturer);map.put("ManufacturerPrimaryKey", manufacturer._getPrimarykey());Sbp sbp=new Sbp();sbp.setSbpname("VV5O5tmkmt47QvaUMIweG9QmTG2r8SQ0YLwQOyuDLFk3DLMSJS"); Sbp SbpTest =sbpRepository.save(sbp);map.put("SbpPrimaryKey", sbp._getPrimarykey());Technology technology=new Technology();technology.setTechnologyname("E0dwSpfqecvrtMK5TJIgIRJeIC0icmOAdU4dj2yRinwVqZGWLq"); Technology TechnologyTest =technologyRepository.save(technology);map.put("TechnologyPrimaryKey", technology._getPrimarykey());Uom uom=new Uom();uom.setUomname("eax4qUotTsnmgJxGpBUT5RRTzi1mfgftKAF4YFXWoY1oQPMwVq"); Uom UomTest =uomRepository.save(uom);map.put("UomPrimaryKey", uom._getPrimarykey());P2pitem p2pitem=new P2pitem();p2pitem.setAcs("9cQUjc6PAgvu7RDPjyfs0YqhXsOjaRZN9H0Qna6XVYndeoRHKs"); p2pitem.setCustomdutycode("NtzXywcQbAhx4d1FYtkpPnP1MYs56xTfCLDHFgVd9zy7urSmO2"); p2pitem.setFuncclassification("G1jonoCXBHcyKawCqZtPLAkuR8AbHAV9UHA89Hb4DIW1mgSioS"); p2pitem.setGlcode("UkrL1Lgr5UhlQdmbyyIOepeV5ZdwgOyBAbKGsJdx7bxdUKfFEb"); p2pitem.setInventoryitem(true); p2pitem.setItemcategoryid((java.lang.String)ItemcategorytypeTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setItemcode("j9Cml3qrrto8NfWednH08bwZT8NKPbYcPWHwrRe5gX52i9Sfgp"); p2pitem.setItemdescription("FHMuk8W7dK5PMZ1TEcpRIviLWiRPq1tsyH9Nw0nZr5PHeQ3hpr"); p2pitem.setItemmainid((java.lang.String)ItemmaintypeTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setItemsubtypeid((java.lang.String)ItemsubtypeTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setItemtypeid((java.lang.String)ItemtypeTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setLeadtime(12.34); p2pitem.setMajorasset(12.34); p2pitem.setManufacturerid((java.lang.String)ManufacturerTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setMinorasset(12.34); p2pitem.setModel("OycMSzFAgCNitS63GSNrcEEj5Obuqq87k3FlGbt55T3Lw4xSe9"); p2pitem.setModelfamily("FGh1i76eoj2DKz9OUFIm9s40JRf06IU6vkUHb10M40IVQf7048"); p2pitem.setMoq("XX3AmoNwX3J5FSCzmZJs6goPAvWIOvBkzshcclKgyzPrIlZtT3"); p2pitem.setMovable("cvapzUiAuv6C0RcLpGhdYUeUV4to6MCLId0myHN3tgpsXnhC5l"); p2pitem.setNatureofitem("nk4I9CXVHgN4PmeI9fwtVl3KR51fo7bkg09cJrg7VIdu4UdnkJ"); p2pitem.setNetworkelement("POVBvrc6lhRpCzFBmEeM46Z18k2B1Ykf84sgHlMkUbqX4ODYP6"); p2pitem.setNmsunique("qleuXrgOtBvdN7PGvl6GubrpdjqAIHcawd8GYwSyMhK8lwbu9Z"); p2pitem.setPartdescription("u2ySp9m5SdjWrltwtM95sqgBYZDR24RBbCFq1YJ59IBQKBgOR9"); p2pitem.setPartnumber("E7hjznsV8O3clQ7Y8V00upBQCOoUgXQKWBI7p4aYm8jiznWDl6"); p2pitem.setPurchasable(true); p2pitem.setRepairable(true); p2pitem.setSbpid((java.lang.String)SbpTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setSerialised(true); p2pitem.setTaggable(true); p2pitem.setTechnical("pLIvIGJgvcJo63Y2fIcXf2ImpshzK8VNi4awMbJ9aafkSQR0vM"); p2pitem.setTechnologyid((java.lang.String)TechnologyTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setTrackablealm(true); p2pitem.setUomid((java.lang.String)UomTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);p2pitem.setEntityValidator(entityValidator);p2pitem.isValid();p2pitemRepository.save(p2pitem); map.put("P2pitemPrimaryKey", p2pitem._getPrimarykey());} catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {org.junit.Assert.fail(e.getMessage()); }  catch (java.lang.Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+ Import add --toClass P2pitemTestCase --importType mdm.app.shared.mdmdomain.Itemcategorytype
+
+buzzorfield create --type P2pitemTestCase --field_name itemcategorytypeRepository --dataType mdm.app.server.repository.ItemcategorytypeRepository<mdm.app.shared.mdmdomain.Itemcategorytype> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name itemcategorytypeRepository --valueType mdm.app.server.repository.ItemcategorytypeRepository<mdm.app.shared.mdmdomain.Itemcategorytype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemTestCase --importType mdm.app.shared.mdmdomain.Itemmaintype
+
+buzzorfield create --type P2pitemTestCase --field_name itemmaintypeRepository --dataType mdm.app.server.repository.ItemmaintypeRepository<mdm.app.shared.mdmdomain.Itemmaintype> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name itemmaintypeRepository --valueType mdm.app.server.repository.ItemmaintypeRepository<mdm.app.shared.mdmdomain.Itemmaintype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemTestCase --importType mdm.app.shared.mdmdomain.Itemsubtype
+
+buzzorfield create --type P2pitemTestCase --field_name itemsubtypeRepository --dataType mdm.app.server.repository.ItemsubtypeRepository<mdm.app.shared.mdmdomain.Itemsubtype> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name itemsubtypeRepository --valueType mdm.app.server.repository.ItemsubtypeRepository<mdm.app.shared.mdmdomain.Itemsubtype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemTestCase --importType mdm.app.shared.mdmdomain.Itemtype
+
+buzzorfield create --type P2pitemTestCase --field_name itemtypeRepository --dataType mdm.app.server.repository.ItemtypeRepository<mdm.app.shared.mdmdomain.Itemtype> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name itemtypeRepository --valueType mdm.app.server.repository.ItemtypeRepository<mdm.app.shared.mdmdomain.Itemtype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemTestCase --importType mdm.app.shared.mdmdomain.Manufacturer
+
+buzzorfield create --type P2pitemTestCase --field_name manufacturerRepository --dataType mdm.app.server.repository.ManufacturerRepository<mdm.app.shared.mdmdomain.Manufacturer> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name manufacturerRepository --valueType mdm.app.server.repository.ManufacturerRepository<mdm.app.shared.mdmdomain.Manufacturer> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemTestCase --importType mdm.app.shared.mdmdomain.Sbp
+
+buzzorfield create --type P2pitemTestCase --field_name sbpRepository --dataType mdm.app.server.repository.SbpRepository<mdm.app.shared.mdmdomain.Sbp> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name sbpRepository --valueType mdm.app.server.repository.SbpRepository<mdm.app.shared.mdmdomain.Sbp> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemTestCase --importType mdm.app.shared.mdmdomain.Technology
+
+buzzorfield create --type P2pitemTestCase --field_name technologyRepository --dataType mdm.app.server.repository.TechnologyRepository<mdm.app.shared.mdmdomain.Technology> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name technologyRepository --valueType mdm.app.server.repository.TechnologyRepository<mdm.app.shared.mdmdomain.Technology> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemTestCase --importType mdm.app.shared.mdmdomain.Uom
+
+buzzorfield create --type P2pitemTestCase --field_name uomRepository --dataType mdm.app.server.repository.UomRepository<mdm.app.shared.mdmdomain.Uom> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemTestCase --field_name uomRepository --valueType mdm.app.server.repository.UomRepository<mdm.app.shared.mdmdomain.Uom> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name test2Update --modifier public --return_type void --method_body " try { org.junit.Assert.assertNotNull(map.get("P2pitemPrimaryKey"));P2pitem p2pitem=p2pitemRepository.findById((java.lang.String)map.get("P2pitemPrimaryKey"));p2pitem.setAcs("2QySgfsrVHqnGXuI9FmNzax3I21uZrE1oqEzhtCsKSIpojMWbq");p2pitem.setCustomdutycode("Qm1ESwXkZgB8RMAnL6n4sxgYPPejwxxruO3eo76V2jQahGfHLe");p2pitem.setFuncclassification("yDg26hltuiz4YY5hwbefYB0YK08Dz6Abb8v5pXrdcTDUpndm0N");p2pitem.setGlcode("c16OcYTlCoPIQdEOyKW4mKQP1WPaSYSmDxDYpHCvueiOMVkB39");p2pitem.setItemcode("vu6aBbk0yMaJWw8y6hDhPnHRtMbNM9v2zldXJCWnxXxVOplT2q");p2pitem.setItemdescription("uydkYWFGSVshaByabhhkrMvffi6O6Ggpzo6nRS6mCdCeCuunds");p2pitem.setLeadtime(12.34);p2pitem.setMajorasset(12.34);p2pitem.setMinorasset(12.34);p2pitem.setModel("jymJ96M2P3eqV0Bsd54q8MRYkih12u6LgRewR0piGJEEsN0teU");p2pitem.setModelfamily("6EA6PS8Hr7elCx2gjWL2tsTj6DHK4yHrWVYODtqx2K2kfgfIMr");p2pitem.setMoq("aORn0JWZRCvN8PWGMN9qKd9Gdks6XNeX9Sg7OwZCIB2qj1ERb3");p2pitem.setMovable("hlooheK7ovOoBG3ilmcTul9vWl2KH7h83si0erwPX94NvADSKh");p2pitem.setNatureofitem("ajSuQudhrmOjrbs1d7W36w7fT6Hzqkl9Z9lvYE5BemkDWCt92n");p2pitem.setNetworkelement("VXuMKcZnIDnrv9OS1O07XqjaRQ5KS9bHTcFypVqw0KyZ5ErpBn");p2pitem.setNmsunique("jvSO2AlxK16P5SCPxu9kmI6qrG3PPKWO71C9XwJ0NPJZuwRVPH");p2pitem.setPartdescription("w3rJOHnMNbSYBzSxj3ti2K78hJHPHY4u8CWzyJ8NE5tYY0dNJw");p2pitem.setPartnumber("m5OgPDj3CWAIRSPwZowi9GmE2LDTdgtDn7AKew8hYVQw2pgoph");p2pitem.setTechnical("m8iXbrwCr4s8g5avBbzMOYb9O5kmaP0YaB2WcJ3twPqa4vuyH6");p2pitem.setVersionId(1);p2pitem.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);p2pitemRepository.update(p2pitem);} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch (java.lang.Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name test3findByitemcategoryid --modifier public --return_type void --method_body " try {java.util.List<P2pitem> listofitemcategoryid=p2pitemRepository.findByItemcategoryid((java.lang.String)map.get("ItemcategorytypePrimaryKey"));if(listofitemcategoryid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name test3FindById --modifier public --return_type void --method_body " try {org.junit.Assert.assertNotNull(map.get("P2pitemPrimaryKey"));p2pitemRepository.findById((java.lang.String)map.get("P2pitemPrimaryKey"));} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name test3findByitemmainid --modifier public --return_type void --method_body " try {java.util.List<P2pitem> listofitemmainid=p2pitemRepository.findByItemmainid((java.lang.String)map.get("ItemmaintypePrimaryKey"));if(listofitemmainid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name test3findByitemsubtypeid --modifier public --return_type void --method_body " try {java.util.List<P2pitem> listofitemsubtypeid=p2pitemRepository.findByItemsubtypeid((java.lang.String)map.get("ItemsubtypePrimaryKey"));if(listofitemsubtypeid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name test3findByitemtypeid --modifier public --return_type void --method_body " try {java.util.List<P2pitem> listofitemtypeid=p2pitemRepository.findByItemtypeid((java.lang.String)map.get("ItemtypePrimaryKey"));if(listofitemtypeid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name test3findBymanufacturerid --modifier public --return_type void --method_body " try {java.util.List<P2pitem> listofmanufacturerid=p2pitemRepository.findByManufacturerid((java.lang.String)map.get("ManufacturerPrimaryKey"));if(listofmanufacturerid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name test3findBysbpid --modifier public --return_type void --method_body " try {java.util.List<P2pitem> listofsbpid=p2pitemRepository.findBySbpid((java.lang.String)map.get("SbpPrimaryKey"));if(listofsbpid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name test3findBytechnologyid --modifier public --return_type void --method_body " try {java.util.List<P2pitem> listoftechnologyid=p2pitemRepository.findByTechnologyid((java.lang.String)map.get("TechnologyPrimaryKey"));if(listoftechnologyid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name test3findByuomid --modifier public --return_type void --method_body " try {java.util.List<P2pitem> listofuomid=p2pitemRepository.findByUomid((java.lang.String)map.get("UomPrimaryKey"));if(listofuomid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemTestCase --method_name test4Delete --modifier public --return_type void --method_body " try {org.junit.Assert.assertNotNull(map.get("P2pitemPrimaryKey"));p2pitemRepository.delete((java.lang.String)map.get("P2pitemPrimaryKey"));/* Deleting refrenced data */uomRepository.delete((java.lang.String)map.get("UomPrimaryKey"));/* Deleting refrenced data */technologyRepository.delete((java.lang.String)map.get("TechnologyPrimaryKey"));/* Deleting refrenced data */sbpRepository.delete((java.lang.String)map.get("SbpPrimaryKey"));/* Deleting refrenced data */manufacturerRepository.delete((java.lang.String)map.get("ManufacturerPrimaryKey"));/* Deleting refrenced data */itemtypeRepository.delete((java.lang.String)map.get("ItemtypePrimaryKey"));/* Deleting refrenced data */itemsubtypeRepository.delete((java.lang.String)map.get("ItemsubtypePrimaryKey"));/* Deleting refrenced data */itemmaintypeRepository.delete((java.lang.String)map.get("ItemmaintypePrimaryKey"));/* Deleting refrenced data */itemcategorytypeRepository.delete((java.lang.String)map.get("ItemcategorytypePrimaryKey"));/* Deleting refrenced data */} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+
+
+buzzorclass add --className P2pitemcircleTestCase  --srcPath test
+Class createAnnotation --toClass P2pitemcircleTestCase --annotation org.junit.runner.RunWith --key value.org.junit.runner.RunWith --value org.springframework.test.context.junit4.SpringJUnit4ClassRunner --value_type javaClass
+Class createAnnotation --toClass P2pitemcircleTestCase --annotation org.springframework.test.context.web.WebAppConfiguration --key null.org.springframework.test.context.web.WebAppConfiguration --value null --value_type null
+Class createAnnotation --toClass P2pitemcircleTestCase --annotation org.springframework.test.context.ContextConfiguration --key classes.org.springframework.test.context.ContextConfiguration --value mdm.app.config.WebConfigExtended --value_type javaClass
+Class createAnnotation --toClass P2pitemcircleTestCase --annotation org.junit.FixMethodOrder --key value.org.junit.FixMethodOrder.org.junit.FixMethodOrder --value org.junit.runners.MethodSorters$NAME_ASCENDING#org.junit.FixMethodOrder --value_type javatype
+ArrayAnnotation create --type P2pitemcircleTestCase --key value --varaiable_name "" --value org.springframework.test.context.support.DependencyInjectionTestExecutionListener,org.springframework.test.context.support.DirtiesContextTestExecutionListener,org.springframework.test.context.transaction.TransactionalTestExecutionListener --valueType javatype,javatype,javatype --annotation org.springframework.test.context.TestExecutionListeners --addTo class
+
+buzzorfield create --type P2pitemcircleTestCase --field_name p2pitemcircleRepository --dataType mdm.app.server.repository.P2pitemcircleRepository<mdm.app.shared.mdmdomain.P2pitemcircle> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name p2pitemcircleRepository --valueType mdm.app.server.repository.P2pitemcircleRepository --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type P2pitemcircleTestCase --field_name runtimeLogInfoHelper --dataType com.athena.framework.server.helper.RuntimeLogInfoHelper --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name runtimeLogInfoHelper --valueType com.athena.framework.server.helper.RuntimeLogInfoHelper --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type P2pitemcircleTestCase --field_name entityValidator --dataType com.athena.framework.server.helper.EntityValidatorHelper<Object> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name entityValidator --valueType com.athena.framework.server.helper.RuntimeLogInfoHelper<Object> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type P2pitemcircleTestCase --field_name valueGenerator --dataType com.athena.framework.server.test.RandomValueGenerator --Modifier private --initializer "new com.athena.framework.server.test.RandomValueGenerator()"
+
+buzzorfield create --type P2pitemcircleTestCase --field_name map --dataType java.util.HashMap<String,Object> --Modifier private --initializer "new HashMap<String,Object>()" --isStatic true
+
+buzzorfield create --type P2pitemcircleTestCase --field_name methodCallStack --dataType com.spartan.healthmeter.entity.scheduler.ArtMethodCallStack --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name methodCallStack --valueType com.spartan.healthmeter.entity.scheduler.ArtMethodCallStack --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type P2pitemcircleTestCase --field_name session --dataType org.springframework.mock.web.MockHttpSession --Modifier protected --valueType javaType
+
+buzzorfield create --type P2pitemcircleTestCase --field_name request --dataType org.springframework.mock.web.MockHttpServletRequest --Modifier protected --valueType javaType
+
+buzzorfield create --type P2pitemcircleTestCase --field_name response --dataType org.springframework.mock.web.MockHttpServletResponse --Modifier protected --valueType javaType
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name startSession --modifier protected --return_type void --method_body "session = new MockHttpSession();"
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name endSession --modifier protected --return_type void --method_body "session.clearAttributes(); session.invalidate(); session = null;"
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name startRequest --modifier protected --return_type void --method_body "request = new MockHttpServletRequest(); request.setSession(session); org.springframework.web.context.request.RequestContextHolder.setRequestAttributes(new org.springframework.web.context.request.ServletRequestAttributes(request));"
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name endRequest --modifier protected --return_type void --method_body "((org.springframework.web.context.request.ServletRequestAttributes) org.springframework.web.context.request.RequestContextHolder.getRequestAttributes()).requestCompleted(); org.springframework.web.context.request.RequestContextHolder.resetRequestAttributes(); request = null;"
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name before --modifier public --return_type void --method_body "startSession(); startRequest(); setBeans();" --annotation org.junit.Before --key "" --value ""
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name after --modifier public --return_type void --method_body "endSession(); endRequest();" --annotation org.junit.After --key "" --value ""
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name setBeans --modifier private --return_type void --method_body "runtimeLogInfoHelper.createRuntimeLogUserInfo(1, "AAAAA", request.getRemoteHost());   org.junit.Assert.assertNotNull(runtimeLogInfoHelper);methodCallStack.setRequestId(java.util.UUID.randomUUID().toString().toUpperCase()); "
+ Import add --toClass P2pitemcircleTestCase --importType mdm.app.shared.mdmdomain.P2pitemcircle
+ Import add --toClass P2pitemcircleTestCase --importType com.athena.framework.shared.entity.web.entityInterface.CommonEntityInterface.RECORD_TYPE
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name test1Save --modifier public --return_type void --method_body " try { Circle circle=new Circle();circle.setCirclename("CZztHXvQCFHZhQc2pXmDLd5KGujJZWgRpbw6szWULn2m0MwZY0"); Circle CircleTest =circleRepository.save(circle);map.put("CirclePrimaryKey", circle._getPrimarykey());P2pitem p2pitem=new P2pitem();p2pitem.setAcs("VUmlJ7NwdFcqtxNF7Fe075NTJst3GiahxI6J08MEZrQTh1VXcA"); p2pitem.setCustomdutycode("nRAWizUWEypQqndj5OnID5qUbMwsOpsADLMr7Q6CtMlGX6NC3Q"); p2pitem.setFuncclassification("yX9ToFJocZ0pC3s98hF11CEh55Y6Cpys0fSXlj4c8AWJs5ky4F"); p2pitem.setGlcode("5mQjTCQVsBuHfEV3ZaUQ8tJzwTQlMhjbshY7yMQVSXFeePMYyl"); p2pitem.setInventoryitem(true); Itemcategorytype itemcategorytype=new Itemcategorytype();itemcategorytype.setItemcategoryname("MeveyfvWOv2EB4dUZdN6cp17fhNJIXGycTOzbdGdrXJqeEmb2d"); Itemcategorytype ItemcategorytypeTest =itemcategorytypeRepository.save(itemcategorytype);map.put("ItemcategorytypePrimaryKey", itemcategorytype._getPrimarykey());Itemmaintype itemmaintype=new Itemmaintype();itemmaintype.setItemmaintypename("pu68BI2UfzE76vKJbHLDpV25S67e2Y3SKSZuPLRoImtbzST9Ta"); Itemmaintype ItemmaintypeTest =itemmaintypeRepository.save(itemmaintype);map.put("ItemmaintypePrimaryKey", itemmaintype._getPrimarykey());Itemsubtype itemsubtype=new Itemsubtype();itemsubtype.setItemsubtypename("6xOsddlLAN7mNLHqQHzces0SdFaUTovArJ2cFJdw6vNQJhVlDF"); Itemsubtype ItemsubtypeTest =itemsubtypeRepository.save(itemsubtype);map.put("ItemsubtypePrimaryKey", itemsubtype._getPrimarykey());Itemtype itemtype=new Itemtype();itemtype.setItemtypename("jqkPZEqeZd4K3zRSfnfZXNGm5F1E8X5avVmeYv0aDrrrpZcvBX"); Itemtype ItemtypeTest =itemtypeRepository.save(itemtype);map.put("ItemtypePrimaryKey", itemtype._getPrimarykey());Manufacturer manufacturer=new Manufacturer();manufacturer.setManufacturername("L4SudgR8SrCZ6tTcB5vnIExDwgivpMW6zFtkHlWbT9kVhx92Jf"); Manufacturer ManufacturerTest =manufacturerRepository.save(manufacturer);map.put("ManufacturerPrimaryKey", manufacturer._getPrimarykey());Sbp sbp=new Sbp();sbp.setSbpname("eDozBBVkpFMJVNFlp5Q3ipJmresjojXHCeb7Dvcp5x0AlIHAFA"); Sbp SbpTest =sbpRepository.save(sbp);map.put("SbpPrimaryKey", sbp._getPrimarykey());Technology technology=new Technology();technology.setTechnologyname("rwyNBrGR6CtcRVZu3EpLRnk1AMdRv4qUYkY9w2eG2RQRqUtCEX"); Technology TechnologyTest =technologyRepository.save(technology);map.put("TechnologyPrimaryKey", technology._getPrimarykey());Uom uom=new Uom();uom.setUomname("96OIV4ccHHQioCEekDfZLUO9snJQBxaaEU3jvfQcqFm8W7uHfR"); Uom UomTest =uomRepository.save(uom);map.put("UomPrimaryKey", uom._getPrimarykey());p2pitem.setAcs("0KJvTLZ5dxAA3XqMuQ3zjwLXyw8ICQASL3HrPDbQ5rFoAVfplm"); p2pitem.setCustomdutycode("cCkuATcLhZ98KyJ8UW4Ivyqpxe61cn2MhXuK0zhRu9svDJx7Qz"); p2pitem.setFuncclassification("QBmbzmtyLNCYpxOQm3PlFxhRrSn5xac19ohqNijjrdkSIA7mWT"); p2pitem.setGlcode("mrHM1G5UwQlsme2tHiuJY1h1avjbreYVFWjEr3k3uCe7rZY3BJ"); p2pitem.setInventoryitem(true); p2pitem.setItemcategoryid((java.lang.String)ItemcategorytypeTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setItemcode("2MRlu8O19d8eRfQDwBK5wOy1nMxAN97WTQbdGtRhpeU99QVGeS"); p2pitem.setItemdescription("bJjzYvYPIVteUj2xChoE1HjsXqGEN0SKcXkOTc9IRKpzBUt4SR"); p2pitem.setItemmainid((java.lang.String)ItemmaintypeTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setItemsubtypeid((java.lang.String)ItemsubtypeTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setItemtypeid((java.lang.String)ItemtypeTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setLeadtime(12.34); p2pitem.setMajorasset(12.34); p2pitem.setManufacturerid((java.lang.String)ManufacturerTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setMinorasset(12.34); p2pitem.setModel("aPSZDNxeGhaLAJtKjron3V6IqotSXG01EzNYwVLa9kNPswjoln"); p2pitem.setModelfamily("ztE2GvCFKIRfZ3DfnXiihi69DCbeDO8eyS0yLJvkAxpuJaLLwe"); p2pitem.setMoq("k68ZUatxtWIMcoCFjYl6Wx1YDDMJtMF76KR6ShfiBX6LYqAzV3"); p2pitem.setMovable("Ar4TI7gZ50ayjjzunFyZX9bLMmqQiy8H6xKXsU2pZajOo7DZzf"); p2pitem.setNatureofitem("JmK305nTcy66U1JGnVNEApuANhcMguyDUM8cAdnxdey1Dkk7Wm"); p2pitem.setNetworkelement("DL5JeBUUgMGnK2AjX0MbD9h0rrj1MDJUg39qkzDCIEVxqiWVCx"); p2pitem.setNmsunique("y5FQmqNsqXssFknEFcpQO901Zl8HNySpgzX9tvOWKFwzoQ334K"); p2pitem.setPartdescription("1gkUztOkBqTezHcubs1tYuV7cPFfo2Ad4cffe6wTwHAWXaqCvj"); p2pitem.setPartnumber("RmvETYA5iupjL6tYKmf2NFDcyMwlCwxLQx3mM1xfKhWTfKbOrY"); p2pitem.setPurchasable(true); p2pitem.setRepairable(true); p2pitem.setSbpid((java.lang.String)SbpTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setSerialised(true); p2pitem.setTaggable(true); p2pitem.setTechnical("5HKt2EZVRmbGq8VXLch3gRgaQUVhqbXQmEVUnpk4nOTS7cBrYn"); p2pitem.setTechnologyid((java.lang.String)TechnologyTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitem.setTrackablealm(true); p2pitem.setUomid((java.lang.String)UomTest._getPrimarykey()); /* ******Adding refrenced table data */P2pitem P2pitemTest =p2pitemRepository.save(p2pitem);map.put("P2pitemPrimaryKey", p2pitem._getPrimarykey());P2pitemcircle p2pitemcircle=new P2pitemcircle();p2pitemcircle.setCircleid((java.lang.String)CircleTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitemcircle.setItemid((java.lang.String)P2pitemTest._getPrimarykey()); /* ******Adding refrenced table data */p2pitemcircle.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);p2pitemcircle.setEntityValidator(entityValidator);p2pitemcircle.isValid();p2pitemcircleRepository.save(p2pitemcircle); map.put("P2pitemcirclePrimaryKey", p2pitemcircle._getPrimarykey());} catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {org.junit.Assert.fail(e.getMessage()); }  catch (java.lang.Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+ Import add --toClass P2pitemcircleTestCase --importType mdm.app.shared.mdmdomain.Circle
+
+buzzorfield create --type P2pitemcircleTestCase --field_name circleRepository --dataType mdm.app.server.repository.CircleRepository<mdm.app.shared.mdmdomain.Circle> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name circleRepository --valueType mdm.app.server.repository.CircleRepository<mdm.app.shared.mdmdomain.Circle> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemcircleTestCase --importType mdm.app.shared.mdmdomain.P2pitem
+
+buzzorfield create --type P2pitemcircleTestCase --field_name p2pitemRepository --dataType mdm.app.server.repository.P2pitemRepository<mdm.app.shared.mdmdomain.P2pitem> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name p2pitemRepository --valueType mdm.app.server.repository.P2pitemRepository<mdm.app.shared.mdmdomain.P2pitem> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemcircleTestCase --importType mdm.app.shared.mdmdomain.Itemcategorytype
+
+buzzorfield create --type P2pitemcircleTestCase --field_name itemcategorytypeRepository --dataType mdm.app.server.repository.ItemcategorytypeRepository<mdm.app.shared.mdmdomain.Itemcategorytype> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name itemcategorytypeRepository --valueType mdm.app.server.repository.ItemcategorytypeRepository<mdm.app.shared.mdmdomain.Itemcategorytype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemcircleTestCase --importType mdm.app.shared.mdmdomain.Itemmaintype
+
+buzzorfield create --type P2pitemcircleTestCase --field_name itemmaintypeRepository --dataType mdm.app.server.repository.ItemmaintypeRepository<mdm.app.shared.mdmdomain.Itemmaintype> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name itemmaintypeRepository --valueType mdm.app.server.repository.ItemmaintypeRepository<mdm.app.shared.mdmdomain.Itemmaintype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemcircleTestCase --importType mdm.app.shared.mdmdomain.Itemsubtype
+
+buzzorfield create --type P2pitemcircleTestCase --field_name itemsubtypeRepository --dataType mdm.app.server.repository.ItemsubtypeRepository<mdm.app.shared.mdmdomain.Itemsubtype> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name itemsubtypeRepository --valueType mdm.app.server.repository.ItemsubtypeRepository<mdm.app.shared.mdmdomain.Itemsubtype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemcircleTestCase --importType mdm.app.shared.mdmdomain.Itemtype
+
+buzzorfield create --type P2pitemcircleTestCase --field_name itemtypeRepository --dataType mdm.app.server.repository.ItemtypeRepository<mdm.app.shared.mdmdomain.Itemtype> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name itemtypeRepository --valueType mdm.app.server.repository.ItemtypeRepository<mdm.app.shared.mdmdomain.Itemtype> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemcircleTestCase --importType mdm.app.shared.mdmdomain.Manufacturer
+
+buzzorfield create --type P2pitemcircleTestCase --field_name manufacturerRepository --dataType mdm.app.server.repository.ManufacturerRepository<mdm.app.shared.mdmdomain.Manufacturer> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name manufacturerRepository --valueType mdm.app.server.repository.ManufacturerRepository<mdm.app.shared.mdmdomain.Manufacturer> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemcircleTestCase --importType mdm.app.shared.mdmdomain.Sbp
+
+buzzorfield create --type P2pitemcircleTestCase --field_name sbpRepository --dataType mdm.app.server.repository.SbpRepository<mdm.app.shared.mdmdomain.Sbp> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name sbpRepository --valueType mdm.app.server.repository.SbpRepository<mdm.app.shared.mdmdomain.Sbp> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemcircleTestCase --importType mdm.app.shared.mdmdomain.Technology
+
+buzzorfield create --type P2pitemcircleTestCase --field_name technologyRepository --dataType mdm.app.server.repository.TechnologyRepository<mdm.app.shared.mdmdomain.Technology> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name technologyRepository --valueType mdm.app.server.repository.TechnologyRepository<mdm.app.shared.mdmdomain.Technology> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+ Import add --toClass P2pitemcircleTestCase --importType mdm.app.shared.mdmdomain.Uom
+
+buzzorfield create --type P2pitemcircleTestCase --field_name uomRepository --dataType mdm.app.server.repository.UomRepository<mdm.app.shared.mdmdomain.Uom> --Modifier private --valueType 
+
+fieldAnnotation create --type P2pitemcircleTestCase --field_name uomRepository --valueType mdm.app.server.repository.UomRepository<mdm.app.shared.mdmdomain.Uom> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name test2Update --modifier public --return_type void --method_body " try { org.junit.Assert.assertNotNull(map.get("P2pitemcirclePrimaryKey"));P2pitemcircle p2pitemcircle=p2pitemcircleRepository.findById((java.lang.String)map.get("P2pitemcirclePrimaryKey"));p2pitemcircle.setVersionId(1);p2pitemcircle.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);p2pitemcircleRepository.update(p2pitemcircle);} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch (java.lang.Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name test3findBycircleid --modifier public --return_type void --method_body " try {java.util.List<P2pitemcircle> listofcircleid=p2pitemcircleRepository.findByCircleid((java.lang.String)map.get("CirclePrimaryKey"));if(listofcircleid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name test3findByitemid --modifier public --return_type void --method_body " try {java.util.List<P2pitemcircle> listofitemid=p2pitemcircleRepository.findByItemid((java.lang.String)map.get("P2pitemPrimaryKey"));if(listofitemid.size()==0){org.junit.Assert.fail("Query did not return any records.");  }} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name test3FindById --modifier public --return_type void --method_body " try {org.junit.Assert.assertNotNull(map.get("P2pitemcirclePrimaryKey"));p2pitemcircleRepository.findById((java.lang.String)map.get("P2pitemcirclePrimaryKey"));} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass P2pitemcircleTestCase --method_name test4Delete --modifier public --return_type void --method_body " try {org.junit.Assert.assertNotNull(map.get("P2pitemcirclePrimaryKey"));p2pitemcircleRepository.delete((java.lang.String)map.get("P2pitemcirclePrimaryKey"));/* Deleting refrenced data */p2pitemRepository.delete((java.lang.String)map.get("P2pitemPrimaryKey"));/* Deleting refrenced data */uomRepository.delete((java.lang.String)map.get("UomPrimaryKey"));/* Deleting refrenced data */technologyRepository.delete((java.lang.String)map.get("TechnologyPrimaryKey"));/* Deleting refrenced data */sbpRepository.delete((java.lang.String)map.get("SbpPrimaryKey"));/* Deleting refrenced data */manufacturerRepository.delete((java.lang.String)map.get("ManufacturerPrimaryKey"));/* Deleting refrenced data */itemtypeRepository.delete((java.lang.String)map.get("ItemtypePrimaryKey"));/* Deleting refrenced data */itemsubtypeRepository.delete((java.lang.String)map.get("ItemsubtypePrimaryKey"));/* Deleting refrenced data */itemmaintypeRepository.delete((java.lang.String)map.get("ItemmaintypePrimaryKey"));/* Deleting refrenced data */itemcategorytypeRepository.delete((java.lang.String)map.get("ItemcategorytypePrimaryKey"));/* Deleting refrenced data */circleRepository.delete((java.lang.String)map.get("CirclePrimaryKey"));/* Deleting refrenced data */} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+
+
+
+
+quit

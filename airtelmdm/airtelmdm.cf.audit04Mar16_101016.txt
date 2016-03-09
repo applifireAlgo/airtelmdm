@@ -1,0 +1,8 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2016-03-04 10:10:11
+ development mode --enabled true 
+project --topLevelPackage mdm --projectName airtelmdm
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2016-03-04 10:10:15
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2016-03-04 10:10:15
+// script --file airtelmdm.cf
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2016-03-04 10:10:15

@@ -1,0 +1,3 @@
+Copy files start
+projectPath : /home/applifire/workspace/customers/FA4C6B15-1762-4517-BE72-13EAA19DE071/user/2EE68217-9341-4750-B93F-542AF37C14AD/HMM9LR6AOTUWZ7UGLRNLG/airtelmdm/src/main/webapp/ and project name projectName:Airtelmdm
+Copy files end

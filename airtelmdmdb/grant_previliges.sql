@@ -1,0 +1,2 @@
+
+GRANT ALL PRIVILEGES  ON airtelmdm.* TO 'airtelmdm'@'%' IDENTIFIED BY 'Glass4#21' WITH GRANT OPTION

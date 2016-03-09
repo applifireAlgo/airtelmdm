@@ -1,0 +1,43 @@
+Ext.define('Airtelmdm.airtelmdm.shared.mdm.model.masterdatamanagment.mdmdomain.UserrequestModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "userrequestid",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "userid",
+          "reference": "User",
+          "defaultValue": ""
+     }, {
+          "name": "circleid",
+          "reference": "Circle",
+          "defaultValue": ""
+     }, {
+          "name": "itemcode",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "itemdescription",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "statusid",
+          "reference": "Userrequeststatus",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
