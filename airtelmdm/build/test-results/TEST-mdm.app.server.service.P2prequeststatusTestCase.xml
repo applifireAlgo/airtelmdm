@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mdm.app.server.service.P2prequeststatusTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T08:21:34" hostname="9b24c35c068b" time="0.066">
+<testsuite name="mdm.app.server.service.P2prequeststatusTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T08:41:28" hostname="79527795e2c5" time="0.079">
   <properties/>
-  <testcase name="test1Save" classname="mdm.app.server.service.P2prequeststatusTestCase" time="0.039"/>
+  <testcase name="test1Save" classname="mdm.app.server.service.P2prequeststatusTestCase" time="0.053"/>
   <testcase name="test2Update" classname="mdm.app.server.service.P2prequeststatusTestCase" time="0.012"/>
-  <testcase name="test3FindById" classname="mdm.app.server.service.P2prequeststatusTestCase" time="0.005"/>
-  <testcase name="test4Delete" classname="mdm.app.server.service.P2prequeststatusTestCase" time="0.009"/>
+  <testcase name="test3FindById" classname="mdm.app.server.service.P2prequeststatusTestCase" time="0.006"/>
+  <testcase name="test4Delete" classname="mdm.app.server.service.P2prequeststatusTestCase" time="0.008"/>
   <system-out><![CDATA[Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 08:21:34.675--ClientSession(1529367057)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_P2prequeststatus_M (statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [DFFDF283-1908-493D-8D81-FC30BCFDA128, PV00y6pDzozHLMZbcsaqknJycXONgMj9Edr0xZwuP8oY0NWvgg, 1, AAAAA, 2016-03-09 08:21:34.648, null, 2016-03-09 08:21:34.648, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:34.682--ClientSession(837476809)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
-	bind => [1, DFFDF283-1908-493D-8D81-FC30BCFDA128]
+[EL Fine]: sql: 2016-03-09 08:41:28.168--ClientSession(66335496)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_P2prequeststatus_M (statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [5164505F-74AD-4194-A86B-D5650D35EF33, PV00y6pDzozHLMZbcsaqknJycXONgMj9Edr0xZwuP8oY0NWvgg, 1, AAAAA, 2016-03-09 08:41:28.134, null, 2016-03-09 08:41:28.134, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:28.175--ClientSession(1324623)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
+	bind => [1, 5164505F-74AD-4194-A86B-D5650D35EF33]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 08:21:34.687--ClientSession(1682477627)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE (statusid = ?)
-	bind => [DFFDF283-1908-493D-8D81-FC30BCFDA128]
-[EL Fine]: sql: 2016-03-09 08:21:34.688--ClientSession(1682477627)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_P2prequeststatus_M SET statusname = ?, updatedBy = ?, versionId = ? WHERE ((statusid = ?) AND (versionId = ?))
-	bind => [PqSYDBU63q5k9lAMviKfpbiB0KREvbQayWttgD0CR3dNsuOSCF, AAAAA, 2, DFFDF283-1908-493D-8D81-FC30BCFDA128, 1]
-[EL Fine]: sql: 2016-03-09 08:21:34.694--ClientSession(508430342)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
-	bind => [1, DFFDF283-1908-493D-8D81-FC30BCFDA128]
-[EL Fine]: sql: 2016-03-09 08:21:34.699--ClientSession(244938499)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE (statusid = ?)
-	bind => [DFFDF283-1908-493D-8D81-FC30BCFDA128]
-[EL Fine]: sql: 2016-03-09 08:21:34.7--ClientSession(244938499)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_P2prequeststatus_M WHERE ((statusid = ?) AND (versionId = ?))
-	bind => [DFFDF283-1908-493D-8D81-FC30BCFDA128, 2]
+[EL Fine]: sql: 2016-03-09 08:41:28.179--ClientSession(417714708)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE (statusid = ?)
+	bind => [5164505F-74AD-4194-A86B-D5650D35EF33]
+[EL Fine]: sql: 2016-03-09 08:41:28.181--ClientSession(417714708)--Connection(988981671)--Thread(Thread[Test worker,5,main])--UPDATE ast_P2prequeststatus_M SET statusname = ?, updatedBy = ?, versionId = ? WHERE ((statusid = ?) AND (versionId = ?))
+	bind => [PqSYDBU63q5k9lAMviKfpbiB0KREvbQayWttgD0CR3dNsuOSCF, AAAAA, 2, 5164505F-74AD-4194-A86B-D5650D35EF33, 1]
+[EL Fine]: sql: 2016-03-09 08:41:28.188--ClientSession(1283574388)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
+	bind => [1, 5164505F-74AD-4194-A86B-D5650D35EF33]
+[EL Fine]: sql: 2016-03-09 08:41:28.193--ClientSession(1257110651)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE (statusid = ?)
+	bind => [5164505F-74AD-4194-A86B-D5650D35EF33]
+[EL Fine]: sql: 2016-03-09 08:41:28.195--ClientSession(1257110651)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_P2prequeststatus_M WHERE ((statusid = ?) AND (versionId = ?))
+	bind => [5164505F-74AD-4194-A86B-D5650D35EF33, 2]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.065s</div>
+<div class="counter">0.079s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.039s</td>
+<td>0.053s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -89,12 +89,12 @@
 </tr>
 <tr>
 <td class="success">test3FindById</td>
-<td>0.005s</td>
+<td>0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test4Delete</td>
-<td>0.009s</td>
+<td>0.008s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -103,21 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 08:21:34.675--ClientSession(1529367057)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_P2prequeststatus_M (statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [DFFDF283-1908-493D-8D81-FC30BCFDA128, PV00y6pDzozHLMZbcsaqknJycXONgMj9Edr0xZwuP8oY0NWvgg, 1, AAAAA, 2016-03-09 08:21:34.648, null, 2016-03-09 08:21:34.648, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:34.682--ClientSession(837476809)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
-	bind =&gt; [1, DFFDF283-1908-493D-8D81-FC30BCFDA128]
+[EL Fine]: sql: 2016-03-09 08:41:28.168--ClientSession(66335496)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_P2prequeststatus_M (statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [5164505F-74AD-4194-A86B-D5650D35EF33, PV00y6pDzozHLMZbcsaqknJycXONgMj9Edr0xZwuP8oY0NWvgg, 1, AAAAA, 2016-03-09 08:41:28.134, null, 2016-03-09 08:41:28.134, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:28.175--ClientSession(1324623)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
+	bind =&gt; [1, 5164505F-74AD-4194-A86B-D5650D35EF33]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 08:21:34.687--ClientSession(1682477627)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE (statusid = ?)
-	bind =&gt; [DFFDF283-1908-493D-8D81-FC30BCFDA128]
-[EL Fine]: sql: 2016-03-09 08:21:34.688--ClientSession(1682477627)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_P2prequeststatus_M SET statusname = ?, updatedBy = ?, versionId = ? WHERE ((statusid = ?) AND (versionId = ?))
-	bind =&gt; [PqSYDBU63q5k9lAMviKfpbiB0KREvbQayWttgD0CR3dNsuOSCF, AAAAA, 2, DFFDF283-1908-493D-8D81-FC30BCFDA128, 1]
-[EL Fine]: sql: 2016-03-09 08:21:34.694--ClientSession(508430342)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
-	bind =&gt; [1, DFFDF283-1908-493D-8D81-FC30BCFDA128]
-[EL Fine]: sql: 2016-03-09 08:21:34.699--ClientSession(244938499)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE (statusid = ?)
-	bind =&gt; [DFFDF283-1908-493D-8D81-FC30BCFDA128]
-[EL Fine]: sql: 2016-03-09 08:21:34.7--ClientSession(244938499)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_P2prequeststatus_M WHERE ((statusid = ?) AND (versionId = ?))
-	bind =&gt; [DFFDF283-1908-493D-8D81-FC30BCFDA128, 2]
+[EL Fine]: sql: 2016-03-09 08:41:28.179--ClientSession(417714708)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE (statusid = ?)
+	bind =&gt; [5164505F-74AD-4194-A86B-D5650D35EF33]
+[EL Fine]: sql: 2016-03-09 08:41:28.181--ClientSession(417714708)--Connection(988981671)--Thread(Thread[Test worker,5,main])--UPDATE ast_P2prequeststatus_M SET statusname = ?, updatedBy = ?, versionId = ? WHERE ((statusid = ?) AND (versionId = ?))
+	bind =&gt; [PqSYDBU63q5k9lAMviKfpbiB0KREvbQayWttgD0CR3dNsuOSCF, AAAAA, 2, 5164505F-74AD-4194-A86B-D5650D35EF33, 1]
+[EL Fine]: sql: 2016-03-09 08:41:28.188--ClientSession(1283574388)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
+	bind =&gt; [1, 5164505F-74AD-4194-A86B-D5650D35EF33]
+[EL Fine]: sql: 2016-03-09 08:41:28.193--ClientSession(1257110651)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2prequeststatus_M WHERE (statusid = ?)
+	bind =&gt; [5164505F-74AD-4194-A86B-D5650D35EF33]
+[EL Fine]: sql: 2016-03-09 08:41:28.195--ClientSession(1257110651)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_P2prequeststatus_M WHERE ((statusid = ?) AND (versionId = ?))
+	bind =&gt; [5164505F-74AD-4194-A86B-D5650D35EF33, 2]
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:41:31 AM</p>
 </div>
 </div>
 </body>

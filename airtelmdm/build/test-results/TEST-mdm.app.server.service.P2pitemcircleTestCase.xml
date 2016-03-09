@@ -1,92 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mdm.app.server.service.P2pitemcircleTestCase" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-03-09T08:21:36" hostname="9b24c35c068b" time="0.211">
+<testsuite name="mdm.app.server.service.P2pitemcircleTestCase" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-03-09T08:41:30" hostname="79527795e2c5" time="0.228">
   <properties/>
-  <testcase name="test1Save" classname="mdm.app.server.service.P2pitemcircleTestCase" time="0.107"/>
+  <testcase name="test1Save" classname="mdm.app.server.service.P2pitemcircleTestCase" time="0.133"/>
   <testcase name="test2Update" classname="mdm.app.server.service.P2pitemcircleTestCase" time="0.011"/>
-  <testcase name="test3FindById" classname="mdm.app.server.service.P2pitemcircleTestCase" time="0.005"/>
-  <testcase name="test3findBycircleid" classname="mdm.app.server.service.P2pitemcircleTestCase" time="0.005"/>
-  <testcase name="test3findByitemid" classname="mdm.app.server.service.P2pitemcircleTestCase" time="0.005"/>
-  <testcase name="test4Delete" classname="mdm.app.server.service.P2pitemcircleTestCase" time="0.077"/>
-  <system-out><![CDATA[[EL Fine]: sql: 2016-03-09 08:21:36.924--ClientSession(30593737)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Circle_M (circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [BDF71CA1-404D-4E1D-A5C6-A476EB2BA4F3, CZztHXvQCFHZhQc2pXmDLd5KGujJZWgRpbw6szWULn2m0MwZY0, 1, AAAAA, 2016-03-09 08:21:36.921, null, 2016-03-09 08:21:36.921, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:36.93--ClientSession(1498252913)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemcategorytype_M (itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [29228597-3796-4679-A511-6DBFE09734C8, MeveyfvWOv2EB4dUZdN6cp17fhNJIXGycTOzbdGdrXJqeEmb2d, 1, AAAAA, 2016-03-09 08:21:36.927, null, 2016-03-09 08:21:36.927, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:36.936--ClientSession(1590713432)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemmaintype_M (itemmaintypeid, itemmaintypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [766E46A9-7DD6-486C-89EA-4FCBB2E46BDC, pu68BI2UfzE76vKJbHLDpV25S67e2Y3SKSZuPLRoImtbzST9Ta, 1, AAAAA, 2016-03-09 08:21:36.933, null, 2016-03-09 08:21:36.933, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:36.941--ClientSession(1853330545)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemsubtype_M (itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [98014AA3-2B96-4B3B-B6D4-616A3470864C, 6xOsddlLAN7mNLHqQHzces0SdFaUTovArJ2cFJdw6vNQJhVlDF, 1, AAAAA, 2016-03-09 08:21:36.938, null, 2016-03-09 08:21:36.938, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:36.947--ClientSession(607552042)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemtype_M (itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [23B9B4CC-95FB-4914-B521-E677810B8B04, jqkPZEqeZd4K3zRSfnfZXNGm5F1E8X5avVmeYv0aDrrrpZcvBX, 1, AAAAA, 2016-03-09 08:21:36.944, null, 2016-03-09 08:21:36.944, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:36.953--ClientSession(623213390)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Manufacturer_M (manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [B4D7C79B-7C31-47B5-80C5-012CF0E2C1C2, L4SudgR8SrCZ6tTcB5vnIExDwgivpMW6zFtkHlWbT9kVhx92Jf, 1, AAAAA, 2016-03-09 08:21:36.95, null, 2016-03-09 08:21:36.95, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:36.959--ClientSession(1684696637)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Sbp_M (sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [E2DAA01B-B290-4417-9A21-DC8B0D87105B, eDozBBVkpFMJVNFlp5Q3ipJmresjojXHCeb7Dvcp5x0AlIHAFA, 1, AAAAA, 2016-03-09 08:21:36.956, null, 2016-03-09 08:21:36.956, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:36.965--ClientSession(493233260)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Technology_M (technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [528FE99A-41DF-4B10-8055-403E3884674E, rwyNBrGR6CtcRVZu3EpLRnk1AMdRv4qUYkY9w2eG2RQRqUtCEX, 1, AAAAA, 2016-03-09 08:21:36.962, null, 2016-03-09 08:21:36.962, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:36.971--ClientSession(1926498987)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Uom_M (uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [239CC361-8FE1-4FCB-9FFF-C6018BFC4AAC, 96OIV4ccHHQioCEekDfZLUO9snJQBxaaEU3jvfQcqFm8W7uHfR, 1, AAAAA, 2016-03-09 08:21:36.968, null, 2016-03-09 08:21:36.968, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:36.984--ClientSession(1994223686)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_P2pitem_M (itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, technical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [DAF7996C-675B-4DCC-8574-A1E305B69A61, 0KJvTLZ5dxAA3XqMuQ3zjwLXyw8ICQASL3HrPDbQ5rFoAVfplm, cCkuATcLhZ98KyJ8UW4Ivyqpxe61cn2MhXuK0zhRu9svDJx7Qz, QBmbzmtyLNCYpxOQm3PlFxhRrSn5xac19ohqNijjrdkSIA7mWT, mrHM1G5UwQlsme2tHiuJY1h1avjbreYVFWjEr3k3uCe7rZY3BJ, true, 29228597-3796-4679-A511-6DBFE09734C8, 2MRlu8O19d8eRfQDwBK5wOy1nMxAN97WTQbdGtRhpeU99QVGeS, bJjzYvYPIVteUj2xChoE1HjsXqGEN0SKcXkOTc9IRKpzBUt4SR, 766E46A9-7DD6-486C-89EA-4FCBB2E46BDC, 98014AA3-2B96-4B3B-B6D4-616A3470864C, 23B9B4CC-95FB-4914-B521-E677810B8B04, 12.34, 12.34, B4D7C79B-7C31-47B5-80C5-012CF0E2C1C2, 12.34, aPSZDNxeGhaLAJtKjron3V6IqotSXG01EzNYwVLa9kNPswjoln, ztE2GvCFKIRfZ3DfnXiihi69DCbeDO8eyS0yLJvkAxpuJaLLwe, k68ZUatxtWIMcoCFjYl6Wx1YDDMJtMF76KR6ShfiBX6LYqAzV3, Ar4TI7gZ50ayjjzunFyZX9bLMmqQiy8H6xKXsU2pZajOo7DZzf, JmK305nTcy66U1JGnVNEApuANhcMguyDUM8cAdnxdey1Dkk7Wm, DL5JeBUUgMGnK2AjX0MbD9h0rrj1MDJUg39qkzDCIEVxqiWVCx, y5FQmqNsqXssFknEFcpQO901Zl8HNySpgzX9tvOWKFwzoQ334K, 1gkUztOkBqTezHcubs1tYuV7cPFfo2Ad4cffe6wTwHAWXaqCvj, RmvETYA5iupjL6tYKmf2NFDcyMwlCwxLQx3mM1xfKhWTfKbOrY, true, true, E2DAA01B-B290-4417-9A21-DC8B0D87105B, true, true, 5HKt2EZVRmbGq8VXLch3gRgaQUVhqbXQmEVUnpk4nOTS7cBrYn, 528FE99A-41DF-4B10-8055-403E3884674E, true, 239CC361-8FE1-4FCB-9FFF-C6018BFC4AAC, 1, AAAAA, 2016-03-09 08:21:36.927, null, 2016-03-09 08:21:36.927, 1, 51000]
+  <testcase name="test3FindById" classname="mdm.app.server.service.P2pitemcircleTestCase" time="0.004"/>
+  <testcase name="test3findBycircleid" classname="mdm.app.server.service.P2pitemcircleTestCase" time="0.004"/>
+  <testcase name="test3findByitemid" classname="mdm.app.server.service.P2pitemcircleTestCase" time="0.004"/>
+  <testcase name="test4Delete" classname="mdm.app.server.service.P2pitemcircleTestCase" time="0.07"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-03-09 08:41:30.456--ClientSession(971633176)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Circle_M (circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [F8BDB564-6318-42CE-8EED-9E1A1A4FDF75, CZztHXvQCFHZhQc2pXmDLd5KGujJZWgRpbw6szWULn2m0MwZY0, 1, AAAAA, 2016-03-09 08:41:30.452, null, 2016-03-09 08:41:30.452, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:30.462--ClientSession(1189856813)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemcategorytype_M (itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [FC79074C-3758-46C3-8B3E-434606C35F86, MeveyfvWOv2EB4dUZdN6cp17fhNJIXGycTOzbdGdrXJqeEmb2d, 1, AAAAA, 2016-03-09 08:41:30.459, null, 2016-03-09 08:41:30.459, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:30.467--ClientSession(1505307047)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemmaintype_M (itemmaintypeid, itemmaintypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [E67E6A3F-DFEB-42EC-B367-CCA0FFD66BBB, pu68BI2UfzE76vKJbHLDpV25S67e2Y3SKSZuPLRoImtbzST9Ta, 1, AAAAA, 2016-03-09 08:41:30.464, null, 2016-03-09 08:41:30.464, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:30.475--ClientSession(1684970467)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemsubtype_M (itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [CA026BF9-0C89-4B71-93E9-3F128BC6D5BB, 6xOsddlLAN7mNLHqQHzces0SdFaUTovArJ2cFJdw6vNQJhVlDF, 1, AAAAA, 2016-03-09 08:41:30.471, null, 2016-03-09 08:41:30.471, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:30.483--ClientSession(1296132402)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemtype_M (itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [AB60A9BD-45F1-4E8F-AC02-59726D89D3F1, jqkPZEqeZd4K3zRSfnfZXNGm5F1E8X5avVmeYv0aDrrrpZcvBX, 1, AAAAA, 2016-03-09 08:41:30.478, null, 2016-03-09 08:41:30.478, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:30.491--ClientSession(1865995084)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Manufacturer_M (manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [504DBE44-5797-44D0-8B2D-585D95245804, L4SudgR8SrCZ6tTcB5vnIExDwgivpMW6zFtkHlWbT9kVhx92Jf, 1, AAAAA, 2016-03-09 08:41:30.486, null, 2016-03-09 08:41:30.486, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:30.499--ClientSession(643954783)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Sbp_M (sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [2D200208-A591-41DA-9662-888E01B42F6A, eDozBBVkpFMJVNFlp5Q3ipJmresjojXHCeb7Dvcp5x0AlIHAFA, 1, AAAAA, 2016-03-09 08:41:30.494, null, 2016-03-09 08:41:30.494, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:30.505--ClientSession(193341461)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Technology_M (technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [3829392C-53E6-45C5-AA6A-A58E6D63C95F, rwyNBrGR6CtcRVZu3EpLRnk1AMdRv4qUYkY9w2eG2RQRqUtCEX, 1, AAAAA, 2016-03-09 08:41:30.502, null, 2016-03-09 08:41:30.502, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:30.511--ClientSession(2058201243)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Uom_M (uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [82C7AE57-96F4-4C78-A2EF-74E85C337ACE, 96OIV4ccHHQioCEekDfZLUO9snJQBxaaEU3jvfQcqFm8W7uHfR, 1, AAAAA, 2016-03-09 08:41:30.508, null, 2016-03-09 08:41:30.508, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:30.531--ClientSession(981140878)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_P2pitem_M (itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, technical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [BAEDB83B-E5A7-4336-88F9-212A2DBC88CE, 0KJvTLZ5dxAA3XqMuQ3zjwLXyw8ICQASL3HrPDbQ5rFoAVfplm, cCkuATcLhZ98KyJ8UW4Ivyqpxe61cn2MhXuK0zhRu9svDJx7Qz, QBmbzmtyLNCYpxOQm3PlFxhRrSn5xac19ohqNijjrdkSIA7mWT, mrHM1G5UwQlsme2tHiuJY1h1avjbreYVFWjEr3k3uCe7rZY3BJ, true, FC79074C-3758-46C3-8B3E-434606C35F86, 2MRlu8O19d8eRfQDwBK5wOy1nMxAN97WTQbdGtRhpeU99QVGeS, bJjzYvYPIVteUj2xChoE1HjsXqGEN0SKcXkOTc9IRKpzBUt4SR, E67E6A3F-DFEB-42EC-B367-CCA0FFD66BBB, CA026BF9-0C89-4B71-93E9-3F128BC6D5BB, AB60A9BD-45F1-4E8F-AC02-59726D89D3F1, 12.34, 12.34, 504DBE44-5797-44D0-8B2D-585D95245804, 12.34, aPSZDNxeGhaLAJtKjron3V6IqotSXG01EzNYwVLa9kNPswjoln, ztE2GvCFKIRfZ3DfnXiihi69DCbeDO8eyS0yLJvkAxpuJaLLwe, k68ZUatxtWIMcoCFjYl6Wx1YDDMJtMF76KR6ShfiBX6LYqAzV3, Ar4TI7gZ50ayjjzunFyZX9bLMmqQiy8H6xKXsU2pZajOo7DZzf, JmK305nTcy66U1JGnVNEApuANhcMguyDUM8cAdnxdey1Dkk7Wm, DL5JeBUUgMGnK2AjX0MbD9h0rrj1MDJUg39qkzDCIEVxqiWVCx, y5FQmqNsqXssFknEFcpQO901Zl8HNySpgzX9tvOWKFwzoQ334K, 1gkUztOkBqTezHcubs1tYuV7cPFfo2Ad4cffe6wTwHAWXaqCvj, RmvETYA5iupjL6tYKmf2NFDcyMwlCwxLQx3mM1xfKhWTfKbOrY, true, true, 2D200208-A591-41DA-9662-888E01B42F6A, true, true, 5HKt2EZVRmbGq8VXLch3gRgaQUVhqbXQmEVUnpk4nOTS7cBrYn, 3829392C-53E6-45C5-AA6A-A58E6D63C95F, true, 82C7AE57-96F4-4C78-A2EF-74E85C337ACE, 1, AAAAA, 2016-03-09 08:41:30.459, null, 2016-03-09 08:41:30.459, 1, 51000]
 Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 08:21:37.014--ClientSession(1702940586)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_P2pitemcircle_T (p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [ADF83E01-8BC6-4344-8291-1A14E6632908, BDF71CA1-404D-4E1D-A5C6-A476EB2BA4F3, DAF7996C-675B-4DCC-8574-A1E305B69A61, 1, AAAAA, 2016-03-09 08:21:36.988, null, 2016-03-09 08:21:36.988, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:37.021--ClientSession(1583873403)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE ((activeStatus = ?) AND (p2itemcircleid = ?))
-	bind => [1, ADF83E01-8BC6-4344-8291-1A14E6632908]
+[EL Fine]: sql: 2016-03-09 08:41:30.568--ClientSession(490071270)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_P2pitemcircle_T (p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [979FE204-E63D-4D37-AC03-215AA6AC28FA, F8BDB564-6318-42CE-8EED-9E1A1A4FDF75, BAEDB83B-E5A7-4336-88F9-212A2DBC88CE, 1, AAAAA, 2016-03-09 08:41:30.535, null, 2016-03-09 08:41:30.535, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:30.577--ClientSession(1918118457)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE ((activeStatus = ?) AND (p2itemcircleid = ?))
+	bind => [1, 979FE204-E63D-4D37-AC03-215AA6AC28FA]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 08:21:37.025--ClientSession(1777936494)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE (p2itemcircleid = ?)
-	bind => [ADF83E01-8BC6-4344-8291-1A14E6632908]
-[EL Fine]: sql: 2016-03-09 08:21:37.026--ClientSession(1777936494)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_P2pitemcircle_T SET updatedBy = ?, versionId = ? WHERE ((p2itemcircleid = ?) AND (versionId = ?))
-	bind => [AAAAA, 2, ADF83E01-8BC6-4344-8291-1A14E6632908, 1]
-[EL Fine]: sql: 2016-03-09 08:21:37.032--ClientSession(1820821941)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE ((activeStatus = ?) AND (p2itemcircleid = ?))
-	bind => [1, ADF83E01-8BC6-4344-8291-1A14E6632908]
-[EL Fine]: sql: 2016-03-09 08:21:37.037--ClientSession(107879851)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE ((activeStatus = ?) AND (circleid = ?))
-	bind => [1, BDF71CA1-404D-4E1D-A5C6-A476EB2BA4F3]
-[EL Fine]: sql: 2016-03-09 08:21:37.043--ClientSession(1017638695)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE ((activeStatus = ?) AND (itemid = ?))
-	bind => [1, DAF7996C-675B-4DCC-8574-A1E305B69A61]
-[EL Fine]: sql: 2016-03-09 08:21:37.051--ClientSession(876196910)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE (p2itemcircleid = ?)
-	bind => [ADF83E01-8BC6-4344-8291-1A14E6632908]
-[EL Fine]: sql: 2016-03-09 08:21:37.053--ClientSession(876196910)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_P2pitemcircle_T WHERE ((p2itemcircleid = ?) AND (versionId = ?))
-	bind => [ADF83E01-8BC6-4344-8291-1A14E6632908, 2]
-[EL Fine]: sql: 2016-03-09 08:21:37.06--ClientSession(922474577)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, technical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitem_M WHERE (itemid = ?)
-	bind => [DAF7996C-675B-4DCC-8574-A1E305B69A61]
-[EL Fine]: sql: 2016-03-09 08:21:37.062--ClientSession(922474577)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_P2pitem_M WHERE ((itemid = ?) AND (versionId = ?))
-	bind => [DAF7996C-675B-4DCC-8574-A1E305B69A61, 1]
-[EL Fine]: sql: 2016-03-09 08:21:37.067--ClientSession(236783699)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE (uomid = ?)
-	bind => [239CC361-8FE1-4FCB-9FFF-C6018BFC4AAC]
-[EL Fine]: sql: 2016-03-09 08:21:37.068--ClientSession(236783699)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Uom_M WHERE ((uomid = ?) AND (versionId = ?))
-	bind => [239CC361-8FE1-4FCB-9FFF-C6018BFC4AAC, 1]
-[EL Fine]: sql: 2016-03-09 08:21:37.072--ClientSession(1931469472)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE (technologyid = ?)
-	bind => [528FE99A-41DF-4B10-8055-403E3884674E]
-[EL Fine]: sql: 2016-03-09 08:21:37.073--ClientSession(1931469472)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Technology_M WHERE ((technologyid = ?) AND (versionId = ?))
-	bind => [528FE99A-41DF-4B10-8055-403E3884674E, 1]
-[EL Fine]: sql: 2016-03-09 08:21:37.081--ClientSession(1946152225)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
-	bind => [E2DAA01B-B290-4417-9A21-DC8B0D87105B]
-[EL Fine]: sql: 2016-03-09 08:21:37.082--ClientSession(1946152225)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Sbp_M WHERE ((sbpid = ?) AND (versionId = ?))
-	bind => [E2DAA01B-B290-4417-9A21-DC8B0D87105B, 1]
-[EL Fine]: sql: 2016-03-09 08:21:37.086--ClientSession(432669909)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
-	bind => [B4D7C79B-7C31-47B5-80C5-012CF0E2C1C2]
-[EL Fine]: sql: 2016-03-09 08:21:37.088--ClientSession(432669909)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Manufacturer_M WHERE ((manufacturerid = ?) AND (versionId = ?))
-	bind => [B4D7C79B-7C31-47B5-80C5-012CF0E2C1C2, 1]
-[EL Fine]: sql: 2016-03-09 08:21:37.092--ClientSession(935770387)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE (itemtypeid = ?)
-	bind => [23B9B4CC-95FB-4914-B521-E677810B8B04]
-[EL Fine]: sql: 2016-03-09 08:21:37.093--ClientSession(935770387)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemtype_M WHERE ((itemtypeid = ?) AND (versionId = ?))
-	bind => [23B9B4CC-95FB-4914-B521-E677810B8B04, 1]
-[EL Fine]: sql: 2016-03-09 08:21:37.098--ClientSession(1082687882)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE (itemsubtypeid = ?)
-	bind => [98014AA3-2B96-4B3B-B6D4-616A3470864C]
-[EL Fine]: sql: 2016-03-09 08:21:37.099--ClientSession(1082687882)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemsubtype_M WHERE ((itemsubtypeid = ?) AND (versionId = ?))
-	bind => [98014AA3-2B96-4B3B-B6D4-616A3470864C, 1]
-[EL Fine]: sql: 2016-03-09 08:21:37.106--ClientSession(1611423813)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemmaintypeid, itemmaintypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemmaintype_M WHERE (itemmaintypeid = ?)
-	bind => [766E46A9-7DD6-486C-89EA-4FCBB2E46BDC]
-[EL Fine]: sql: 2016-03-09 08:21:37.107--ClientSession(1611423813)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemmaintype_M WHERE ((itemmaintypeid = ?) AND (versionId = ?))
-	bind => [766E46A9-7DD6-486C-89EA-4FCBB2E46BDC, 1]
-[EL Fine]: sql: 2016-03-09 08:21:37.112--ClientSession(1744551375)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
-	bind => [29228597-3796-4679-A511-6DBFE09734C8]
-[EL Fine]: sql: 2016-03-09 08:21:37.113--ClientSession(1744551375)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemcategorytype_M WHERE ((itemcategoryid = ?) AND (versionId = ?))
-	bind => [29228597-3796-4679-A511-6DBFE09734C8, 1]
-[EL Fine]: sql: 2016-03-09 08:21:37.117--ClientSession(190399613)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE (circleid = ?)
-	bind => [BDF71CA1-404D-4E1D-A5C6-A476EB2BA4F3]
-[EL Fine]: sql: 2016-03-09 08:21:37.118--ClientSession(190399613)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Circle_M WHERE ((circleid = ?) AND (versionId = ?))
-	bind => [BDF71CA1-404D-4E1D-A5C6-A476EB2BA4F3, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.58--ClientSession(1976333103)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE (p2itemcircleid = ?)
+	bind => [979FE204-E63D-4D37-AC03-215AA6AC28FA]
+[EL Fine]: sql: 2016-03-09 08:41:30.582--ClientSession(1976333103)--Connection(988981671)--Thread(Thread[Test worker,5,main])--UPDATE ast_P2pitemcircle_T SET updatedBy = ?, versionId = ? WHERE ((p2itemcircleid = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, 979FE204-E63D-4D37-AC03-215AA6AC28FA, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.588--ClientSession(1707648346)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE ((activeStatus = ?) AND (p2itemcircleid = ?))
+	bind => [1, 979FE204-E63D-4D37-AC03-215AA6AC28FA]
+[EL Fine]: sql: 2016-03-09 08:41:30.593--ClientSession(15240784)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE ((activeStatus = ?) AND (circleid = ?))
+	bind => [1, F8BDB564-6318-42CE-8EED-9E1A1A4FDF75]
+[EL Fine]: sql: 2016-03-09 08:41:30.598--ClientSession(1706876001)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE ((activeStatus = ?) AND (itemid = ?))
+	bind => [1, BAEDB83B-E5A7-4336-88F9-212A2DBC88CE]
+[EL Fine]: sql: 2016-03-09 08:41:30.602--ClientSession(2022619010)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT p2itemcircleid, circleid, itemid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitemcircle_T WHERE (p2itemcircleid = ?)
+	bind => [979FE204-E63D-4D37-AC03-215AA6AC28FA]
+[EL Fine]: sql: 2016-03-09 08:41:30.603--ClientSession(2022619010)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_P2pitemcircle_T WHERE ((p2itemcircleid = ?) AND (versionId = ?))
+	bind => [979FE204-E63D-4D37-AC03-215AA6AC28FA, 2]
+[EL Fine]: sql: 2016-03-09 08:41:30.61--ClientSession(744616077)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemid, acs, customdutycode, funcclassification, glcode, inventoryitem, itemcategoryid, itemcode, itemdescription, itemmainid, itemsubtypeid, itemtypeid, leadtime, majorasset, manufacturerid, minorasset, model, modelfamily, moq, movable, natureofitem, networkelement, nmsunique, partdescription, partnumber, purchasable, repairable, sbpid, serialised, taggable, technical, technologyid, trackablealm, uomid, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_P2pitem_M WHERE (itemid = ?)
+	bind => [BAEDB83B-E5A7-4336-88F9-212A2DBC88CE]
+[EL Fine]: sql: 2016-03-09 08:41:30.611--ClientSession(744616077)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_P2pitem_M WHERE ((itemid = ?) AND (versionId = ?))
+	bind => [BAEDB83B-E5A7-4336-88F9-212A2DBC88CE, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.616--ClientSession(641695398)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE (uomid = ?)
+	bind => [82C7AE57-96F4-4C78-A2EF-74E85C337ACE]
+[EL Fine]: sql: 2016-03-09 08:41:30.617--ClientSession(641695398)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Uom_M WHERE ((uomid = ?) AND (versionId = ?))
+	bind => [82C7AE57-96F4-4C78-A2EF-74E85C337ACE, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.621--ClientSession(1292489205)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE (technologyid = ?)
+	bind => [3829392C-53E6-45C5-AA6A-A58E6D63C95F]
+[EL Fine]: sql: 2016-03-09 08:41:30.622--ClientSession(1292489205)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Technology_M WHERE ((technologyid = ?) AND (versionId = ?))
+	bind => [3829392C-53E6-45C5-AA6A-A58E6D63C95F, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.628--ClientSession(1713895534)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
+	bind => [2D200208-A591-41DA-9662-888E01B42F6A]
+[EL Fine]: sql: 2016-03-09 08:41:30.63--ClientSession(1713895534)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Sbp_M WHERE ((sbpid = ?) AND (versionId = ?))
+	bind => [2D200208-A591-41DA-9662-888E01B42F6A, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.635--ClientSession(802621310)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT manufacturerid, manufacturername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Manufacturer_M WHERE (manufacturerid = ?)
+	bind => [504DBE44-5797-44D0-8B2D-585D95245804]
+[EL Fine]: sql: 2016-03-09 08:41:30.636--ClientSession(802621310)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Manufacturer_M WHERE ((manufacturerid = ?) AND (versionId = ?))
+	bind => [504DBE44-5797-44D0-8B2D-585D95245804, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.64--ClientSession(2114474894)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE (itemtypeid = ?)
+	bind => [AB60A9BD-45F1-4E8F-AC02-59726D89D3F1]
+[EL Fine]: sql: 2016-03-09 08:41:30.641--ClientSession(2114474894)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemtype_M WHERE ((itemtypeid = ?) AND (versionId = ?))
+	bind => [AB60A9BD-45F1-4E8F-AC02-59726D89D3F1, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.647--ClientSession(580363444)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE (itemsubtypeid = ?)
+	bind => [CA026BF9-0C89-4B71-93E9-3F128BC6D5BB]
+[EL Fine]: sql: 2016-03-09 08:41:30.648--ClientSession(580363444)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemsubtype_M WHERE ((itemsubtypeid = ?) AND (versionId = ?))
+	bind => [CA026BF9-0C89-4B71-93E9-3F128BC6D5BB, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.654--ClientSession(1209770982)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemmaintypeid, itemmaintypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemmaintype_M WHERE (itemmaintypeid = ?)
+	bind => [E67E6A3F-DFEB-42EC-B367-CCA0FFD66BBB]
+[EL Fine]: sql: 2016-03-09 08:41:30.655--ClientSession(1209770982)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemmaintype_M WHERE ((itemmaintypeid = ?) AND (versionId = ?))
+	bind => [E67E6A3F-DFEB-42EC-B367-CCA0FFD66BBB, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.659--ClientSession(1081315492)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemcategoryid, itemcategoryname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemcategorytype_M WHERE (itemcategoryid = ?)
+	bind => [FC79074C-3758-46C3-8B3E-434606C35F86]
+[EL Fine]: sql: 2016-03-09 08:41:30.66--ClientSession(1081315492)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemcategorytype_M WHERE ((itemcategoryid = ?) AND (versionId = ?))
+	bind => [FC79074C-3758-46C3-8B3E-434606C35F86, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.664--ClientSession(1966054237)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE (circleid = ?)
+	bind => [F8BDB564-6318-42CE-8EED-9E1A1A4FDF75]
+[EL Fine]: sql: 2016-03-09 08:41:30.666--ClientSession(1966054237)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Circle_M WHERE ((circleid = ?) AND (versionId = ?))
+	bind => [F8BDB564-6318-42CE-8EED-9E1A1A4FDF75, 1]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

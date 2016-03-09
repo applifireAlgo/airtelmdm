@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.016s</td>
+<td>0.017s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@
 </tr>
 <tr>
 <td class="success">test4Delete</td>
-<td>0.008s</td>
+<td>0.007s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -103,21 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 08:21:35.45--ClientSession(511376647)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Technology_M (technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [64600E66-0169-4326-90B9-89A9175A7874, FS24K8voIxfP2io2YKhX4XAQN5y7XMb7C1d883Y6HzQBxUxqMe, 1, AAAAA, 2016-03-09 08:21:35.445, null, 2016-03-09 08:21:35.445, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:35.456--ClientSession(1401529879)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE ((activeStatus = ?) AND (technologyid = ?))
-	bind =&gt; [1, 64600E66-0169-4326-90B9-89A9175A7874]
+[EL Fine]: sql: 2016-03-09 08:41:28.984--ClientSession(1572371272)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Technology_M (technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [BC5CDF5D-81CA-47E2-B4CE-280D269B223A, FS24K8voIxfP2io2YKhX4XAQN5y7XMb7C1d883Y6HzQBxUxqMe, 1, AAAAA, 2016-03-09 08:41:28.979, null, 2016-03-09 08:41:28.979, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:28.991--ClientSession(1814440606)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE ((activeStatus = ?) AND (technologyid = ?))
+	bind =&gt; [1, BC5CDF5D-81CA-47E2-B4CE-280D269B223A]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 08:21:35.46--ClientSession(204052480)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE (technologyid = ?)
-	bind =&gt; [64600E66-0169-4326-90B9-89A9175A7874]
-[EL Fine]: sql: 2016-03-09 08:21:35.461--ClientSession(204052480)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Technology_M SET technologyname = ?, updatedBy = ?, versionId = ? WHERE ((technologyid = ?) AND (versionId = ?))
-	bind =&gt; [ZpDybQ7cjypj6SqVBtoPn8NjNfj8cM0UsknOtqJKyOTLujQsfL, AAAAA, 2, 64600E66-0169-4326-90B9-89A9175A7874, 1]
-[EL Fine]: sql: 2016-03-09 08:21:35.467--ClientSession(228748654)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE ((activeStatus = ?) AND (technologyid = ?))
-	bind =&gt; [1, 64600E66-0169-4326-90B9-89A9175A7874]
-[EL Fine]: sql: 2016-03-09 08:21:35.472--ClientSession(953155780)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE (technologyid = ?)
-	bind =&gt; [64600E66-0169-4326-90B9-89A9175A7874]
-[EL Fine]: sql: 2016-03-09 08:21:35.474--ClientSession(953155780)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Technology_M WHERE ((technologyid = ?) AND (versionId = ?))
-	bind =&gt; [64600E66-0169-4326-90B9-89A9175A7874, 2]
+[EL Fine]: sql: 2016-03-09 08:41:28.995--ClientSession(1935529058)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE (technologyid = ?)
+	bind =&gt; [BC5CDF5D-81CA-47E2-B4CE-280D269B223A]
+[EL Fine]: sql: 2016-03-09 08:41:28.996--ClientSession(1935529058)--Connection(988981671)--Thread(Thread[Test worker,5,main])--UPDATE ast_Technology_M SET technologyname = ?, updatedBy = ?, versionId = ? WHERE ((technologyid = ?) AND (versionId = ?))
+	bind =&gt; [ZpDybQ7cjypj6SqVBtoPn8NjNfj8cM0UsknOtqJKyOTLujQsfL, AAAAA, 2, BC5CDF5D-81CA-47E2-B4CE-280D269B223A, 1]
+[EL Fine]: sql: 2016-03-09 08:41:29.004--ClientSession(301302621)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE ((activeStatus = ?) AND (technologyid = ?))
+	bind =&gt; [1, BC5CDF5D-81CA-47E2-B4CE-280D269B223A]
+[EL Fine]: sql: 2016-03-09 08:41:29.008--ClientSession(1597358240)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT technologyid, technologyname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Technology_M WHERE (technologyid = ?)
+	bind =&gt; [BC5CDF5D-81CA-47E2-B4CE-280D269B223A]
+[EL Fine]: sql: 2016-03-09 08:41:29.009--ClientSession(1597358240)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Technology_M WHERE ((technologyid = ?) AND (versionId = ?))
+	bind =&gt; [BC5CDF5D-81CA-47E2-B4CE-280D269B223A, 2]
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:41:31 AM</p>
 </div>
 </div>
 </body>

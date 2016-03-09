@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.037s</div>
+<div class="counter">0.036s</div>
 <p>duration</p>
 </div>
 </td>
@@ -84,7 +84,7 @@
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.011s</td>
+<td>0.010s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -103,21 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 08:21:36.646--ClientSession(2109572454)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemsubtype_M (itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [4FB14351-0932-452F-9366-FE10B3ECE1EA, uQVZUgYjQkIb1Gn432vvRvn1FuHg21qcKPIWK9q15dIkqFXBK7, 1, AAAAA, 2016-03-09 08:21:36.641, null, 2016-03-09 08:21:36.641, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:36.653--ClientSession(70613527)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE ((activeStatus = ?) AND (itemsubtypeid = ?))
-	bind =&gt; [1, 4FB14351-0932-452F-9366-FE10B3ECE1EA]
+[EL Fine]: sql: 2016-03-09 08:41:30.188--ClientSession(1542516326)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemsubtype_M (itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [86F09894-9DEA-4B4F-863F-995C3D63D050, uQVZUgYjQkIb1Gn432vvRvn1FuHg21qcKPIWK9q15dIkqFXBK7, 1, AAAAA, 2016-03-09 08:41:30.183, null, 2016-03-09 08:41:30.183, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:30.194--ClientSession(1371705938)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE ((activeStatus = ?) AND (itemsubtypeid = ?))
+	bind =&gt; [1, 86F09894-9DEA-4B4F-863F-995C3D63D050]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 08:21:36.656--ClientSession(1417721208)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE (itemsubtypeid = ?)
-	bind =&gt; [4FB14351-0932-452F-9366-FE10B3ECE1EA]
-[EL Fine]: sql: 2016-03-09 08:21:36.657--ClientSession(1417721208)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Itemsubtype_M SET itemsubtypename = ?, updatedBy = ?, versionId = ? WHERE ((itemsubtypeid = ?) AND (versionId = ?))
-	bind =&gt; [NDI6HqUfBFPstBYX17ACt9cUgcefjwO5KTALlwILJrGyDBM19l, AAAAA, 2, 4FB14351-0932-452F-9366-FE10B3ECE1EA, 1]
-[EL Fine]: sql: 2016-03-09 08:21:36.663--ClientSession(2089416165)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE ((activeStatus = ?) AND (itemsubtypeid = ?))
-	bind =&gt; [1, 4FB14351-0932-452F-9366-FE10B3ECE1EA]
-[EL Fine]: sql: 2016-03-09 08:21:36.667--ClientSession(1550475558)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE (itemsubtypeid = ?)
-	bind =&gt; [4FB14351-0932-452F-9366-FE10B3ECE1EA]
-[EL Fine]: sql: 2016-03-09 08:21:36.668--ClientSession(1550475558)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemsubtype_M WHERE ((itemsubtypeid = ?) AND (versionId = ?))
-	bind =&gt; [4FB14351-0932-452F-9366-FE10B3ECE1EA, 2]
+[EL Fine]: sql: 2016-03-09 08:41:30.197--ClientSession(643624853)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE (itemsubtypeid = ?)
+	bind =&gt; [86F09894-9DEA-4B4F-863F-995C3D63D050]
+[EL Fine]: sql: 2016-03-09 08:41:30.198--ClientSession(643624853)--Connection(988981671)--Thread(Thread[Test worker,5,main])--UPDATE ast_Itemsubtype_M SET itemsubtypename = ?, updatedBy = ?, versionId = ? WHERE ((itemsubtypeid = ?) AND (versionId = ?))
+	bind =&gt; [NDI6HqUfBFPstBYX17ACt9cUgcefjwO5KTALlwILJrGyDBM19l, AAAAA, 2, 86F09894-9DEA-4B4F-863F-995C3D63D050, 1]
+[EL Fine]: sql: 2016-03-09 08:41:30.204--ClientSession(149068836)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE ((activeStatus = ?) AND (itemsubtypeid = ?))
+	bind =&gt; [1, 86F09894-9DEA-4B4F-863F-995C3D63D050]
+[EL Fine]: sql: 2016-03-09 08:41:30.208--ClientSession(1935543020)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemsubtypeid, itemsubtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemsubtype_M WHERE (itemsubtypeid = ?)
+	bind =&gt; [86F09894-9DEA-4B4F-863F-995C3D63D050]
+[EL Fine]: sql: 2016-03-09 08:41:30.209--ClientSession(1935543020)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemsubtype_M WHERE ((itemsubtypeid = ?) AND (versionId = ?))
+	bind =&gt; [86F09894-9DEA-4B4F-863F-995C3D63D050, 2]
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:41:31 AM</p>
 </div>
 </div>
 </body>

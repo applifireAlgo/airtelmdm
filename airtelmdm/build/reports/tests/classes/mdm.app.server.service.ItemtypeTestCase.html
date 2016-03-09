@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.087s</div>
+<div class="counter">0.078s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.058s</td>
+<td>0.046s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.014s</td>
+<td>0.016s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@
 </tr>
 <tr>
 <td class="success">test4Delete</td>
-<td>0.009s</td>
+<td>0.010s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -103,23 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 08:21:32.365--ClientSession(764125664)--Connection(429951377)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemtype_M (itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [9E09764C-76F8-4BDF-B0B0-654903295016, 9bcW84yepmThZv6yApKUoeav4WPTUmPWZomh5Ukkff7o7anPpr, 1, AAAAA, 2016-03-09 08:21:32.326, null, 2016-03-09 08:21:32.326, 1, 51000]
-[EL Config]: connection: 2016-03-09 08:21:32.369--ServerSession(988431166)--Connection(429951377)--Thread(Thread[Test worker,5,main])--disconnect
-[EL Fine]: sql: 2016-03-09 08:21:32.375--ClientSession(272980125)--Connection(306092155)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE ((activeStatus = ?) AND (itemtypeid = ?))
-	bind =&gt; [1, 9E09764C-76F8-4BDF-B0B0-654903295016]
-[EL Config]: connection: 2016-03-09 08:21:32.376--ServerSession(988431166)--Connection(306092155)--Thread(Thread[Test worker,5,main])--disconnect
+[EL Fine]: sql: 2016-03-09 08:41:26.32--ClientSession(1788587327)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Itemtype_M (itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [747E7028-18DD-448B-A722-EADC87D7BE7E, 9bcW84yepmThZv6yApKUoeav4WPTUmPWZomh5Ukkff7o7anPpr, 1, AAAAA, 2016-03-09 08:41:26.289, null, 2016-03-09 08:41:26.289, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:26.33--ClientSession(2005797958)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE ((activeStatus = ?) AND (itemtypeid = ?))
+	bind =&gt; [1, 747E7028-18DD-448B-A722-EADC87D7BE7E]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 08:21:32.38--ClientSession(1059222544)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE (itemtypeid = ?)
-	bind =&gt; [9E09764C-76F8-4BDF-B0B0-654903295016]
-[EL Fine]: sql: 2016-03-09 08:21:32.381--ClientSession(1059222544)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Itemtype_M SET itemtypename = ?, updatedBy = ?, versionId = ? WHERE ((itemtypeid = ?) AND (versionId = ?))
-	bind =&gt; [P6BWtwrLYdeF36GZJ2MkpZLzFpvFmhFjmqbBQVyz4vl7VqqCKj, AAAAA, 2, 9E09764C-76F8-4BDF-B0B0-654903295016, 1]
-[EL Fine]: sql: 2016-03-09 08:21:32.389--ClientSession(4327813)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE ((activeStatus = ?) AND (itemtypeid = ?))
-	bind =&gt; [1, 9E09764C-76F8-4BDF-B0B0-654903295016]
-[EL Fine]: sql: 2016-03-09 08:21:32.395--ClientSession(1347448482)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE (itemtypeid = ?)
-	bind =&gt; [9E09764C-76F8-4BDF-B0B0-654903295016]
-[EL Fine]: sql: 2016-03-09 08:21:32.397--ClientSession(1347448482)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemtype_M WHERE ((itemtypeid = ?) AND (versionId = ?))
-	bind =&gt; [9E09764C-76F8-4BDF-B0B0-654903295016, 2]
+[EL Fine]: sql: 2016-03-09 08:41:26.335--ClientSession(131231069)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE (itemtypeid = ?)
+	bind =&gt; [747E7028-18DD-448B-A722-EADC87D7BE7E]
+[EL Fine]: sql: 2016-03-09 08:41:26.337--ClientSession(131231069)--Connection(988981671)--Thread(Thread[Test worker,5,main])--UPDATE ast_Itemtype_M SET itemtypename = ?, updatedBy = ?, versionId = ? WHERE ((itemtypeid = ?) AND (versionId = ?))
+	bind =&gt; [P6BWtwrLYdeF36GZJ2MkpZLzFpvFmhFjmqbBQVyz4vl7VqqCKj, AAAAA, 2, 747E7028-18DD-448B-A722-EADC87D7BE7E, 1]
+[EL Fine]: sql: 2016-03-09 08:41:26.344--ClientSession(1545963845)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE ((activeStatus = ?) AND (itemtypeid = ?))
+	bind =&gt; [1, 747E7028-18DD-448B-A722-EADC87D7BE7E]
+[EL Fine]: sql: 2016-03-09 08:41:26.351--ClientSession(1154548233)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT itemtypeid, itemtypename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Itemtype_M WHERE (itemtypeid = ?)
+	bind =&gt; [747E7028-18DD-448B-A722-EADC87D7BE7E]
+[EL Fine]: sql: 2016-03-09 08:41:26.353--ClientSession(1154548233)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Itemtype_M WHERE ((itemtypeid = ?) AND (versionId = ?))
+	bind =&gt; [747E7028-18DD-448B-A722-EADC87D7BE7E, 2]
 </pre>
 </span>
 </div>
@@ -131,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:41:31 AM</p>
 </div>
 </div>
 </body>

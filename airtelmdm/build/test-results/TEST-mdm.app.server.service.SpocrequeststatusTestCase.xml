@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="mdm.app.server.service.SpocrequeststatusTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T08:21:32" hostname="9b24c35c068b" time="0.109">
+<testsuite name="mdm.app.server.service.SpocrequeststatusTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-09T08:41:26" hostname="79527795e2c5" time="0.08">
   <properties/>
-  <testcase name="test1Save" classname="mdm.app.server.service.SpocrequeststatusTestCase" time="0.066"/>
-  <testcase name="test2Update" classname="mdm.app.server.service.SpocrequeststatusTestCase" time="0.02"/>
-  <testcase name="test3FindById" classname="mdm.app.server.service.SpocrequeststatusTestCase" time="0.009"/>
-  <testcase name="test4Delete" classname="mdm.app.server.service.SpocrequeststatusTestCase" time="0.013"/>
+  <testcase name="test1Save" classname="mdm.app.server.service.SpocrequeststatusTestCase" time="0.047"/>
+  <testcase name="test2Update" classname="mdm.app.server.service.SpocrequeststatusTestCase" time="0.015"/>
+  <testcase name="test3FindById" classname="mdm.app.server.service.SpocrequeststatusTestCase" time="0.006"/>
+  <testcase name="test4Delete" classname="mdm.app.server.service.SpocrequeststatusTestCase" time="0.011"/>
   <system-out><![CDATA[Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 08:21:32.462--ClientSession(953162593)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Spocrequeststatus_M (statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [1EAB2F44-D713-4DC9-824A-9922A03315A6, 9BA4d0abEPcT2vA84kmPUjcqZ87dZwUWvxQkESO2tnySC81Qt5, 1, AAAAA, 2016-03-09 08:21:32.414, null, 2016-03-09 08:21:32.414, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:32.477--ClientSession(280062216)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
-	bind => [1, 1EAB2F44-D713-4DC9-824A-9922A03315A6]
+[EL Fine]: sql: 2016-03-09 08:41:26.401--ClientSession(1162252757)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Spocrequeststatus_M (statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [835C668F-E8E5-4C30-BD27-0CEF567B55AE, 9BA4d0abEPcT2vA84kmPUjcqZ87dZwUWvxQkESO2tnySC81Qt5, 1, AAAAA, 2016-03-09 08:41:26.369, null, 2016-03-09 08:41:26.369, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:26.412--ClientSession(317409867)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
+	bind => [1, 835C668F-E8E5-4C30-BD27-0CEF567B55AE]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 08:21:32.483--ClientSession(1657229431)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE (statusid = ?)
-	bind => [1EAB2F44-D713-4DC9-824A-9922A03315A6]
-[EL Fine]: sql: 2016-03-09 08:21:32.485--ClientSession(1657229431)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Spocrequeststatus_M SET statusname = ?, updatedBy = ?, versionId = ? WHERE ((statusid = ?) AND (versionId = ?))
-	bind => [A1zXwcCO5SY5ok4nEE2xQsLZglOt7rEM5aVUr3ka1RHGmduuHV, AAAAA, 2, 1EAB2F44-D713-4DC9-824A-9922A03315A6, 1]
-[EL Fine]: sql: 2016-03-09 08:21:32.496--ClientSession(1582758140)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
-	bind => [1, 1EAB2F44-D713-4DC9-824A-9922A03315A6]
-[EL Fine]: sql: 2016-03-09 08:21:32.505--ClientSession(95415994)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE (statusid = ?)
-	bind => [1EAB2F44-D713-4DC9-824A-9922A03315A6]
-[EL Fine]: sql: 2016-03-09 08:21:32.507--ClientSession(95415994)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Spocrequeststatus_M WHERE ((statusid = ?) AND (versionId = ?))
-	bind => [1EAB2F44-D713-4DC9-824A-9922A03315A6, 2]
+[EL Fine]: sql: 2016-03-09 08:41:26.416--ClientSession(1582887417)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE (statusid = ?)
+	bind => [835C668F-E8E5-4C30-BD27-0CEF567B55AE]
+[EL Fine]: sql: 2016-03-09 08:41:26.418--ClientSession(1582887417)--Connection(988981671)--Thread(Thread[Test worker,5,main])--UPDATE ast_Spocrequeststatus_M SET statusname = ?, updatedBy = ?, versionId = ? WHERE ((statusid = ?) AND (versionId = ?))
+	bind => [A1zXwcCO5SY5ok4nEE2xQsLZglOt7rEM5aVUr3ka1RHGmduuHV, AAAAA, 2, 835C668F-E8E5-4C30-BD27-0CEF567B55AE, 1]
+[EL Fine]: sql: 2016-03-09 08:41:26.426--ClientSession(130544857)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE ((activeStatus = ?) AND (statusid = ?))
+	bind => [1, 835C668F-E8E5-4C30-BD27-0CEF567B55AE]
+[EL Fine]: sql: 2016-03-09 08:41:26.433--ClientSession(601712600)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT statusid, statusname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Spocrequeststatus_M WHERE (statusid = ?)
+	bind => [835C668F-E8E5-4C30-BD27-0CEF567B55AE]
+[EL Fine]: sql: 2016-03-09 08:41:26.435--ClientSession(601712600)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Spocrequeststatus_M WHERE ((statusid = ?) AND (versionId = ?))
+	bind => [835C668F-E8E5-4C30-BD27-0CEF567B55AE, 2]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

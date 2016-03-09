@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.042s</div>
+<div class="counter">0.038s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,22 +79,22 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.017s</td>
+<td>0.016s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.012s</td>
+<td>0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3FindById</td>
-<td>0.005s</td>
+<td>0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test4Delete</td>
-<td>0.008s</td>
+<td>0.007s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -103,21 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 08:21:36.025--ClientSession(101444104)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Circle_M (circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [F5F845E4-BA40-4ED9-9626-11A70E4E3C19, 6q1feQphY8nARUB1sHpHmeIILnNwxqrA77XSVQVYwIzqDHCa7o, 1, AAAAA, 2016-03-09 08:21:36.02, null, 2016-03-09 08:21:36.02, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:36.032--ClientSession(1294105871)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE ((activeStatus = ?) AND (circleid = ?))
-	bind =&gt; [1, F5F845E4-BA40-4ED9-9626-11A70E4E3C19]
+[EL Fine]: sql: 2016-03-09 08:41:29.597--ClientSession(236595895)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Circle_M (circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [0AEBBD89-B729-4505-86EF-A5D879B6531C, 6q1feQphY8nARUB1sHpHmeIILnNwxqrA77XSVQVYwIzqDHCa7o, 1, AAAAA, 2016-03-09 08:41:29.591, null, 2016-03-09 08:41:29.591, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:29.604--ClientSession(550836182)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE ((activeStatus = ?) AND (circleid = ?))
+	bind =&gt; [1, 0AEBBD89-B729-4505-86EF-A5D879B6531C]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 08:21:36.036--ClientSession(1259843643)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE (circleid = ?)
-	bind =&gt; [F5F845E4-BA40-4ED9-9626-11A70E4E3C19]
-[EL Fine]: sql: 2016-03-09 08:21:36.038--ClientSession(1259843643)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Circle_M SET circlename = ?, updatedBy = ?, versionId = ? WHERE ((circleid = ?) AND (versionId = ?))
-	bind =&gt; [6ezKErJzjt59He0pva6825bjEJnc48iW2yg9fvxR5NQfh30ALv, AAAAA, 2, F5F845E4-BA40-4ED9-9626-11A70E4E3C19, 1]
-[EL Fine]: sql: 2016-03-09 08:21:36.045--ClientSession(578050042)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE ((activeStatus = ?) AND (circleid = ?))
-	bind =&gt; [1, F5F845E4-BA40-4ED9-9626-11A70E4E3C19]
-[EL Fine]: sql: 2016-03-09 08:21:36.049--ClientSession(474158873)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE (circleid = ?)
-	bind =&gt; [F5F845E4-BA40-4ED9-9626-11A70E4E3C19]
-[EL Fine]: sql: 2016-03-09 08:21:36.051--ClientSession(474158873)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Circle_M WHERE ((circleid = ?) AND (versionId = ?))
-	bind =&gt; [F5F845E4-BA40-4ED9-9626-11A70E4E3C19, 2]
+[EL Fine]: sql: 2016-03-09 08:41:29.608--ClientSession(554487873)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE (circleid = ?)
+	bind =&gt; [0AEBBD89-B729-4505-86EF-A5D879B6531C]
+[EL Fine]: sql: 2016-03-09 08:41:29.609--ClientSession(554487873)--Connection(988981671)--Thread(Thread[Test worker,5,main])--UPDATE ast_Circle_M SET circlename = ?, updatedBy = ?, versionId = ? WHERE ((circleid = ?) AND (versionId = ?))
+	bind =&gt; [6ezKErJzjt59He0pva6825bjEJnc48iW2yg9fvxR5NQfh30ALv, AAAAA, 2, 0AEBBD89-B729-4505-86EF-A5D879B6531C, 1]
+[EL Fine]: sql: 2016-03-09 08:41:29.615--ClientSession(1138387668)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE ((activeStatus = ?) AND (circleid = ?))
+	bind =&gt; [1, 0AEBBD89-B729-4505-86EF-A5D879B6531C]
+[EL Fine]: sql: 2016-03-09 08:41:29.619--ClientSession(1180404462)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT circleid, circlename, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Circle_M WHERE (circleid = ?)
+	bind =&gt; [0AEBBD89-B729-4505-86EF-A5D879B6531C]
+[EL Fine]: sql: 2016-03-09 08:41:29.621--ClientSession(1180404462)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Circle_M WHERE ((circleid = ?) AND (versionId = ?))
+	bind =&gt; [0AEBBD89-B729-4505-86EF-A5D879B6531C, 2]
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:41:31 AM</p>
 </div>
 </div>
 </body>

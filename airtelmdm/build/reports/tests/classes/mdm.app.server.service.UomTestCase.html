@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.074s</div>
+<div class="counter">0.078s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.049s</td>
+<td>0.053s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.014s</td>
+<td>0.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@
 </tr>
 <tr>
 <td class="success">test4Delete</td>
-<td>0.007s</td>
+<td>0.009s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -103,21 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 08:21:33.916--ClientSession(934844887)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Uom_M (uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [D6AC0AA1-73DE-4AEB-8BFE-836D845D3907, KnTstgh7F1koj4Fq1nKLZ8VZdywa4Z2zuCNYVrK8PRevePPGKp, 1, AAAAA, 2016-03-09 08:21:33.884, null, 2016-03-09 08:21:33.884, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:33.928--ClientSession(40082953)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE ((activeStatus = ?) AND (uomid = ?))
-	bind =&gt; [1, D6AC0AA1-73DE-4AEB-8BFE-836D845D3907]
+[EL Fine]: sql: 2016-03-09 08:41:27.44--ClientSession(650060504)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Uom_M (uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [0FEC95B1-33BB-4F53-A982-354D6B7C9899, KnTstgh7F1koj4Fq1nKLZ8VZdywa4Z2zuCNYVrK8PRevePPGKp, 1, AAAAA, 2016-03-09 08:41:27.404, null, 2016-03-09 08:41:27.404, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:27.448--ClientSession(1735820374)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE ((activeStatus = ?) AND (uomid = ?))
+	bind =&gt; [1, 0FEC95B1-33BB-4F53-A982-354D6B7C9899]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 08:21:33.933--ClientSession(468037728)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE (uomid = ?)
-	bind =&gt; [D6AC0AA1-73DE-4AEB-8BFE-836D845D3907]
-[EL Fine]: sql: 2016-03-09 08:21:33.935--ClientSession(468037728)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Uom_M SET uomname = ?, updatedBy = ?, versionId = ? WHERE ((uomid = ?) AND (versionId = ?))
-	bind =&gt; [STDZhoO654dECjB3FX7jnqavqYDN0LIHwA8Oo0wXnDOODva1OH, AAAAA, 2, D6AC0AA1-73DE-4AEB-8BFE-836D845D3907, 1]
-[EL Fine]: sql: 2016-03-09 08:21:33.941--ClientSession(126620990)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE ((activeStatus = ?) AND (uomid = ?))
-	bind =&gt; [1, D6AC0AA1-73DE-4AEB-8BFE-836D845D3907]
-[EL Fine]: sql: 2016-03-09 08:21:33.945--ClientSession(1675982942)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE (uomid = ?)
-	bind =&gt; [D6AC0AA1-73DE-4AEB-8BFE-836D845D3907]
-[EL Fine]: sql: 2016-03-09 08:21:33.946--ClientSession(1675982942)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Uom_M WHERE ((uomid = ?) AND (versionId = ?))
-	bind =&gt; [D6AC0AA1-73DE-4AEB-8BFE-836D845D3907, 2]
+[EL Fine]: sql: 2016-03-09 08:41:27.452--ClientSession(1887269520)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE (uomid = ?)
+	bind =&gt; [0FEC95B1-33BB-4F53-A982-354D6B7C9899]
+[EL Fine]: sql: 2016-03-09 08:41:27.453--ClientSession(1887269520)--Connection(988981671)--Thread(Thread[Test worker,5,main])--UPDATE ast_Uom_M SET uomname = ?, updatedBy = ?, versionId = ? WHERE ((uomid = ?) AND (versionId = ?))
+	bind =&gt; [STDZhoO654dECjB3FX7jnqavqYDN0LIHwA8Oo0wXnDOODva1OH, AAAAA, 2, 0FEC95B1-33BB-4F53-A982-354D6B7C9899, 1]
+[EL Fine]: sql: 2016-03-09 08:41:27.459--ClientSession(345053663)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE ((activeStatus = ?) AND (uomid = ?))
+	bind =&gt; [1, 0FEC95B1-33BB-4F53-A982-354D6B7C9899]
+[EL Fine]: sql: 2016-03-09 08:41:27.463--ClientSession(1078325704)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT uomid, uomname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Uom_M WHERE (uomid = ?)
+	bind =&gt; [0FEC95B1-33BB-4F53-A982-354D6B7C9899]
+[EL Fine]: sql: 2016-03-09 08:41:27.464--ClientSession(1078325704)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Uom_M WHERE ((uomid = ?) AND (versionId = ?))
+	bind =&gt; [0FEC95B1-33BB-4F53-A982-354D6B7C9899, 2]
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:41:31 AM</p>
 </div>
 </div>
 </body>

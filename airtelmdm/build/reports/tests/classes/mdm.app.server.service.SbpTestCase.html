@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.071s</div>
+<div class="counter">0.064s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.043s</td>
+<td>0.039s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -89,12 +89,12 @@
 </tr>
 <tr>
 <td class="success">test3FindById</td>
-<td>0.007s</td>
+<td>0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test4Delete</td>
-<td>0.009s</td>
+<td>0.008s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -103,21 +103,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Setting logged in user info for ADD
-[EL Fine]: sql: 2016-03-09 08:21:34.035--ClientSession(901275877)--Connection(606745752)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Sbp_M (sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [B94DD198-9CD9-431D-9D21-99BC422B809F, 55zRoaJyzXr6Cs4UflolBdWk5gYbZGw8me5oqqqkbp1dwmrjyy, 1, AAAAA, 2016-03-09 08:21:34.008, null, 2016-03-09 08:21:34.008, 1, 51000]
-[EL Fine]: sql: 2016-03-09 08:21:34.046--ClientSession(1910495108)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE ((activeStatus = ?) AND (sbpid = ?))
-	bind =&gt; [1, B94DD198-9CD9-431D-9D21-99BC422B809F]
+[EL Fine]: sql: 2016-03-09 08:41:27.554--ClientSession(1372530193)--Connection(988981671)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Sbp_M (sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [BCE81B20-86DE-4221-84C9-0C00218B5E14, 55zRoaJyzXr6Cs4UflolBdWk5gYbZGw8me5oqqqkbp1dwmrjyy, 1, AAAAA, 2016-03-09 08:41:27.527, null, 2016-03-09 08:41:27.527, 1, 51000]
+[EL Fine]: sql: 2016-03-09 08:41:27.561--ClientSession(13177226)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE ((activeStatus = ?) AND (sbpid = ?))
+	bind =&gt; [1, BCE81B20-86DE-4221-84C9-0C00218B5E14]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-03-09 08:21:34.05--ClientSession(36044411)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
-	bind =&gt; [B94DD198-9CD9-431D-9D21-99BC422B809F]
-[EL Fine]: sql: 2016-03-09 08:21:34.051--ClientSession(36044411)--Connection(606745752)--Thread(Thread[Test worker,5,main])--UPDATE ast_Sbp_M SET sbpname = ?, updatedBy = ?, versionId = ? WHERE ((sbpid = ?) AND (versionId = ?))
-	bind =&gt; [1EcT3FfIbAwiKIhmqAZj8Yd5DF2R1HJGDZe0zfUcrFWcizvq6O, AAAAA, 2, B94DD198-9CD9-431D-9D21-99BC422B809F, 1]
-[EL Fine]: sql: 2016-03-09 08:21:34.06--ClientSession(643476063)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE ((activeStatus = ?) AND (sbpid = ?))
-	bind =&gt; [1, B94DD198-9CD9-431D-9D21-99BC422B809F]
-[EL Fine]: sql: 2016-03-09 08:21:34.067--ClientSession(871486073)--Connection(606745752)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
-	bind =&gt; [B94DD198-9CD9-431D-9D21-99BC422B809F]
-[EL Fine]: sql: 2016-03-09 08:21:34.069--ClientSession(871486073)--Connection(606745752)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Sbp_M WHERE ((sbpid = ?) AND (versionId = ?))
-	bind =&gt; [B94DD198-9CD9-431D-9D21-99BC422B809F, 2]
+[EL Fine]: sql: 2016-03-09 08:41:27.565--ClientSession(244269013)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
+	bind =&gt; [BCE81B20-86DE-4221-84C9-0C00218B5E14]
+[EL Fine]: sql: 2016-03-09 08:41:27.567--ClientSession(244269013)--Connection(988981671)--Thread(Thread[Test worker,5,main])--UPDATE ast_Sbp_M SET sbpname = ?, updatedBy = ?, versionId = ? WHERE ((sbpid = ?) AND (versionId = ?))
+	bind =&gt; [1EcT3FfIbAwiKIhmqAZj8Yd5DF2R1HJGDZe0zfUcrFWcizvq6O, AAAAA, 2, BCE81B20-86DE-4221-84C9-0C00218B5E14, 1]
+[EL Fine]: sql: 2016-03-09 08:41:27.573--ClientSession(1242643306)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE ((activeStatus = ?) AND (sbpid = ?))
+	bind =&gt; [1, BCE81B20-86DE-4221-84C9-0C00218B5E14]
+[EL Fine]: sql: 2016-03-09 08:41:27.578--ClientSession(1856508524)--Connection(988981671)--Thread(Thread[Test worker,5,main])--SELECT sbpid, sbpname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Sbp_M WHERE (sbpid = ?)
+	bind =&gt; [BCE81B20-86DE-4221-84C9-0C00218B5E14]
+[EL Fine]: sql: 2016-03-09 08:41:27.579--ClientSession(1856508524)--Connection(988981671)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Sbp_M WHERE ((sbpid = ?) AND (versionId = ?))
+	bind =&gt; [BCE81B20-86DE-4221-84C9-0C00218B5E14, 2]
 </pre>
 </span>
 </div>
@@ -129,7 +129,7 @@ Setting logged in user info for UPDATE
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:21:38 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 9, 2016 8:41:31 AM</p>
 </div>
 </div>
 </body>
